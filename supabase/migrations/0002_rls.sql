@@ -26,11 +26,18 @@ alter table certificates enable row level security;
 create policy profiles_self_select on profiles for select
   using (id = auth.uid() or is_admin());
 create policy profiles_self_update on profiles for update
-  using (id = auth.uid() or is_admin());
+  using (id = auth.uid() or is_admin())
+  with check (
+    is_admin()
+    or (id = auth.uid() and role = (select p.role from profiles p where p.id = auth.uid()))
+  );
 create policy profiles_admin_write on profiles for insert
   with check (is_admin());
 
 -- courses/chapters: enrolled learners read published; admins all
+-- NOTE: courses/chapters/quiz_questions have no learner- or admin-facing write
+-- policies by design. Content is file-seeded via the service-role key (bypasses
+-- RLS). If an admin authoring UI is added later, add is_admin() write policies then.
 create policy courses_read on courses for select
   using (
     is_admin() or (
@@ -44,7 +51,10 @@ create policy chapters_read on chapters for select
   using (
     is_admin() or exists (
       select 1 from enrollments e
-      where e.course_id = chapters.course_id and e.profile_id = auth.uid()
+      join courses co on co.id = e.course_id
+      where e.course_id = chapters.course_id
+        and e.profile_id = auth.uid()
+        and co.status = 'published'
     )
   );
 

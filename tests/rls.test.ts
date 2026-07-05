@@ -64,3 +64,10 @@ test("quiz_questions_public exposes no `correct` column", async () => {
   const cols = view.data?.[0] ? Object.keys(view.data[0]) : [];
   expect(cols).not.toContain("correct");
 });
+
+test("a learner cannot escalate their own role to admin", async () => {
+  const cA = await authedClient(emailA);
+  await cA.from("profiles").update({ role: "admin" }).eq("id", uA);
+  const { data } = await cA.from("profiles").select("role").eq("id", uA).single();
+  expect(data?.role).toBe("learner");
+});
