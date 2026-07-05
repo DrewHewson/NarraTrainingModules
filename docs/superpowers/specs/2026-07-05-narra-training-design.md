@@ -161,6 +161,11 @@ content/
   courses/chapters/quiz_questions into Postgres (idempotent, keyed by slug), and
   syncs images to Storage. Editing content = edit files + re-seed.
 
+**Authoring is collaborative and iterative.** Margarita provides sample/source
+content; modules are structured and written together with her feedback
+(draft → review → refine → seed), not generated unilaterally. Module authoring is
+its own working track, separate from — and ongoing alongside — the platform build.
+
 ## Scope & Phasing
 
 **In scope for v1:**
