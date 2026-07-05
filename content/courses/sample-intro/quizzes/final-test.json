@@ -1,0 +1,10 @@
+[
+  {
+    "externalKey": "final-q1",
+    "question": "Minimum passing grade?",
+    "options": ["50%", "70%", "80%"],
+    "correct": [2],
+    "type": "single",
+    "order": 1
+  }
+]

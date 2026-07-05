@@ -1,0 +1,10 @@
+[
+  {
+    "externalKey": "welcome-q1",
+    "question": "What is this course for?",
+    "options": ["Validating seeding", "Nothing", "Billing"],
+    "correct": [0],
+    "type": "single",
+    "order": 1
+  }
+]

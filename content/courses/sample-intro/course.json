@@ -1,0 +1,7 @@
+{
+  "slug": "sample-intro",
+  "title": "Sample Intro Course",
+  "description": "A tiny course used to validate seeding.",
+  "passingScore": 80,
+  "status": "published"
+}
