@@ -59,7 +59,7 @@ export function parseCourse(dir: string): ParsedCourse {
         questions,
       };
     })
-    .sort((a, b) => a.order - b.order);
+    .sort((a, b) => a.order - b.order || a.slug.localeCompare(b.slug));
 
   return {
     ...meta,
