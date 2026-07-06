@@ -42,25 +42,27 @@ export default function SetPasswordPage() {
       }
     });
 
+    // Give onAuthStateChange a short window to fire before showing the
+    // "no session" error state. Hoisted here so the cleanup can clear it.
+    let timer: ReturnType<typeof setTimeout> | undefined;
+
     // Also check if a session already exists (e.g. page refresh after
     // the token was already exchanged).
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (session) {
         setPageState("ready");
       } else {
-        // Give onAuthStateChange a short window to fire before showing the
-        // "no session" error state.
-        const timer = setTimeout(() => {
+        timer = setTimeout(() => {
           setPageState((prev) =>
             prev === "loading" ? "error-no-session" : prev,
           );
         }, 2500);
-        return () => clearTimeout(timer);
       }
     });
 
     return () => {
       subscription.unsubscribe();
+      clearTimeout(timer);
     };
   }, []);
 
@@ -82,7 +84,9 @@ export default function SetPasswordPage() {
     const { error } = await supabase.auth.updateUser({ password });
 
     if (error) {
-      setFieldError(error.message);
+      setFieldError(
+        "Unable to set your password. Please try again or ask your administrator to re-invite you.",
+      );
       setPageState("ready");
       return;
     }
