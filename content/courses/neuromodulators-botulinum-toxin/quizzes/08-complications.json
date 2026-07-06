@@ -1,0 +1,81 @@
+[
+  {
+    "externalKey": "ch08-q1",
+    "question": "A patient calls two days after glabellar treatment to report a small bruise near one injection point. She is concerned something went wrong. Applying the chapter's three-question classification, how should you categorize this finding?",
+    "options": [
+      "Product-effect / adverse / minor — the toxin has diffused to an unintended muscle, but bruising is usually self-limiting.",
+      "Injection-related / expected / minor — bruising from a nicked vessel is a needle event, not a toxin effect, and was disclosed at consent.",
+      "Product-effect / expected / serious — bruising at the glabellar area can indicate proximity to the levator palpebrae superioris.",
+      "Injection-related / adverse / serious — any visible bruise near the orbital area warrants urgent ophthalmology review."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 1
+  },
+  {
+    "externalKey": "ch08-q2",
+    "question": "At a two-week review, a patient presents with one eye appearing 'half-closed.' On examination, the lid margin on the affected side covers more of the iris; the brows sit at roughly the same height on both sides. What does this presentation most specifically indicate, and what is the mechanism?",
+    "options": [
+      "Brow ptosis — the frontalis was over-treated, causing the brow to descend and crowd the upper lid.",
+      "Blepharoptosis — toxin diffused from the glabellar injection to the levator palpebrae superioris, dropping the lid margin itself.",
+      "An extraocular-muscle effect — the clinical picture suggests toxin has reached the muscles controlling eye movement.",
+      "A normal settling artifact — asymmetric lid appearance in the first two weeks resolves without any action."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 2
+  },
+  {
+    "externalKey": "ch08-q3",
+    "question": "A patient with true blepharoptosis asks whether there is anything that can be done while she waits for the effect to wear off. You recall that apraclonidine drops are described in the chapter as a symptomatic option. Which statement correctly represents your role in that decision?",
+    "options": [
+      "You may instruct the patient to obtain apraclonidine over the counter, since it is a topical product and the chapter describes it as supportive care.",
+      "You should administer apraclonidine at the next clinic visit as a standard complication-management step.",
+      "You recognize and document the complication, notify the supervising prescriber, and discuss whether apraclonidine is appropriate — it is a prescription medication and is not self-initiated by the injecting nurse.",
+      "Apraclonidine reverses the chemodenervation, so arranging it promptly reduces the duration of ptosis and should not be delayed."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 3
+  },
+  {
+    "externalKey": "ch08-q4",
+    "question": "Before injecting the lateral canthal area, an experienced injector pauses to ask: 'If this spreads, where does it go, and what would that look like?' According to the chapter's diffusion table, what is the primary risk specific to lateral canthal injection placed too low or too medially?",
+    "options": [
+      "Diffusion to the levator palpebrae superioris, causing blepharoptosis.",
+      "Diffusion to the frontalis, causing brow heaviness.",
+      "Diffusion to the zygomaticus muscles, causing smile asymmetry or cheek droop.",
+      "Diffusion to extraocular muscles, causing diplopia requiring emergency care."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 4
+  },
+  {
+    "externalKey": "ch08-q5",
+    "question": "Which of the following presentations after neuromodulator treatment should trigger the response 'direct the patient to emergency care immediately and notify the prescriber'? (Select all that apply.)",
+    "options": [
+      "Difficulty swallowing that develops in the days following treatment.",
+      "A mild forehead headache on the day of treatment that resolves by the next morning.",
+      "Slurred speech appearing two days after a cosmetic upper-face treatment.",
+      "New double vision in one eye after periorbital injection.",
+      "A small bruise at a crow's-feet injection point with no other symptoms."
+    ],
+    "correct": [0, 2],
+    "type": "multiple",
+    "order": 5
+  },
+  {
+    "externalKey": "ch08-q6",
+    "question": "A patient who has had successful treatments for three years reports that her usual dose 'just isn't working anymore.' Before the chapter's framework supports a conclusion of neutralizing-antibody non-response, what reasoning step is required?",
+    "options": [
+      "Switch immediately to a different type A brand, since antibody formation is product-specific and a switch typically restores response.",
+      "Increase her dose at the next visit by a standard increment to overcome the antibody titre.",
+      "Treat it as a medical emergency and refer to the prescriber for urgent investigation.",
+      "Systematically exclude mundane explanations — under-dosing, reconstitution or storage error, realistic expectation mismatch, or the effect simply having worn off — before labelling it immunologic non-response, and involve the prescriber if genuine non-response is suspected."
+    ],
+    "correct": [3],
+    "type": "single",
+    "order": 6
+  }
+]

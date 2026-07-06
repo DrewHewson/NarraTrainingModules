@@ -1,0 +1,80 @@
+[
+  {
+    "externalKey": "ch02-q1",
+    "question": "A nerve impulse reaches a motor neuron terminal but botulinum toxin type A has already been delivered to that terminal. Which event in the normal transmission sequence is specifically blocked, and why?",
+    "options": [
+      "Calcium entry through voltage-gated channels, because the toxin blocks the channels before they can open.",
+      "Acetylcholine synthesis inside the nerve terminal, because the toxin degrades the enzymes that produce it.",
+      "Fusion of acetylcholine-filled vesicles with the terminal membrane, because the toxin cleaves SNAP-25 and the SNARE zipper cannot assemble.",
+      "Binding of acetylcholine to receptors on the muscle fibre, because the toxin occupies those receptors directly."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 1
+  },
+  {
+    "externalKey": "ch02-q2",
+    "question": "Botulinum toxin type A is described as a two-part molecule. A patient asks why such a complex design is needed — why not just inject the cutting enzyme directly? Which answer best explains the structural logic?",
+    "options": [
+      "The heavy chain prevents the light chain from breaking down in the bloodstream before it reaches the face.",
+      "The heavy chain targets and delivers the molecule to cholinergic nerve terminals and gets it inside the cell; without it, the light chain would have no way to reach the SNAP-25 it needs to cut.",
+      "The disulphide bond holds the two chains together permanently so that neither chain can act until the patient metabolizes the bond years later.",
+      "The light chain is too large to enter a cell on its own, so the heavy chain acts as a size-reduction agent that breaks it into smaller fragments."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 2
+  },
+  {
+    "externalKey": "ch02-q3",
+    "question": "After binding to the nerve terminal surface, the toxin molecule is drawn into the cell by endocytosis and is now trapped inside an intracellular vesicle. What must happen next for the toxin to exert its effect, and which component drives it?",
+    "options": [
+      "The heavy chain must be shed in the bloodstream so only the light chain enters the cell, preventing delivery of the heavy chain into the vesicle.",
+      "The light chain must be released from the vesicle into the cytosol — driven by the heavy chain helping it translocate and the disulphide bond breaking — so the light chain is free to reach SNAP-25.",
+      "The vesicle must travel to the nucleus, where nuclear enzymes strip the heavy chain and allow the light chain to exit.",
+      "Calcium must re-enter the terminal to dissolve the vesicle membrane, since the same calcium signal that triggers acetylcholine release also activates the toxin."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 3
+  },
+  {
+    "externalKey": "ch02-q4",
+    "question": "A patient treated three months ago is now noticing her frown lines returning. She is alarmed and asks whether her muscles are recovering from permanent damage. Which explanation is mechanistically accurate?",
+    "options": [
+      "The muscle fibres were destroyed by the toxin and are now being replaced by newly grown muscle cells, which is why movement is returning.",
+      "The toxin's effect is wearing off because the drug is being cleared from her bloodstream, and a new injection will re-circulate it to the nerve.",
+      "The muscle itself was never damaged; the nerve terminals are recovering — through axonal sprouting and repair of the original terminal, which restore acetylcholine release — so the muscle is simply receiving its signal again.",
+      "The returning movement means the toxin was counterfeit, since a genuine product would still be active after three months."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 4
+  },
+  {
+    "externalKey": "ch02-q5",
+    "question": "A colleague reasons: 'It's been 10 days since treatment and the patient still has some movement — either the injection missed or we need to top up immediately.' Which response best reflects the pharmacodynamics described in this chapter?",
+    "options": [
+      "The colleague is correct: full effect should be visible within 24–48 hours, so residual movement at 10 days confirms a missed injection.",
+      "Residual movement at 10 days is consistent with normal pharmacodynamics — peak effect takes approximately two weeks to develop — so assessment and any top-up decision should wait until the two-week mark.",
+      "Ten days is past peak, so any remaining movement is permanent and a top-up will not help.",
+      "Onset is nearly instant once SNAP-25 is cleaved, so 10-day residual movement means the product was stored incorrectly and has lost all potency."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 5
+  },
+  {
+    "externalKey": "ch02-q6",
+    "question": "A patient treated with Product X asks whether she can switch to Product Y next time since 'they're both the same toxin at the same dose.' Which of the following statements correctly identifies the problem with this reasoning? Select all that apply.",
+    "options": [
+      "A unit of botulinum toxin measures biological activity as defined by each manufacturer's own assay, not a universal mass or volume.",
+      "Because the unit is product-specific, 20 units of Product X and 20 units of Product Y are not clinically equivalent, even though both are botulinum toxin type A acting on the same SNAP-25.",
+      "Both products use exactly the same potency assay, so unit equivalence is guaranteed across brands.",
+      "Treating units as interchangeable between products is one of the most clinically significant dosing errors in this field."
+    ],
+    "correct": [0, 1, 3],
+    "type": "multiple",
+    "order": 6
+  }
+]

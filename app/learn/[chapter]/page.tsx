@@ -3,6 +3,7 @@ import { getSessionProfile, singleCourse, COURSE_SLUG } from "@/lib/auth";
 import { createClient } from "@/lib/supabase/server";
 import { getCourse, getChapter } from "@/lib/preview-content";
 import ChapterView from "@/app/preview/_components/ChapterView";
+import ChapterQuiz, { type QuizQuestion } from "@/app/preview/_components/ChapterQuiz";
 
 type Params = { chapter: string };
 
@@ -20,8 +21,8 @@ export default async function LearnChapterPage({
   // Access gate — admin or enrolled
   const course = await singleCourse();
   const isAdmin = session.profile?.role === "admin";
+  const supabase = await createClient();
   if (!isAdmin) {
-    const supabase = await createClient();
     const { data: enrollment } = await supabase
       .from("enrollments")
       .select("id")
@@ -43,6 +44,36 @@ export default async function LearnChapterPage({
       ? courseMeta.chapters[idx + 1]
       : null;
 
+  // Chapter quiz — resolve the DB chapter id, then read this chapter's questions
+  // from the answer-hiding view (RLS filters to enrolled learners / admins; the
+  // `correct` key is never selected). Only rendered if questions exist.
+  const { data: dbChapter } = await supabase
+    .from("chapters")
+    .select("id")
+    .eq("course_id", course.id)
+    .eq("slug", chapterSlug)
+    .maybeSingle();
+
+  let quizSlot: React.ReactNode = null;
+  if (dbChapter) {
+    const { data: questions } = await supabase
+      .from("quiz_questions_public")
+      .select("id, question, options, type")
+      .eq("scope", "chapter")
+      .eq("parent_id", dbChapter.id)
+      .order("order");
+    if (questions && questions.length > 0) {
+      quizSlot = (
+        <ChapterQuiz
+          chapterId={dbChapter.id}
+          questions={questions as QuizQuestion[]}
+          passingScore={course.passing_score}
+          nextHref={next ? `/learn/${next.slug}` : null}
+        />
+      );
+    }
+  }
+
   return (
     <ChapterView
       course={{ slug: courseMeta.slug, title: courseMeta.title }}
@@ -58,6 +89,7 @@ export default async function LearnChapterPage({
       prevChapter={prev ? { slug: prev.slug, title: prev.title } : null}
       nextChapter={next ? { slug: next.slug, title: next.title } : null}
       linkBase="/learn"
+      quizSlot={quizSlot}
     />
   );
 }

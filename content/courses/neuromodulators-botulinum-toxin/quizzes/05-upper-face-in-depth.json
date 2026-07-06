@@ -1,0 +1,80 @@
+[
+  {
+    "externalKey": "ch05-q1",
+    "question": "A patient with a visibly heavy, hooded brow constantly raises her forehead to keep her upper lids clear of her lashes. She asks you to fully treat her horizontal forehead lines. What is the best-reasoned approach to her frontalis?",
+    "options": [
+      "Treat the frontalis fully to abolish the lines, since that is her stated goal.",
+      "Be very cautious or defer frontalis treatment, because she is using her frontalis to compensate for her heavy brow — weakening it could worsen the hooding.",
+      "Treat the frontalis aggressively but place product low, near the brow, to address every line.",
+      "Treat only the glabella and avoid discussing the forehead with her."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 1
+  },
+  {
+    "externalKey": "ch05-q2",
+    "question": "Ten days after glabellar treatment a patient reports a drooping upper eyelid on one side. Which mechanism and which injection-principle failure best explain this?",
+    "options": [
+      "The toxin permanently damaged the eyelid-closing muscle because too little product was used.",
+      "Product diffused through the orbital septum to the levator palpebrae superioris; the diffusion field was likely placed too low, too deep, or too large near the orbital rim.",
+      "The frontalis was over-treated laterally, allowing the lateral brow depressors to pull the lid down.",
+      "Zygomaticus major was weakened by product placed too superficially below the lateral canthus."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 2
+  },
+  {
+    "externalKey": "ch05-q3",
+    "question": "A colleague reconstitutes a vial with a much larger volume of diluent than usual before treating the glabella. From a diffusion-control standpoint, what is the principal safety concern?",
+    "options": [
+      "None — the number of units is unchanged, so dilution has no effect on how far the product spreads.",
+      "The higher volume at lower concentration produces a larger diffusion field, increasing the risk of reaching the levator and causing eyelid ptosis.",
+      "The product becomes too concentrated and causes irreversible muscle damage near the orbital rim.",
+      "The larger volume makes the product biologically inert, so the treatment simply will not work."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 3
+  },
+  {
+    "externalKey": "ch05-q4",
+    "question": "A patient with strong \"11\" frown lines has deep vertical creases visible at rest. She expects the lines to completely disappear after treatment. What is the most appropriate reasoning-based response?",
+    "options": [
+      "Increase the glabellar dose well above the usual range to fully erase the static component.",
+      "Decline treatment entirely, because lines visible at rest are an absolute contraindication to glabellar BoNT-A.",
+      "Explain that BoNT-A softens the dynamic component; deeply etched static lines will likely improve but may not fully disappear, and over-dosing to chase them raises complication risk without guaranteeing a better result.",
+      "Treat the frontalis instead, since it controls vertical frown lines between the brows."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 4
+  },
+  {
+    "externalKey": "ch05-q5",
+    "question": "You are planning a crow's-feet treatment and want to minimize the risk of a lopsided smile. Which combination of choices best reflects the chapter's diffusion-control logic?",
+    "options": [
+      "Deep placement, more anterior toward the cheek, larger bolus per point to cover more lines.",
+      "Superficial placement, kept lateral and high, small contained fields with appropriate spacing.",
+      "Superficial placement but low and anterior over the zygoma to catch more lines.",
+      "Deep placement with high dilution to spread the effect evenly across the orbital area."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 5
+  },
+  {
+    "externalKey": "ch05-q6",
+    "question": "The chapter describes three danger zones in the upper face, each linked to a specific complication. Which of the following correctly maps each complication to the structure whose field must be respected?",
+    "options": [
+      "Heavy, low brow → zygomaticus; drooping upper eyelid → levator; lopsided smile → low-brow frontalis.",
+      "Heavy, low brow → low-brow frontalis; drooping upper eyelid → levator; lopsided smile → zygomaticus major.",
+      "Heavy, low brow → levator; drooping upper eyelid → zygomaticus; lopsided smile → low-brow frontalis.",
+      "Heavy, low brow → low-brow frontalis; drooping upper eyelid → zygomaticus; lopsided smile → levator."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 6
+  }
+]

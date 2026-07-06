@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getSessionProfile, singleCourse, COURSE_SLUG } from "@/lib/auth";
+import { createClient } from "@/lib/supabase/server";
 import { getCourse } from "@/lib/preview-content";
 
 export const metadata = { title: "Dashboard — Narra Training" };
@@ -43,7 +44,48 @@ export default async function DashboardPage() {
     Promise.resolve(getCourse(COURSE_SLUG)),
   ]);
 
-  const firstChapterSlug = courseContent?.chapters[0]?.slug ?? null;
+  const chapters = courseContent?.chapters ?? [];
+  const firstChapterSlug = chapters[0]?.slug ?? null;
+
+  // Per-learner progress: which chapters they've passed (score ≥ passing) and
+  // their best score per chapter. Persisted in chapter_progress + quiz_attempts.
+  const passedSlugs = new Set<string>();
+  const bestScoreBySlug = new Map<string, number>();
+  if (profile?.role === "learner") {
+    const supabase = await createClient();
+    const { data: enrollment } = await supabase
+      .from("enrollments")
+      .select("id")
+      .eq("profile_id", session.user.id)
+      .eq("course_id", course.id)
+      .maybeSingle();
+    if (enrollment) {
+      const [{ data: dbChapters }, { data: progress }, { data: attempts }] = await Promise.all([
+        supabase.from("chapters").select("id, slug").eq("course_id", course.id),
+        supabase.from("chapter_progress").select("chapter_id").eq("enrollment_id", enrollment.id),
+        supabase
+          .from("quiz_attempts")
+          .select("parent_id, score")
+          .eq("enrollment_id", enrollment.id)
+          .eq("quiz_scope", "chapter"),
+      ]);
+      const idToSlug = new Map((dbChapters ?? []).map((c) => [c.id as string, c.slug as string]));
+      for (const p of progress ?? []) {
+        const slug = idToSlug.get(p.chapter_id as string);
+        if (slug) passedSlugs.add(slug);
+      }
+      for (const a of attempts ?? []) {
+        const slug = idToSlug.get(a.parent_id as string);
+        if (!slug) continue;
+        const s = Number(a.score);
+        if (s > (bestScoreBySlug.get(slug) ?? -1)) bestScoreBySlug.set(slug, s);
+      }
+    }
+  }
+
+  const passedCount = chapters.filter((c) => passedSlugs.has(c.slug)).length;
+  const continueSlug = chapters.find((c) => !passedSlugs.has(c.slug))?.slug ?? firstChapterSlug;
+  const isLearner = profile?.role === "learner";
 
   const cnoStatus = (profile?.cno_status as string | null | undefined) ?? "pending";
   const statusInfo = CNO_STATUS_COPY[cnoStatus] ?? CNO_STATUS_COPY.pending;
@@ -122,9 +164,82 @@ export default async function DashboardPage() {
           </p>
         )}
 
-        {firstChapterSlug ? (
-          <Link href={`/learn/${firstChapterSlug}`} className="narra-btn">
-            Start / Continue →
+        {isLearner && chapters.length > 0 && (
+          <p
+            className="narra-eyebrow"
+            style={{ marginBottom: "0.9rem", color: "var(--clay-deep)" }}
+          >
+            {passedCount} of {chapters.length} chapters passed
+          </p>
+        )}
+
+        {isLearner && chapters.length > 0 && (
+          <ol
+            style={{
+              listStyle: "none",
+              margin: "0 0 1.75rem",
+              padding: 0,
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.15rem",
+            }}
+          >
+            {chapters.map((c, i) => {
+              const passed = passedSlugs.has(c.slug);
+              const best = bestScoreBySlug.get(c.slug);
+              const status = passed
+                ? `Passed ✓${best !== undefined ? ` · ${best}%` : ""}`
+                : best !== undefined
+                  ? `Best ${best}%`
+                  : "Not started";
+              return (
+                <li key={c.slug}>
+                  <Link
+                    href={`/learn/${c.slug}`}
+                    style={{
+                      display: "flex",
+                      alignItems: "baseline",
+                      justifyContent: "space-between",
+                      gap: "1rem",
+                      padding: "0.55rem 0.2rem",
+                      borderBottom: "1px solid var(--line-soft)",
+                      textDecoration: "none",
+                      color: "var(--ink)",
+                    }}
+                  >
+                    <span style={{ display: "flex", gap: "0.7ch", alignItems: "baseline" }}>
+                      <span
+                        style={{
+                          fontFamily: "var(--font-geist-sans), sans-serif",
+                          fontSize: "0.72rem",
+                          color: "var(--ink-faint)",
+                        }}
+                      >
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span style={{ fontSize: "0.95rem" }}>{c.title}</span>
+                    </span>
+                    <span
+                      style={{
+                        flex: "none",
+                        fontFamily: "var(--font-geist-sans), sans-serif",
+                        fontSize: "0.72rem",
+                        letterSpacing: "0.04em",
+                        color: passed ? "#4a7c59" : "var(--ink-faint)",
+                      }}
+                    >
+                      {status}
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ol>
+        )}
+
+        {continueSlug ? (
+          <Link href={`/learn/${continueSlug}`} className="narra-btn">
+            {passedCount > 0 ? "Continue →" : "Start →"}
           </Link>
         ) : (
           <p

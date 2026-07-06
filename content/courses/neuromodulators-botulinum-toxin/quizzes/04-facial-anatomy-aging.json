@@ -1,0 +1,81 @@
+[
+  {
+    "externalKey": "ch04-q1",
+    "question": "The SMAS is described as the mechanical link that makes neuromodulators cosmetically effective. Which statement best explains WHY this linkage is the reason treatment works?",
+    "options": [
+      "Because the SMAS lies in the same layer as the subcutaneous fat, toxin injected there spreads evenly across the face.",
+      "Because mimetic muscles insert into the SMAS and, through fibrous extensions, into the overlying skin — so quieting the muscle directly reduces the skin movement that folds a line.",
+      "Because the SMAS connects the periosteum to the dermis, allowing bone remodelling to smooth surface lines.",
+      "Because the SMAS is the layer where all retaining ligaments anchor, and releasing those ligaments lifts the face."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 1
+  },
+  {
+    "externalKey": "ch04-q2",
+    "question": "A patient's chart notes 'vertical glabellar lines.' Using the perpendicular rule taught in this chapter, which muscle direction of pull would you expect to be responsible — and why?",
+    "options": [
+      "A vertical (upward) pull, because vertical muscles always make vertical lines.",
+      "A horizontal (inward) pull, because a line forms perpendicular to its muscle's pull, so a horizontal pull produces a vertical line.",
+      "A downward pull, because gravity reinforces the muscle and sets the crease in the same direction.",
+      "A diagonal pull, because the corrugator is oriented at 45 degrees and diagonal pulls produce vertical lines."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 2
+  },
+  {
+    "externalKey": "ch04-q3",
+    "question": "A patient asks for smoother horizontal forehead lines. You treat the frontalis thoroughly across the forehead without touching the glabellar complex. Two weeks later the forehead is smooth but the patient reports a heavy, tired look. What is the most accurate mechanistic explanation?",
+    "options": [
+      "Toxin diffused to the levator palpebrae superioris through the orbital septum, causing true eyelid ptosis.",
+      "Frontalis is the sole brow elevator; removing it while leaving the depressor team intact lets the depressors pull the brow downward unopposed.",
+      "The horizontal forehead lines were static, so the drug could not address them and the apparent heaviness is unchanged underlying skin damage.",
+      "Weakening the frontalis activated a compensatory over-contraction of the orbicularis oculi, closing the eye partially."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 3
+  },
+  {
+    "externalKey": "ch04-q4",
+    "question": "The levator palpebrae superioris is described as a 'never-target, always-avoid' structure. What correctly distinguishes the complication it causes from brow ptosis — and what causes each?",
+    "options": [
+      "Both are caused by over-weakening the frontalis; the only difference is how many units were used.",
+      "Brow ptosis results from toxin reaching the levator; true eyelid ptosis results from over-weakening the frontalis.",
+      "Brow ptosis results from over-weakening the sole elevator (frontalis), creating an antagonist-balance failure; true eyelid ptosis results from toxin diffusing to the levator palpebrae superioris — a placement/depth problem.",
+      "True eyelid ptosis results from over-weakening the orbicularis oculi so the lid cannot be held open; brow ptosis results from diffusion to the levator."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 4
+  },
+  {
+    "externalKey": "ch04-q5",
+    "question": "A 54-year-old patient has glabellar lines that are faintly visible at rest and deepen clearly when she frowns. She wants them gone completely. Which response best reflects this chapter's framework for setting expectations?",
+    "options": [
+      "A neuromodulator should erase them completely, because the lines deepen on frowning so they are entirely dynamic.",
+      "A neuromodulator cannot help at all, because the static component means the lines are beyond the drug's indication.",
+      "The dynamic deepening should respond well to treatment, but the component visible at rest has a static element etched into the dermis — that part will improve partially at best, and additional modalities may be needed for full correction.",
+      "She needs a higher dose than standard, because lines visible at rest always require extra units to achieve erasure."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 5
+  },
+  {
+    "externalKey": "ch04-q6",
+    "question": "Which of the following statements about the orbicularis oculi are accurate according to this chapter? (Select ALL that apply.)",
+    "options": [
+      "Its lateral orbital fibers pull the outer-eye skin into crow's feet (lateral canthal lines).",
+      "Its palpebral part closes the lids gently and is not a cosmetic treatment target.",
+      "Its lateral fibers also act as a brow depressor, pulling the tail of the brow down.",
+      "It is the sole brow elevator and its over-weakening causes the brow to fall.",
+      "Spread of toxin to the zygomaticus major is a potential undesired effect of treating its lateral portion."
+    ],
+    "correct": [0, 1, 2, 4],
+    "type": "multiple",
+    "order": 6
+  }
+]

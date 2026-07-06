@@ -1,0 +1,81 @@
+[
+  {
+    "externalKey": "ch07-q1",
+    "question": "A patient presents for glabellar treatment. On focused history she reports a diagnosis of myasthenia gravis, currently stable and not visibly affecting her face. She has realistic expectations and no other concerns. What is the most defensible action?",
+    "options": [
+      "Proceed as planned — the condition is stable, and cosmetic doses are far lower than therapeutic ones.",
+      "Proceed with a reduced dose to limit the muscle-weakening effect.",
+      "Do not treat today; escalate to the prescriber before any cosmetic neuromodulator treatment.",
+      "Treat only the lateral canthal lines, avoiding the glabella where NMJ risk is highest."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 1
+  },
+  {
+    "externalKey": "ch07-q2",
+    "question": "A patient on daily low-dose aspirin prescribed by her cardiologist wants frown-line treatment. She is otherwise an excellent candidate with realistic expectations. Which approach best reflects this chapter's guidance on antiplatelet use?",
+    "options": [
+      "Decline — anticoagulants and antiplatelets are an absolute contraindication to neuromodulator injection.",
+      "Advise her to stop aspirin for one week before treatment, then proceed.",
+      "Proceed after counseling her about the increased bruising risk; document that counseling and use bruise-minimizing technique.",
+      "Proceed without additional discussion, since aspirin affects only post-procedural bleeding and is not relevant to neuromodulators."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 2
+  },
+  {
+    "externalKey": "ch07-q3",
+    "question": "A patient mid-course on intravenous gentamicin for an active infection asks to keep her scheduled neuromodulator appointment. She is otherwise a good candidate and the infection is unrelated to the treatment site. What is the safest decision and why?",
+    "options": [
+      "Treat as scheduled — antibiotics affect infection, not muscle-weakening action.",
+      "Treat with a proportionally reduced dose to offset any potentiation.",
+      "Defer cosmetic treatment until the aminoglycoside course is complete, or consult the prescriber before proceeding.",
+      "Decline permanently; any history of aminoglycoside use is a lifelong absolute contraindication."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 3
+  },
+  {
+    "externalKey": "ch07-q4",
+    "question": "During screening, a patient on a limited budget mentions an area of active, inflamed, pustular acne directly over the glabellar injection sites. She is otherwise a strong candidate. What is the most appropriate action?",
+    "options": [
+      "Inject carefully through the uninvolved margins of the glabella and avoid the most inflamed spots.",
+      "Decline the patient permanently; active infection at an injection site is an absolute lifelong disqualification.",
+      "Defer treatment until the site has healed and rebook — the barrier is temporary, not permanent.",
+      "Proceed — superficial skin infection is irrelevant to a substance being injected into the underlying muscle."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 4
+  },
+  {
+    "externalKey": "ch07-q5",
+    "question": "A colleague argues that because a patient with unrealistic expectations signed a detailed consent form acknowledging she may not be satisfied, it is safe to proceed with treatment. Which response best applies this chapter's reasoning?",
+    "options": [
+      "The colleague is correct — a signed acknowledgment shifts liability to the patient and makes the treatment appropriate.",
+      "The colleague is correct, provided the form also disclosed the specific material risks.",
+      "The colleague is wrong — a patient can decline what you offer, but a patient cannot authorize a treatment your clinical judgment identifies as likely to harm them.",
+      "The colleague is wrong only if the patient shows overt signs of body dysmorphic disorder; documented unrealistic expectations alone are a relative, not absolute, barrier."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 5
+  },
+  {
+    "externalKey": "ch07-q6",
+    "question": "A well-screened patient with no contraindications hands back a signed consent form without having asked any questions. Which elements must be documented to meet a valid, medico-legal consent standard according to this chapter? (Select all that apply.)",
+    "options": [
+      "Confirmation that the patient had capacity to understand the decision and its consequences.",
+      "Disclosure of specific material risks including asymmetry, brow or eyelid ptosis, and the temporary and variable nature of results.",
+      "A record that the decision was the patient's own, free of undue pressure or commercial coercion.",
+      "The patient's signature, which by itself constitutes complete and valid consent.",
+      "A realistic no-guarantee framing confirming the patient understands results cannot be warranted."
+    ],
+    "correct": [0, 1, 2, 4],
+    "type": "multiple",
+    "order": 6
+  }
+]
