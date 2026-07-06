@@ -19,6 +19,10 @@ type ChapterData = {
 // drives through with the sidebar TOC or the Prev/Next controls — sub-sections are
 // not stacked below and scrolled into view. Sidebar and content are independent
 // scroll panes (see .np-shell in preview.css). Active sub-section is hash-addressable.
+//
+// When `quizSlot` is provided (the /learn route), it is appended as one extra
+// step after the last section (the "Chapter quiz"). /preview passes no quizSlot,
+// so the authoring view behaves exactly as before.
 export default function ChapterView({
   course,
   chapters,
@@ -26,6 +30,7 @@ export default function ChapterView({
   prevChapter,
   nextChapter,
   linkBase,
+  quizSlot,
 }: {
   course: { slug: string; title: string };
   chapters: ChapterMini[];
@@ -33,45 +38,53 @@ export default function ChapterView({
   prevChapter: ChapterMini | null;
   nextChapter: ChapterMini | null;
   linkBase?: string;
+  quizSlot?: React.ReactNode;
 }) {
   const base = linkBase ?? `/preview/${course.slug}`;
   const router = useRouter();
   const sections = chapter.sections;
+  const hasQuiz = !!quizSlot;
+  const stepCount = sections.length + (hasQuiz ? 1 : 0);
+  const quizIndex = sections.length; // step index of the quiz, when present
   const [active, setActive] = useState(0);
   const mainRef = useRef<HTMLElement | null>(null);
 
-  // Initialize the focused sub-section from the URL hash (so refresh / shared links
+  // Initialize the focused step from the URL hash (so refresh / shared links
   // restore position). Re-runs when navigating to a different chapter.
   useEffect(() => {
     const hash = decodeURIComponent(window.location.hash.replace(/^#/, ""));
-    const i = hash ? sections.findIndex((s) => s.id === hash) : -1;
+    let i = -1;
+    if (hash === "chapter-quiz" && hasQuiz) i = quizIndex;
+    else if (hash) i = sections.findIndex((s) => s.id === hash);
     // Sync from the URL hash on mount / chapter change — this cannot run server-side,
     // so an effect is the correct place (initializing lazily would hydrate-mismatch).
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setActive(i >= 0 ? i : 0);
-  }, [chapter.slug, sections]);
+  }, [chapter.slug, sections, hasQuiz, quizIndex]);
 
   // Keep the hash in sync and scroll the content pane to the top on change.
   useEffect(() => {
-    const id = sections[active]?.id;
-    if (id) history.replaceState(null, "", `#${id}`);
+    const hash = hasQuiz && active === quizIndex ? "chapter-quiz" : sections[active]?.id;
+    if (hash) history.replaceState(null, "", `#${hash}`);
     mainRef.current?.scrollTo({ top: 0 });
-  }, [active, sections]);
+  }, [active, sections, hasQuiz, quizIndex]);
 
-  const go = (i: number) => setActive(Math.max(0, Math.min(sections.length - 1, i)));
+  const go = (i: number) => setActive(Math.max(0, Math.min(stepCount - 1, i)));
   const onPrev = () => {
     if (active > 0) go(active - 1);
     else if (prevChapter) router.push(`${base}/${prevChapter.slug}`);
   };
   const onNext = () => {
-    if (active < sections.length - 1) go(active + 1);
+    if (active < stepCount - 1) go(active + 1);
     else if (nextChapter) router.push(`${base}/${nextChapter.slug}`);
   };
 
+  const isQuizStep = hasQuiz && active === quizIndex;
   const current = sections[active];
-  const progress = sections.length ? (active + 1) / sections.length : 0;
+  const progress = stepCount ? (active + 1) / stepCount : 0;
   const atFirst = active === 0;
-  const atLast = active >= sections.length - 1;
+  const atLast = active >= stepCount - 1;
+  const stepTitle = (i: number) => (i < sections.length ? sections[i].title : "Chapter quiz");
 
   return (
     <div className="np-shell">
@@ -124,6 +137,20 @@ export default function ChapterView({
                         </li>
                       );
                     })}
+                    {hasQuiz && (
+                      <li className="np-toc-item">
+                        <a
+                          href="#chapter-quiz"
+                          className={`np-toc-link${isQuizStep ? " is-active" : ""}`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            go(quizIndex);
+                          }}
+                        >
+                          Chapter quiz
+                        </a>
+                      </li>
+                    )}
                   </ol>
                 </nav>
               )}
@@ -150,13 +177,15 @@ export default function ChapterView({
             />
           )}
 
-          {current && (
-            <div
-              key={current.id}
-              className="np-prose"
-              dangerouslySetInnerHTML={{ __html: current.html }}
-            />
-          )}
+          {isQuizStep
+            ? quizSlot
+            : current && (
+                <div
+                  key={current.id}
+                  className="np-prose"
+                  dangerouslySetInnerHTML={{ __html: current.html }}
+                />
+              )}
 
           <nav className="np-reader-nav">
             <button
@@ -167,16 +196,12 @@ export default function ChapterView({
             >
               <span className="np-nav-dir">← Previous</span>
               <span className="np-nav-title">
-                {!atFirst
-                  ? sections[active - 1].title
-                  : prevChapter
-                    ? prevChapter.title
-                    : "Start"}
+                {!atFirst ? stepTitle(active - 1) : prevChapter ? prevChapter.title : "Start"}
               </span>
             </button>
 
             <span className="np-reader-count">
-              {sections.length ? `Section ${active + 1} of ${sections.length}` : ""}
+              {isQuizStep ? "Chapter quiz" : `Section ${active + 1} of ${sections.length}`}
             </span>
 
             <button
@@ -190,7 +215,7 @@ export default function ChapterView({
               </span>
               <span className="np-nav-title">
                 {!atLast
-                  ? sections[active + 1].title
+                  ? stepTitle(active + 1)
                   : nextChapter
                     ? nextChapter.title
                     : "End of module"}
