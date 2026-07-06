@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img" aria-label="Red-flag and escalation decision tree">
+  <defs>
+    <marker id="esc-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6a6153"/>
+    </marker>
+  </defs>
+  <g font-family="ui-sans-serif, system-ui, -apple-system, sans-serif">
+    <!-- Start -->
+    <rect x="330" y="14" width="240" height="40" rx="8" fill="#f6f1e8" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="450" y="39" text-anchor="middle" font-size="12" fill="#221f18">Reported symptom after treatment</text>
+
+    <!-- bus -->
+    <line x1="450" y1="54" x2="450" y2="76" stroke="#6a6153" stroke-width="1.6"/>
+    <line x1="115" y1="76" x2="785" y2="76" stroke="#6a6153" stroke-width="1.6"/>
+    <line x1="115" y1="76" x2="115" y2="96" stroke="#6a6153" stroke-width="1.6" marker-end="url(#esc-arrow)"/>
+    <line x1="345" y1="76" x2="345" y2="96" stroke="#6a6153" stroke-width="1.6" marker-end="url(#esc-arrow)"/>
+    <line x1="565" y1="76" x2="565" y2="96" stroke="#6a6153" stroke-width="1.6" marker-end="url(#esc-arrow)"/>
+    <line x1="785" y1="76" x2="785" y2="96" stroke="#6a6153" stroke-width="1.6" marker-end="url(#esc-arrow)"/>
+
+    <!-- Symptom row -->
+    <rect x="15" y="98" width="200" height="70" rx="8" fill="#efe7d9" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="115" y="126" text-anchor="middle" font-size="10.5" fill="#221f18">Expected / minor:</text>
+    <text x="115" y="141" text-anchor="middle" font-size="10.5" fill="#4a453b">bruising, mild headache,</text>
+    <text x="115" y="156" text-anchor="middle" font-size="10.5" fill="#4a453b">transient asymmetry</text>
+
+    <rect x="245" y="98" width="200" height="70" rx="8" fill="#efe7d9" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="345" y="126" text-anchor="middle" font-size="10.5" fill="#221f18">Visual disturbance,</text>
+    <text x="345" y="141" text-anchor="middle" font-size="10.5" fill="#4a453b">diplopia, or eye-movement</text>
+    <text x="345" y="156" text-anchor="middle" font-size="10.5" fill="#4a453b">change</text>
+
+    <rect x="465" y="98" width="200" height="70" rx="8" fill="#efe7d9" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="565" y="126" text-anchor="middle" font-size="10.5" fill="#221f18">Trouble swallowing or</text>
+    <text x="565" y="141" text-anchor="middle" font-size="10.5" fill="#4a453b">breathing; generalized</text>
+    <text x="565" y="156" text-anchor="middle" font-size="10.5" fill="#4a453b">weakness</text>
+
+    <rect x="685" y="98" width="200" height="70" rx="8" fill="#efe7d9" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="785" y="133" text-anchor="middle" font-size="10.5" fill="#221f18">Uncertain or</text>
+    <text x="785" y="148" text-anchor="middle" font-size="10.5" fill="#4a453b">worsening</text>
+
+    <!-- connectors -->
+    <line x1="115" y1="168" x2="115" y2="206" stroke="#6a6153" stroke-width="1.6" marker-end="url(#esc-arrow)"/>
+    <line x1="345" y1="168" x2="345" y2="206" stroke="#6a6153" stroke-width="1.6" marker-end="url(#esc-arrow)"/>
+    <line x1="565" y1="168" x2="565" y2="206" stroke="#6a6153" stroke-width="1.6" marker-end="url(#esc-arrow)"/>
+    <line x1="785" y1="168" x2="785" y2="206" stroke="#6a6153" stroke-width="1.6" marker-end="url(#esc-arrow)"/>
+
+    <!-- Response row -->
+    <rect x="15" y="208" width="200" height="66" rx="8" fill="#efe1d0" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="115" y="236" text-anchor="middle" font-size="11" font-weight="600" fill="#7c5335">Reassure, document,</text>
+    <text x="115" y="251" text-anchor="middle" font-size="11" font-weight="600" fill="#7c5335">review at 2 weeks</text>
+
+    <rect x="245" y="208" width="200" height="66" rx="8" fill="#f3e6cf" stroke="#b07a2e" stroke-width="1.6"/>
+    <text x="345" y="236" text-anchor="middle" font-size="11" font-weight="700" fill="#7c5a26">URGENT</text>
+    <text x="345" y="251" text-anchor="middle" font-size="11" font-weight="700" fill="#7c5a26">ophthalmology referral</text>
+
+    <rect x="465" y="208" width="200" height="66" rx="8" fill="#f3ddd3" stroke="#b0472e" stroke-width="1.6"/>
+    <text x="565" y="236" text-anchor="middle" font-size="11" font-weight="700" fill="#8a3a25">EMERGENCY</text>
+    <text x="565" y="251" text-anchor="middle" font-size="11" font-weight="700" fill="#8a3a25">care now</text>
+
+    <rect x="685" y="208" width="200" height="66" rx="8" fill="#efe7d9" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="785" y="236" text-anchor="middle" font-size="11" font-weight="600" fill="#221f18">Escalate to prescriber</text>
+    <text x="785" y="251" text-anchor="middle" font-size="11" font-weight="600" fill="#221f18">/ medical director</text>
+
+    <!-- footer -->
+    <text x="450" y="316" text-anchor="middle" font-size="11" fill="#6a6153">Most symptoms are minor and expected. The two coloured columns are time-critical —</text>
+    <text x="450" y="332" text-anchor="middle" font-size="11" fill="#6a6153">act immediately and do not &#8220;watch and wait.&#8221; Escalation thresholds &#9888; verify.</text>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 456" width="760" height="456" role="img" aria-label="Ptosis management algorithm: blepharoptosis versus brow ptosis">
+  <defs>
+    <marker id="pt-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6a6153"/>
+    </marker>
+  </defs>
+  <g font-family="ui-sans-serif, system-ui, -apple-system, sans-serif">
+    <!-- Start -->
+    <rect x="175" y="16" width="350" height="42" rx="8" fill="#f6f1e8" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="350" y="42" text-anchor="middle" font-size="12" fill="#221f18">Drooping / heaviness reported (often at the 2-week review)</text>
+    <line x1="350" y1="58" x2="350" y2="82" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pt-arrow)"/>
+
+    <!-- Red-flag gate -->
+    <rect x="175" y="84" width="350" height="46" rx="8" fill="#efe7d9" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="350" y="112" text-anchor="middle" font-size="12.5" font-weight="600" fill="#221f18">Red flags first — visual change or diplopia?</text>
+    <line x1="525" y1="107" x2="588" y2="107" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pt-arrow)"/>
+    <text x="556" y="99" text-anchor="middle" font-size="10" fill="#8a3a25">Yes</text>
+    <rect x="592" y="85" width="155" height="46" rx="8" fill="#f3ddd3" stroke="#b0472e" stroke-width="1.6"/>
+    <text x="669" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#8a3a25">Escalate —</text>
+    <text x="669" y="120" text-anchor="middle" font-size="10.5" fill="#8a3a25">red-flag pathway</text>
+    <line x1="350" y1="130" x2="350" y2="150" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pt-arrow)"/>
+    <text x="361" y="145" font-size="10" fill="#6a6153">No</text>
+
+    <!-- Differentiate -->
+    <rect x="165" y="152" width="370" height="44" rx="8" fill="#efe7d9" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="350" y="179" text-anchor="middle" font-size="12" font-weight="600" fill="#221f18">Which is it? — assess the lid margin vs. the brow</text>
+    <!-- split bus -->
+    <line x1="350" y1="196" x2="350" y2="206" stroke="#6a6153" stroke-width="1.6"/>
+    <line x1="190" y1="206" x2="562" y2="206" stroke="#6a6153" stroke-width="1.6"/>
+    <line x1="190" y1="206" x2="190" y2="212" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pt-arrow)"/>
+    <line x1="562" y1="206" x2="562" y2="212" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pt-arrow)"/>
+
+    <!-- Left: blepharoptosis -->
+    <rect x="55" y="214" width="270" height="66" rx="8" fill="#efe7d9" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="190" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#221f18">Eyelid ptosis (blepharoptosis)</text>
+    <text x="190" y="250" text-anchor="middle" font-size="10.5" fill="#4a453b">the upper-lid margin itself drops;</text>
+    <text x="190" y="265" text-anchor="middle" font-size="10.5" fill="#4a453b">often worse late in the day</text>
+    <line x1="190" y1="280" x2="190" y2="302" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pt-arrow)"/>
+    <rect x="55" y="304" width="270" height="80" rx="8" fill="#efe1d0" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="190" y="326" text-anchor="middle" font-size="11" font-weight="600" fill="#7c5335">Reassure — it is temporary.</text>
+    <text x="190" y="342" text-anchor="middle" font-size="10.5" fill="#7c5335">Prescriber-directed</text>
+    <text x="190" y="357" text-anchor="middle" font-size="10.5" fill="#7c5335">apraclonidine drops &#9888;.</text>
+    <text x="190" y="373" text-anchor="middle" font-size="10.5" fill="#7c5335">Document + review.</text>
+
+    <!-- Right: brow ptosis -->
+    <rect x="420" y="214" width="285" height="66" rx="8" fill="#efe7d9" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="562" y="234" text-anchor="middle" font-size="11" font-weight="600" fill="#221f18">Brow ptosis / heaviness</text>
+    <text x="562" y="250" text-anchor="middle" font-size="10.5" fill="#4a453b">brow sits low, lid margin intact;</text>
+    <text x="562" y="265" text-anchor="middle" font-size="10.5" fill="#4a453b">often frontalis over-weakened</text>
+    <line x1="562" y1="280" x2="562" y2="302" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pt-arrow)"/>
+    <rect x="420" y="304" width="285" height="80" rx="8" fill="#efe1d0" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="562" y="330" text-anchor="middle" font-size="11" font-weight="600" fill="#7c5335">Reassure — resolves as</text>
+    <text x="562" y="346" text-anchor="middle" font-size="10.5" fill="#7c5335">the effect wears off.</text>
+    <text x="562" y="361" text-anchor="middle" font-size="10.5" fill="#7c5335">Consider balancing at review.</text>
+    <text x="562" y="376" text-anchor="middle" font-size="10.5" fill="#7c5335">Document.</text>
+
+    <!-- footer -->
+    <text x="380" y="418" text-anchor="middle" font-size="10.5" fill="#6a6153">Both are temporary and resolve as the toxin wears off; conservative dosing + the 2-week review prevent most.</text>
+    <text x="380" y="434" text-anchor="middle" font-size="10.5" fill="#6a6153">Any medication is prescriber-directed. Management specifics &#9888; verify (Margie / evidence pass).</text>
+  </g>
+</svg>

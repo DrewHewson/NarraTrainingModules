@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { config } from "dotenv";
 import { parseCourse, type ParsedQuestion } from "@/lib/content";
 
-config({ path: ".env.local", quiet: true });
+config({ path: process.env.ENV_FILE ?? ".env.local", quiet: true });
 
 const db = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,

@@ -1,0 +1,553 @@
+/* Narra Training — live content preview
+   Aesthetic: refined editorial × luxury medical-aesthetics.
+   Warm ivory paper, deep ink, clay accents; Fraunces display + Newsreader body. */
+
+.np-root {
+  --paper: #f6f1e8;
+  --paper-lift: #fcf9f3;
+  --panel: #efe7d9;
+  --ink: #221f18;
+  --ink-soft: #6a6153;
+  --ink-faint: #928979;
+  --clay: #9a6a46;
+  --clay-deep: #7c5335;
+  --taupe: #c9beac;
+  --line: rgba(34, 31, 24, 0.13);
+  --line-soft: rgba(34, 31, 24, 0.07);
+
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.np-root a { color: inherit; }
+
+/* ---------- Top bar ---------- */
+.np-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 58px;
+  padding: 0 clamp(1rem, 4vw, 2.5rem);
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: saturate(120%) blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.np-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5ch;
+  text-decoration: none;
+}
+.np-wordmark-the {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.np-wordmark-name {
+  font-family: var(--font-display), serif;
+  font-weight: 600;
+  font-size: 1.28rem;
+  letter-spacing: 0.02em;
+}
+.np-wordmark-sub {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--clay);
+  align-self: center;
+  padding-left: 0.4ch;
+  border-left: 1px solid var(--line);
+  margin-left: 0.2ch;
+  padding-top: 0.1em;
+}
+.np-preview-pill {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+  background: color-mix(in srgb, var(--taupe) 45%, var(--paper));
+  border: 1px solid var(--line);
+  padding: 0.35em 0.85em;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* ---------- Reading shell: two independently-scrolling panes below the 58px topbar ---------- */
+.np-shell {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  height: calc(100dvh - 58px);
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden; /* each pane scrolls internally, the page itself does not */
+}
+
+/* ---------- Sidebar (its own scroll container) ---------- */
+.np-sidebar {
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: clamp(1.4rem, 3vw, 2.4rem) clamp(0.9rem, 2vw, 1.6rem) 3rem clamp(1rem, 3vw, 2rem);
+  border-right: 1px solid var(--line);
+}
+.np-side-eyebrow {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.5rem;
+}
+.np-side-title {
+  font-family: var(--font-display), serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+.np-chapter-list { list-style: none; margin: 0; padding: 0; }
+.np-chapter-item { margin: 0; }
+.np-chapter-link {
+  display: grid;
+  grid-template-columns: 1.9em 1fr;
+  gap: 0.5ch;
+  align-items: baseline;
+  text-decoration: none;
+  padding: 0.5rem 0.6rem 0.5rem 0.7rem;
+  margin-left: -0.7rem;
+  border-left: 2px solid transparent;
+  border-radius: 0 4px 4px 0;
+  color: var(--ink-soft);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.np-chapter-link:hover { background: color-mix(in srgb, var(--panel) 60%, transparent); color: var(--ink); }
+.np-chapter-num {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--clay);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.15em;
+}
+.np-chapter-title { font-size: 0.92rem; line-height: 1.35; }
+.np-chapter-link.is-current {
+  background: var(--panel);
+  border-left-color: var(--clay);
+  color: var(--ink);
+}
+.np-chapter-link.is-current .np-chapter-title { font-weight: 600; }
+
+/* ---------- Main content pane (its own scroll container) ---------- */
+.np-main {
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: clamp(1.6rem, 4vw, 3.5rem) clamp(1.1rem, 4vw, 3rem) 4rem;
+}
+
+/* ---------- Article ---------- */
+.np-article { max-width: 42rem; margin: 0 auto; }
+.np-preamble { margin-bottom: 1.6rem; }
+.np-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 1.1rem;
+}
+.np-kicker .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--taupe); }
+.np-kicker .muted { color: var(--ink-faint); }
+.np-article-title {
+  font-family: var(--font-display), serif;
+  font-weight: 600;
+  font-size: clamp(1.9rem, 4.5vw, 2.7rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0 0 2rem;
+}
+.np-article-title::after {
+  content: "";
+  display: block;
+  width: 3.2rem;
+  height: 2px;
+  margin-top: 1.4rem;
+  background: var(--clay);
+}
+
+/* ---------- Prose ---------- */
+.np-prose { font-size: 1.06rem; line-height: 1.72; }
+.np-prose > * + * { margin-top: 1.15rem; }
+.np-prose p { color: #2b271f; }
+.np-prose strong { font-weight: 600; color: var(--ink); }
+.np-prose em { font-style: italic; }
+.np-prose a { color: var(--clay-deep); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+
+.np-prose h2 {
+  font-family: var(--font-display), serif;
+  font-weight: 600;
+  font-size: 1.42rem;
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  margin-top: 2.8rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 76px; /* clear the 58px sticky topbar on anchor navigation */
+}
+.np-prose h3 {
+  font-family: var(--font-display), serif;
+  font-weight: 600;
+  font-size: 1.12rem;
+  margin-top: 1.9rem;
+}
+.np-prose h4 {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-top: 1.6rem;
+}
+
+.np-prose ul, .np-prose ol { padding-left: 1.35rem; }
+.np-prose li { margin-top: 0.5rem; padding-left: 0.3rem; }
+.np-prose ul li::marker { color: var(--clay); }
+.np-prose ol li::marker { color: var(--clay); font-family: var(--font-geist-sans), sans-serif; font-size: 0.9em; }
+
+/* Callouts (blockquotes) */
+.np-prose blockquote {
+  margin: 1.6rem 0;
+  padding: 1.05rem 1.25rem;
+  background: var(--paper-lift);
+  border: 1px solid var(--line-soft);
+  border-left: 3px solid var(--taupe);
+  border-radius: 0 8px 8px 0;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+.np-prose blockquote p { color: inherit; }
+.np-prose blockquote > * + * { margin-top: 0.6rem; }
+.np-prose blockquote.callout-warn {
+  border-left-color: #b07a2e;
+  background: color-mix(in srgb, #e8b45f 12%, var(--paper-lift));
+  color: #6d5326;
+}
+.np-prose blockquote.callout-pearl {
+  border-left-color: var(--clay);
+  background: color-mix(in srgb, var(--clay) 7%, var(--paper-lift));
+}
+
+/* Tables */
+.np-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.8rem 0;
+  font-size: 0.9rem;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+.np-prose thead th {
+  background: color-mix(in srgb, var(--taupe) 40%, var(--paper-lift));
+  font-weight: 600;
+  text-align: left;
+  color: var(--ink);
+}
+.np-prose th, .np-prose td {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--line);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.np-prose tbody tr:nth-child(even) { background: color-mix(in srgb, var(--panel) 40%, transparent); }
+
+.np-prose code {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.86em;
+  background: var(--panel);
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+}
+
+/* Ornamental divider */
+.np-prose hr {
+  border: none;
+  height: 1.5rem;
+  margin: 2.4rem 0;
+  text-align: center;
+}
+.np-prose hr::before {
+  content: "❧";
+  color: var(--taupe);
+  font-size: 1.1rem;
+}
+
+/* ---------- Reader prev / next (drive through sub-sections) ---------- */
+.np-reader-nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+}
+.np-reader-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-align: left;
+  font-family: inherit;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper-lift);
+  max-width: 44%;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.np-reader-btn:hover:not(:disabled) { border-color: var(--clay); background: var(--paper); }
+.np-reader-btn:disabled { opacity: 0.4; cursor: default; }
+.np-reader-btn.next { text-align: right; align-items: flex-end; }
+.np-reader-btn .np-nav-dir {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--clay);
+}
+.np-reader-btn .np-nav-title { font-size: 0.9rem; line-height: 1.3; color: var(--ink); }
+.np-reader-count {
+  align-self: center;
+  flex-shrink: 0;
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+/* ---------- Course index ---------- */
+.np-index { max-width: 760px; margin: 0 auto; padding: clamp(2.5rem, 8vw, 5rem) 1.5rem 6rem; }
+.np-index-eyebrow {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 1rem;
+}
+.np-index-title {
+  font-family: var(--font-display), serif;
+  font-weight: 600;
+  font-size: clamp(2.1rem, 6vw, 3rem);
+  line-height: 1.08;
+  margin-bottom: 0.8rem;
+}
+.np-index-lede { color: var(--ink-soft); font-size: 1.1rem; max-width: 34rem; margin-bottom: 2.8rem; }
+.np-course-card {
+  display: block;
+  text-decoration: none;
+  padding: 1.6rem 1.8rem;
+  background: var(--paper-lift);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.np-course-card:hover { border-color: var(--clay); transform: translateY(-2px); }
+.np-course-card .np-course-name {
+  font-family: var(--font-display), serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.np-course-card .np-course-desc { color: var(--ink-soft); font-size: 0.98rem; }
+.np-course-card .np-course-meta {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: 0.9rem;
+}
+.np-status {
+  display: inline-block;
+  color: var(--clay-deep);
+  background: color-mix(in srgb, var(--taupe) 40%, var(--paper));
+  border-radius: 999px;
+  padding: 0.2em 0.7em;
+  margin-left: 0.6ch;
+}
+
+/* ---------- Responsive ---------- */
+/* ---------- Sub-section TOC + progress ---------- */
+.np-toc-wrap {
+  margin: 0.7rem 0 0.2rem;
+  padding: 0.9rem 0 0.2rem 0.9rem;
+  border-left: 2px solid var(--line);
+}
+.np-toc-head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.np-toc-eyebrow {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.56rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+.np-toc-progress {
+  flex: 1;
+  height: 3px;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.np-toc-progress-fill {
+  display: block;
+  height: 100%;
+  background: var(--clay);
+  border-radius: 999px;
+  transition: width 0.15s ease-out;
+}
+.np-toc { list-style: none; margin: 0; padding: 0; }
+.np-toc-item { margin: 0; }
+.np-toc-link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: var(--ink-faint);
+  padding: 0.32rem 0 0.32rem 1.1rem;
+  border-left: 2px solid transparent;
+  margin-left: -0.9rem;
+  padding-left: calc(0.9rem + 1.1rem);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.np-toc-link:hover { color: var(--ink); }
+.np-toc-link.is-visited { color: var(--ink-soft); }
+.np-toc-link.is-visited::before {
+  content: "✓";
+  position: absolute;
+  left: 0.9rem;
+  color: var(--clay);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+.np-toc-link.is-active {
+  color: var(--clay-deep);
+  font-weight: 600;
+  border-left-color: var(--clay);
+}
+
+/* ---------- Inline figures ---------- */
+.np-figure {
+  margin: 2rem 0;
+  padding: 1.4rem;
+  background: var(--paper-lift);
+  border: 1px solid var(--line-soft);
+  border-radius: 10px;
+  text-align: center;
+}
+.np-figure-media svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.np-figure-media img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.np-figure-credit {
+  display: block;
+  margin-top: 0.55rem;
+  font-size: 0.64rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-faint);
+}
+.np-figure-credit a { color: var(--clay-deep); }
+.np-figure-cap {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin-top: 1rem;
+}
+.np-figure-id {
+  display: inline-block;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+  background: color-mix(in srgb, var(--taupe) 40%, var(--paper));
+  border-radius: 999px;
+  padding: 0.15em 0.6em;
+  margin-left: 0.6ch;
+  vertical-align: middle;
+}
+/* Planned figure: asset not yet produced — reads as intentional, not an error */
+.np-figure-planned {
+  border: 1px dashed var(--taupe);
+  background: color-mix(in srgb, var(--taupe) 10%, var(--paper-lift));
+}
+.np-figure-planned-tag {
+  display: inline-block;
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+  background: color-mix(in srgb, var(--taupe) 45%, var(--paper));
+  border-radius: 999px;
+  padding: 0.3em 0.9em;
+}
+.np-figure-planned .np-figure-cap {
+  margin-top: 0.9rem;
+  font-style: italic;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  /* Stack the two panes: sidebar becomes a scrollable top strip, main fills the rest */
+  .np-shell {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 38vh) minmax(0, 1fr);
+    height: calc(100dvh - 58px);
+  }
+  .np-sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    padding: 1.1rem 1.2rem 1.4rem;
+  }
+  .np-main { padding: 1.4rem 1.2rem 3rem; }
+  .np-article { max-width: none; }
+  .np-reader-btn { max-width: 42%; }
+}

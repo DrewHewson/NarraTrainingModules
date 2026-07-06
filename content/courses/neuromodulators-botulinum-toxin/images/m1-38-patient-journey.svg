@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 210" width="1120" height="210" role="img" aria-label="The patient journey: consult to review">
+  <defs>
+    <marker id="pj-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6a6153"/>
+    </marker>
+  </defs>
+  <g font-family="ui-sans-serif, system-ui, -apple-system, sans-serif">
+    <!-- step boxes -->
+    <!-- 1 Consult -->
+    <rect x="12" y="56" width="152" height="72" rx="9" fill="#f6f1e8" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="88" y="86" text-anchor="middle" font-size="12.5" font-weight="600" fill="#221f18">Consult</text>
+    <text x="88" y="103" text-anchor="middle" font-size="11" fill="#4a453b">&amp; assess</text>
+    <line x1="164" y1="92" x2="196" y2="92" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pj-arrow)"/>
+    <!-- 2 Plan -->
+    <rect x="198" y="56" width="152" height="72" rx="9" fill="#f6f1e8" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="274" y="86" text-anchor="middle" font-size="12.5" font-weight="600" fill="#221f18">Plan</text>
+    <text x="274" y="103" text-anchor="middle" font-size="11" fill="#4a453b">with rationale</text>
+    <line x1="350" y1="92" x2="382" y2="92" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pj-arrow)"/>
+    <!-- 3 Consent -->
+    <rect x="384" y="56" width="152" height="72" rx="9" fill="#f6f1e8" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="460" y="86" text-anchor="middle" font-size="12.5" font-weight="600" fill="#221f18">Consent</text>
+    <text x="460" y="103" text-anchor="middle" font-size="11" fill="#4a453b">&amp; photography</text>
+    <line x1="536" y1="92" x2="568" y2="92" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pj-arrow)"/>
+    <!-- 4 Treat (supervised, highlighted) -->
+    <rect x="570" y="56" width="152" height="72" rx="9" fill="#efe1d0" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="646" y="86" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7c5335">Treat</text>
+    <text x="646" y="103" text-anchor="middle" font-size="10.5" fill="#7c5335">(supervised skill)</text>
+    <line x1="722" y1="92" x2="754" y2="92" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pj-arrow)"/>
+    <!-- 5 Aftercare -->
+    <rect x="756" y="56" width="152" height="72" rx="9" fill="#f6f1e8" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="832" y="86" text-anchor="middle" font-size="12.5" font-weight="600" fill="#221f18">Aftercare</text>
+    <text x="832" y="103" text-anchor="middle" font-size="11" fill="#4a453b">+ rationale</text>
+    <line x1="908" y1="92" x2="940" y2="92" stroke="#6a6153" stroke-width="1.6" marker-end="url(#pj-arrow)"/>
+    <!-- 6 Review -->
+    <rect x="942" y="56" width="164" height="72" rx="9" fill="#efe7d9" stroke="#9a6a46" stroke-width="1.4"/>
+    <text x="1024" y="86" text-anchor="middle" font-size="12.5" font-weight="600" fill="#221f18">2-week review</text>
+    <text x="1024" y="103" text-anchor="middle" font-size="10.5" fill="#4a453b">touch-up? rebook?</text>
+
+    <!-- feedback loop: review informs the next plan -->
+    <path d="M1024,128 V168 H274 V132" fill="none" stroke="#9a6a46" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#pj-arrow)"/>
+    <text x="649" y="184" text-anchor="middle" font-size="10.5" fill="#7c5335" font-style="italic">the review informs the next cycle's plan — treatment is a loop, not a one-off</text>
+  </g>
+</svg>
