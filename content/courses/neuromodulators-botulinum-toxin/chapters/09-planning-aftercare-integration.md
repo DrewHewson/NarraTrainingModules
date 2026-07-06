@@ -319,26 +319,6 @@ This capstone assembled the module. A **treatment plan** is a documented chain o
 
 ---
 
-## Knowledge Check
-
-**1. (Clinical reasoning) A 50-year-old man returns two weeks after his first upper-face treatment. His forehead is smoother but his brows feel heavy and sit lower than before; he is unhappy. Reviewing your record, you see the frontalis was treated fairly fully to chase "complete smoothness." At review, residual glabellar movement is minor and not bothering him. What is the best next step?**
-A. Add more frontalis toxin to smooth the remaining forehead movement and even things out.
-B. Add glabellar toxin to try to lift the medial brow and counteract the heaviness.
-C. Do not add toxin; document the brow heaviness and its likely mechanism, reassure that it will settle as the effect wears off, and reason toward *lighter* frontalis dosing next cycle — treating this as an over-treatment/balance lesson.
-D. Reassure him nothing is wrong and rebook him for a full repeat treatment in four months.
-
-> ✅ **Correct: C.** The heaviness is the predictable result of over-quieting the frontalis — the sole brow elevator (Chapters 4–5) — and the review's job is to *stop*, not stack more toxin. Adding frontalis (**A**) worsens the exact problem. Chasing a lift with more glabellar toxin (**B**) piles complexity onto an already-unbalanced face and is not a reliable fix. Ignoring it and repeating the same plan (**D**) fails to learn from a documented over-treatment and sets up a recurrence. The correct move is supportive management plus a *lighter, reviewed* strategy next time — the "you can add but not subtract" and full-face-balance principles in action. *Objectives 2, 5 & 6; connects to Chapter 8.*
-
-**2. (Clinical reasoning) A first-time patient's goal is: "Soften my frown but I still want to look natural and be able to move my face." Your assessment shows a strong glabellar frown, moderate frontalis activity, and a brow that already sits a little low at rest. Which planning approach best fits both the goal and the anatomy?**
-A. Dose the glabella and frontalis fully now to guarantee a smooth result, since a natural look just means treating everything evenly.
-B. Treat the glabellar complex to address the frown, dose the frontalis conservatively (or under-treat and review) to protect the already-low brow, deliberately leave un-indicated areas alone, and book a two-week review to add precisely if needed.
-C. Treat only the frontalis, because forehead lines are what patients notice most.
-D. Decline to treat, because a natural goal cannot be achieved with neuromodulators.
-
-> ✅ **Correct: B.** A natural goal in a first-timer with an at-risk brow points to conservative, movement-preserving, *sequenced* dosing: address the documented complaint (the frown), protect the brow by going light on the frontalis and reviewing at peak, treat nothing without a finding, and keep the option to add. **A** conflates "natural" with "treat everything fully" and endangers the low brow — the opposite of the goal. **C** ignores the patient's actual complaint (the frown) and over-focuses the frontalis, the risky muscle here. **D** is wrong — a natural result is a routine, achievable aim; declining would be inappropriate for a cleared, realistic patient. *Objectives 1, 2 & 5; connects to Chapters 4–6.*
-
----
-
 ## References
 
 > ⚠ **Draft reference list — pending verification.** The categories and candidate works below are the appropriate source types for this chapter's claims — upper-face planning/dosing consensus, aftercare evidence, and Ontario documentation/scope standards. **No citation, author, journal, or DOI here is final**; full APA-7 details and DOIs are to be confirmed in the evidence pass, and the CNO/Ontario documentation and scope claims require regulatory sign-off before this list is published. Where a specific work cannot be confirmed, the *category* is named rather than a citation invented.

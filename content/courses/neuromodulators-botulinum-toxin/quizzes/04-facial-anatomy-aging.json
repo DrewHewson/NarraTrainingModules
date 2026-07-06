@@ -1,81 +1,86 @@
 [
   {
     "externalKey": "ch04-q1",
-    "question": "The SMAS is described as the mechanical link that makes neuromodulators cosmetically effective. Which statement best explains WHY this linkage is the reason treatment works?",
+    "question": "A patient has deep horizontal forehead lines and requests that they be smoothed. An injector weakens the frontalis thoroughly across the forehead but treats no other muscle. Two weeks later the forehead is smooth, but the patient complains the eyes look \"heavy and tired.\" What best explains this?",
     "options": [
-      "Because the SMAS lies in the same layer as the subcutaneous fat, toxin injected there spreads evenly across the face.",
-      "Because mimetic muscles insert into the SMAS and, through fibrous extensions, into the overlying skin — so quieting the muscle directly reduces the skin movement that folds a line.",
-      "Because the SMAS connects the periosteum to the dermis, allowing bone remodelling to smooth surface lines.",
-      "Because the SMAS is the layer where all retaining ligaments anchor, and releasing those ligaments lifts the face."
+      "The toxin spread to the levator palpebrae superioris, causing a true eyelid ptosis.",
+      "Frontalis is the sole brow elevator; weakening it in isolation left the brow depressors unopposed, so the brow dropped (\"opposite effect\").",
+      "The forehead lines were static, so the treatment could not have worked.",
+      "The orbicularis oculi was over-weakened, preventing the patient from closing the eyes."
     ],
     "correct": [1],
+    "explanation": "Brow position is a tug-of-war between one elevator (frontalis) and several depressors; removing the only elevator lets the depressors win, dropping the brow and producing heaviness — the classic \"opposite effect\" of isolated frontalis treatment. A describes eyelid ptosis from diffusion to the levator — a placement problem with a different presentation, not what unopposed depressors produce. C is wrong: the lines did soften (the forehead is smooth), so they were dynamic; the problem is brow balance, not line type. D describes a different complication (loss of eye closure) that isolated frontalis treatment would not cause.",
     "type": "single",
     "order": 1
   },
   {
     "externalKey": "ch04-q2",
-    "question": "A patient's chart notes 'vertical glabellar lines.' Using the perpendicular rule taught in this chapter, which muscle direction of pull would you expect to be responsible — and why?",
+    "question": "An injector treats only the glabellar complex (corrugator, procerus, depressor supercilii) and nothing else. Regarding the medial brow, what is the most likely effect?",
     "options": [
-      "A vertical (upward) pull, because vertical muscles always make vertical lines.",
-      "A horizontal (inward) pull, because a line forms perpendicular to its muscle's pull, so a horizontal pull produces a vertical line.",
-      "A downward pull, because gravity reinforces the muscle and sets the crease in the same direction.",
-      "A diagonal pull, because the corrugator is oriented at 45 degrees and diagonal pulls produce vertical lines."
+      "The medial brow drops, because these muscles elevate it.",
+      "The medial brow rises slightly, because these are depressors and removing their downward pull lets the frontalis lift more freely.",
+      "The upper eyelid droops, because these muscles hold the lid open.",
+      "Nothing changes at the brow, because the glabellar muscles act only on the nose."
     ],
     "correct": [1],
+    "explanation": "The glabellar complex pulls the medial brow down and in; quieting these depressors removes downward pull, so the medial brow tends to rise slightly — the subtle medial-brow lift seen after glabellar treatment. A reverses their action (they depress, not elevate). C confuses these muscles with the levator palpebrae superioris, which lifts the lid. D is false — the corrugator and depressor supercilii act directly on the medial brow.",
     "type": "single",
     "order": 2
   },
   {
     "externalKey": "ch04-q3",
-    "question": "A patient asks for smoother horizontal forehead lines. You treat the frontalis thoroughly across the forehead without touching the glabellar complex. Two weeks later the forehead is smooth but the patient reports a heavy, tired look. What is the most accurate mechanistic explanation?",
+    "question": "Why is the levator palpebrae superioris relevant to glabellar treatment even though no injector ever intends to inject it?",
     "options": [
-      "Toxin diffused to the levator palpebrae superioris through the orbital septum, causing true eyelid ptosis.",
-      "Frontalis is the sole brow elevator; removing it while leaving the depressor team intact lets the depressors pull the brow downward unopposed.",
-      "The horizontal forehead lines were static, so the drug could not address them and the apparent heaviness is unchanged underlying skin damage.",
-      "Weakening the frontalis activated a compensatory over-contraction of the orbicularis oculi, closing the eye partially."
+      "It is the muscle that forms the \"11\" lines, so it must be treated to soften them.",
+      "It lies near the glabellar field, and toxin placed too deep, too low, or in too large a volume can diffuse to it and cause a true eyelid ptosis.",
+      "It is the sole brow elevator, so weakening it drops the brow.",
+      "It is part of the SMAS and connects the corrugator to the skin."
     ],
     "correct": [1],
+    "explanation": "The levator is a \"never-target, always-avoid\" neighbour of the glabellar field; unwanted diffusion to it causes true eyelid ptosis — the reason depth, dose, and placement matter (danger-zone thinking). A is wrong: the corrugator (not the levator) authors the \"11s.\" C confuses the levator (lifts the eyelid) with the frontalis (lifts the brow). D is anatomically false.",
     "type": "single",
     "order": 3
   },
   {
     "externalKey": "ch04-q4",
-    "question": "The levator palpebrae superioris is described as a 'never-target, always-avoid' structure. What correctly distinguishes the complication it causes from brow ptosis — and what causes each?",
+    "question": "At rest, a patient's glabellar \"11\" lines remain clearly visible; they deepen further when she frowns. How should you counsel her about what a neuromodulator will achieve?",
     "options": [
-      "Both are caused by over-weakening the frontalis; the only difference is how many units were used.",
-      "Brow ptosis results from toxin reaching the levator; true eyelid ptosis results from over-weakening the frontalis.",
-      "Brow ptosis results from over-weakening the sole elevator (frontalis), creating an antagonist-balance failure; true eyelid ptosis results from toxin diffusing to the levator palpebrae superioris — a placement/depth problem.",
-      "True eyelid ptosis results from over-weakening the orbicularis oculi so the lid cannot be held open; brow ptosis results from diffusion to the levator."
+      "The lines will be completely erased, because neuromodulators remove all glabellar lines.",
+      "The lines will not change at all, because neuromodulators do not affect the glabella.",
+      "The dynamic component (deepening on frown) should soften well, but the static component visible at rest will improve only partially — realistic expectations and possibly other modalities are appropriate.",
+      "She should be declined, because visible-at-rest lines are an absolute contraindication."
     ],
     "correct": [2],
+    "explanation": "A line visible at rest has a static component etched into the skin; quieting the muscle stops the dynamic deepening but cannot iron out a set crease, so improvement is partial and honest expectation-setting (and possibly skin-directed modalities) applies. A overpromises on a static line — the commonest way to disappoint. B is false; the dynamic component responds well. D invents a contraindication that does not exist.",
     "type": "single",
     "order": 4
   },
   {
     "externalKey": "ch04-q5",
-    "question": "A 54-year-old patient has glabellar lines that are faintly visible at rest and deepen clearly when she frowns. She wants them gone completely. Which response best reflects this chapter's framework for setting expectations?",
+    "question": "Match each muscle to its primary functional action.\n\n1. Frontalis\n2. Corrugator supercilii\n3. Procerus\n4. Orbicularis oculi\n\nA. Pulls the brow medially and downward (knits the brows)\nB. Raises the eyebrows — the sole brow elevator\nC. Sphincter around the eye; lateral fibers fold the crow's-feet skin\nD. Pulls the medial brow/glabella downward, over the nasal root",
     "options": [
-      "A neuromodulator should erase them completely, because the lines deepen on frowning so they are entirely dynamic.",
-      "A neuromodulator cannot help at all, because the static component means the lines are beyond the drug's indication.",
-      "The dynamic deepening should respond well to treatment, but the component visible at rest has a static element etched into the dermis — that part will improve partially at best, and additional modalities may be needed for full correction.",
-      "She needs a higher dose than standard, because lines visible at rest always require extra units to achieve erasure."
+      "1→B, 2→A, 3→D, 4→C",
+      "1→A, 2→B, 3→D, 4→C",
+      "1→B, 2→D, 3→A, 4→C",
+      "1→C, 2→A, 3→D, 4→B"
     ],
-    "correct": [2],
+    "correct": [0],
+    "explanation": "Frontalis is the lone elevator (B); the corrugator draws the brow in and down to knit the brows (A); the procerus pulls the glabella down over the nasal root (D); orbicularis oculi is the ocular sphincter whose lateral fibers crease the crow's feet (C). Distractor logic: swapping 1 and 2 is the classic elevator/depressor confusion; swapping 3 and 4 loses the distinction between the vertical procerus pull and the ring-shaped orbicularis.",
     "type": "single",
     "order": 5
   },
   {
     "externalKey": "ch04-q6",
-    "question": "Which of the following statements about the orbicularis oculi are accurate according to this chapter? (Select ALL that apply.)",
+    "question": "Using the rule that a dynamic line lies perpendicular to its muscle's pull, match each muscle to the rhytid it produces.\n\n1. Frontalis (vertical, upward pull)\n2. Corrugator supercilii (inward, horizontal pull)\n3. Procerus (vertical, downward pull)\n4. Orbicularis oculi (lateral orbital fibers)\n\nA. Vertical \"11\" lines between the brows\nB. Lateral canthal lines (\"crow's feet\")\nC. Horizontal lines across the forehead\nD. Horizontal line across the root of the nose",
     "options": [
-      "Its lateral orbital fibers pull the outer-eye skin into crow's feet (lateral canthal lines).",
-      "Its palpebral part closes the lids gently and is not a cosmetic treatment target.",
-      "Its lateral fibers also act as a brow depressor, pulling the tail of the brow down.",
-      "It is the sole brow elevator and its over-weakening causes the brow to fall.",
-      "Spread of toxin to the zygomaticus major is a potential undesired effect of treating its lateral portion."
+      "1→C, 2→A, 3→D, 4→B",
+      "1→A, 2→C, 3→D, 4→B",
+      "1→C, 2→D, 3→A, 4→B",
+      "1→A, 2→C, 3→B, 4→D"
     ],
-    "correct": [0, 1, 2, 4],
-    "type": "multiple",
+    "correct": [0],
+    "explanation": "Apply the perpendicular rule each time: frontalis pulls vertically → horizontal forehead lines (C); corrugator pulls inward/horizontally → vertical \"11s\" (A); procerus pulls vertically over the nasal root → a horizontal nasal-root line (D); the lateral orbicularis fibers fold the outer-eye skin into crow's feet (B). Distractor logic: pairing frontalis with the \"11s\" (1→A) is the error of memorizing without deriving — the vertical pull cannot make a vertical line.",
+    "type": "single",
     "order": 6
   }
 ]

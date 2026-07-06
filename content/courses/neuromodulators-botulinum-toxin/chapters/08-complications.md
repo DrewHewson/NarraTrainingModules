@@ -265,58 +265,6 @@ Neuromodulator complications are best carried as a **classification**, not a lis
 
 ---
 
-## Knowledge Check
-
-**1. (Clinical reasoning) Two weeks after glabellar and forehead treatment, a patient's *upper eyelid margin* on one side sits noticeably lower, covering more of the iris; her eyebrows are symmetric. She has no double vision and no eye pain. What is the most likely complication and its mechanism?**
-A. Brow ptosis, from over-weakening the frontalis.
-B. Blepharoptosis, from toxin diffusing to the levator palpebrae superioris.
-C. An extraocular-muscle effect requiring emergency care.
-D. A permanent injury to the eyelid muscle.
-
-> ✅ **Correct: B.** The *lid margin* is what is low, with a symmetric brow — that localizes the problem to the eyelid elevator (levator palpebrae superioris), and glabellar injection is the classic route for diffusion to it. **A** is wrong because the brow is symmetric and it is the lid, not the brow, that droops (brow ptosis crowds the lid with heavy skin rather than dropping the lid margin). **C** is wrong: there is no diplopia or eye pain, so this is not an extraocular-muscle/emergency picture — though screening for those red flags is the correct *first* step. **D** is wrong: this is temporary chemodenervation, not injury. *Objective 2.*
-
-**2. (Triage / escalation) Three days after lateral canthal (crow's-feet) treatment, a patient calls reporting new *double vision* and aching in one eye. What is the correct action?**
-A. Reassure her that double vision is a normal part of settling and review her in two weeks.
-B. Advise cool compresses and apraclonidine drops and reassess by phone tomorrow.
-C. Treat it as a red flag: arrange **urgent ophthalmology referral** and notify the supervising prescriber promptly.
-D. Book her for a balancing touch-up to correct the asymmetry.
-
-> ✅ **Correct: C.** New diplopia suggests toxin has reached an extraocular muscle — a serious, time-sensitive problem that is *not* cosmetic lid droop and *not* something to watch. Urgent ophthalmology plus prescriber notification is the defined threshold. **A** normalizes a red flag and dangerously delays care. **B** self-initiates a prescription drop (outside scope) and still delays urgent referral. **D** misreads a serious neurological symptom as a cosmetic asymmetry. *Objective 5.*
-
-**3. (Clinical reasoning) A patient at her two-week review has a symmetric, pleasant result except that the *outer* end of each eyebrow is pulled up into a surprised, arched "Spock" shape. Reasoning from the elevator/depressor model, what happened and what is the fix?**
-A. The lateral frontalis was over-treated, paralyzing the outer brow; nothing can be done but wait.
-B. The lateral frontalis was *under-treated* relative to the medial frontalis, so residual pull lifts the outer brow; a small targeted dose to the lateral frontalis evens it out.
-C. The levator palpebrae was weakened; she needs apraclonidine.
-D. This is distant spread of toxin and requires emergency care.
-
-> ✅ **Correct: B.** The frontalis is the brow's elevator; if its *lateral* portion retains pull while the medial portion is weakened, the unopposed lateral pull arches the outer brow — the classic Spock/reverse-tick pattern. The fix follows the cause: a small, targeted dose to the over-active lateral frontalis, ideally added at the two-week review. **A** inverts the mechanism (the problem is *residual* pull, not over-treatment) and wrongly says nothing can be done. **C** describes lid ptosis, not a brow-shape problem. **D** is a serious-complication answer for a purely cosmetic, correctable issue. *Objectives 3 & 4.*
-
-**4. (Clinical reasoning) A patient is disappointed at *four days* post-treatment that she can still move her forehead a little and asks you to "add more to freeze it completely." What is the best response and why?**
-A. Add more toxin now to meet her expectation while she is in the clinic.
-B. Explain that the effect peaks at about two weeks; review then and add a small amount only if needed — because "you can add but you cannot remove."
-C. Tell her the treatment failed and offer a different product.
-D. Reassure her it will settle and discharge her with no review.
-
-> ✅ **Correct: B.** The effect is still developing at day four (peak ~2 weeks, per Chapter 2); topping up now risks over-treatment, which cannot be reversed. The two-week review is exactly where a conservative under-dose is safely corrected. **A** is the over-treatment trap and abandons the safety philosophy. **C** misinterprets a normal, incomplete effect as failure. **D** removes the review that makes conservative dosing safe. *Objective 4.*
-
-**5. (Triage / escalation) In the days after treatment, a patient develops difficulty swallowing and a sense that her voice is slurred. She has no fever. What does this most likely represent and what must you do?**
-A. A normal post-injection headache variant; reassure and review.
-B. A local injection-site reaction; advise compresses.
-C. Possible **distant spread of toxin** — a medical emergency: direct her to **emergency care immediately** and notify the prescriber.
-D. Secondary non-response; increase her dose next visit.
-
-> ✅ **Correct: C.** Dysphagia and slurred speech are hallmark symptoms of toxin effect *distant* from the injection site — the most serious neuromodulator concern. Even though it is very rare with cosmetic upper-face dosing, the threshold to act is deliberately low because the consequences are severe. **A** and **B** trivialize emergency symptoms. **D** confuses a serious systemic red flag with a *loss-of-effect* phenomenon that has nothing to do with these symptoms. *Objectives 1 & 5.*
-
-**6. (Clinical reasoning) A returning patient who responded well for two years reports that her usual dose "isn't working anymore." Before concluding she has developed neutralizing antibodies, what is the most appropriate reasoning?**
-A. Immediately diagnose secondary non-response and stop offering treatment.
-B. Rule out mundane causes first — under-dosing, reconstitution/handling error, storage problems, expectations, or the effect simply having worn off — and discuss genuine suspected non-response with the prescriber.
-C. Switch products without further assessment, since antibodies affect only one brand.
-D. Double her dose at the next visit to overcome the antibodies.
-
-> ✅ **Correct: B.** True neutralizing-antibody non-response is thought to be uncommon in low-dose cosmetic use and is a *diagnosis of exclusion*; the common explanations are technical or expectation-related and must be excluded first, with the prescriber involved in any genuine non-response work-up. **A** jumps to the rarest cause and abandons the patient. **C** and **D** act on an unconfirmed diagnosis and, in the case of dose escalation, could compound risk without evidence. *Objectives 1 & 6.*
-
----
-
 ## References
 
 > ⚠ **Draft reference list — pending verification.** The categories and candidate works below are the standard source *types* for aesthetic complication management and the ptosis/apraclonidine and escalation content. Full APA-7 details and DOIs are to be confirmed in the evidence pass; **no citation will be published unverified.** Where a specific work is not yet confirmed, a source *category* is named instead of an invented reference. Every incidence figure, management/drug claim (including apraclonidine), red-flag list, and regulatory/scope statement requires Margie's clinical sign-off and, for scope, regulatory review before this list and chapter are finalized.

@@ -1,80 +1,85 @@
 [
   {
     "externalKey": "ch08-q1",
-    "question": "A patient calls two days after glabellar treatment to report a small bruise near one injection point. She is concerned something went wrong. Applying the chapter's three-question classification, how should you categorize this finding?",
+    "question": "Two weeks after glabellar and forehead treatment, a patient's upper eyelid margin on one side sits noticeably lower, covering more of the iris; her eyebrows are symmetric. She has no double vision and no eye pain. What is the most likely complication and its mechanism?",
     "options": [
-      "Product-effect / adverse / minor — the toxin has diffused to an unintended muscle, but bruising is usually self-limiting.",
-      "Injection-related / expected / minor — bruising from a nicked vessel is a needle event, not a toxin effect, and was disclosed at consent.",
-      "Product-effect / expected / serious — bruising at the glabellar area can indicate proximity to the levator palpebrae superioris.",
-      "Injection-related / adverse / serious — any visible bruise near the orbital area warrants urgent ophthalmology review."
+      "Brow ptosis, from over-weakening the frontalis.",
+      "Blepharoptosis, from toxin diffusing to the levator palpebrae superioris.",
+      "An extraocular-muscle effect requiring emergency care.",
+      "A permanent injury to the eyelid muscle."
     ],
     "correct": [1],
+    "explanation": "The lid margin is what is low, with a symmetric brow — that localizes the problem to the eyelid elevator (levator palpebrae superioris), and glabellar injection is the classic route for diffusion to it. A is wrong because the brow is symmetric and it is the lid, not the brow, that droops (brow ptosis crowds the lid with heavy skin rather than dropping the lid margin). C is wrong: there is no diplopia or eye pain, so this is not an extraocular-muscle/emergency picture — though screening for those red flags is the correct first step. D is wrong: this is temporary chemodenervation, not injury.",
     "type": "single",
     "order": 1
   },
   {
     "externalKey": "ch08-q2",
-    "question": "At a two-week review, a patient presents with one eye appearing 'half-closed.' On examination, the lid margin on the affected side covers more of the iris; the brows sit at roughly the same height on both sides. What does this presentation most specifically indicate, and what is the mechanism?",
+    "question": "Three days after lateral canthal (crow's-feet) treatment, a patient calls reporting new double vision and aching in one eye. What is the correct action?",
     "options": [
-      "Brow ptosis — the frontalis was over-treated, causing the brow to descend and crowd the upper lid.",
-      "Blepharoptosis — toxin diffused from the glabellar injection to the levator palpebrae superioris, dropping the lid margin itself.",
-      "An extraocular-muscle effect — the clinical picture suggests toxin has reached the muscles controlling eye movement.",
-      "A normal settling artifact — asymmetric lid appearance in the first two weeks resolves without any action."
+      "Reassure her that double vision is a normal part of settling and review her in two weeks.",
+      "Advise cool compresses and apraclonidine drops and reassess by phone tomorrow.",
+      "Treat it as a red flag: arrange urgent ophthalmology referral and notify the supervising prescriber promptly.",
+      "Book her for a balancing touch-up to correct the asymmetry."
     ],
-    "correct": [1],
+    "correct": [2],
+    "explanation": "New diplopia suggests toxin has reached an extraocular muscle — a serious, time-sensitive problem that is not cosmetic lid droop and not something to watch. Urgent ophthalmology plus prescriber notification is the defined threshold. A normalizes a red flag and dangerously delays care. B self-initiates a prescription drop (outside scope) and still delays urgent referral. D misreads a serious neurological symptom as a cosmetic asymmetry.",
     "type": "single",
     "order": 2
   },
   {
     "externalKey": "ch08-q3",
-    "question": "A patient with true blepharoptosis asks whether there is anything that can be done while she waits for the effect to wear off. You recall that apraclonidine drops are described in the chapter as a symptomatic option. Which statement correctly represents your role in that decision?",
+    "question": "A patient at her two-week review has a symmetric, pleasant result except that the outer end of each eyebrow is pulled up into a surprised, arched \"Spock\" shape. Reasoning from the elevator/depressor model, what happened and what is the fix?",
     "options": [
-      "You may instruct the patient to obtain apraclonidine over the counter, since it is a topical product and the chapter describes it as supportive care.",
-      "You should administer apraclonidine at the next clinic visit as a standard complication-management step.",
-      "You recognize and document the complication, notify the supervising prescriber, and discuss whether apraclonidine is appropriate — it is a prescription medication and is not self-initiated by the injecting nurse.",
-      "Apraclonidine reverses the chemodenervation, so arranging it promptly reduces the duration of ptosis and should not be delayed."
+      "The lateral frontalis was over-treated, paralyzing the outer brow; nothing can be done but wait.",
+      "The lateral frontalis was under-treated relative to the medial frontalis, so residual pull lifts the outer brow; a small targeted dose to the lateral frontalis evens it out.",
+      "The levator palpebrae was weakened; she needs apraclonidine.",
+      "This is distant spread of toxin and requires emergency care."
     ],
-    "correct": [2],
+    "correct": [1],
+    "explanation": "The frontalis is the brow's elevator; if its lateral portion retains pull while the medial portion is weakened, the unopposed lateral pull arches the outer brow — the classic Spock/reverse-tick pattern. The fix follows the cause: a small, targeted dose to the over-active lateral frontalis, ideally added at the two-week review. A inverts the mechanism (the problem is residual pull, not over-treatment) and wrongly says nothing can be done. C describes lid ptosis, not a brow-shape problem. D is a serious-complication answer for a purely cosmetic, correctable issue.",
     "type": "single",
     "order": 3
   },
   {
     "externalKey": "ch08-q4",
-    "question": "Before injecting the lateral canthal area, an experienced injector pauses to ask: 'If this spreads, where does it go, and what would that look like?' According to the chapter's diffusion table, what is the primary risk specific to lateral canthal injection placed too low or too medially?",
+    "question": "A patient is disappointed at four days post-treatment that she can still move her forehead a little and asks you to \"add more to freeze it completely.\" What is the best response and why?",
     "options": [
-      "Diffusion to the levator palpebrae superioris, causing blepharoptosis.",
-      "Diffusion to the frontalis, causing brow heaviness.",
-      "Diffusion to the zygomaticus muscles, causing smile asymmetry or cheek droop.",
-      "Diffusion to extraocular muscles, causing diplopia requiring emergency care."
+      "Add more toxin now to meet her expectation while she is in the clinic.",
+      "Explain that the effect peaks at about two weeks; review then and add a small amount only if needed — because \"you can add but you cannot remove.\"",
+      "Tell her the treatment failed and offer a different product.",
+      "Reassure her it will settle and discharge her with no review."
     ],
-    "correct": [2],
+    "correct": [1],
+    "explanation": "The effect is still developing at day four (peak ~2 weeks, per Chapter 2); topping up now risks over-treatment, which cannot be reversed. The two-week review is exactly where a conservative under-dose is safely corrected. A is the over-treatment trap and abandons the safety philosophy. C misinterprets a normal, incomplete effect as failure. D removes the review that makes conservative dosing safe.",
     "type": "single",
     "order": 4
   },
   {
     "externalKey": "ch08-q5",
-    "question": "Which of the following presentations after neuromodulator treatment should trigger the response 'direct the patient to emergency care immediately and notify the prescriber'? (Select all that apply.)",
+    "question": "In the days after treatment, a patient develops difficulty swallowing and a sense that her voice is slurred. She has no fever. What does this most likely represent and what must you do?",
     "options": [
-      "Difficulty swallowing that develops in the days following treatment.",
-      "A mild forehead headache on the day of treatment that resolves by the next morning.",
-      "Slurred speech appearing two days after a cosmetic upper-face treatment.",
-      "New double vision in one eye after periorbital injection.",
-      "A small bruise at a crow's-feet injection point with no other symptoms."
+      "A normal post-injection headache variant; reassure and review.",
+      "A local injection-site reaction; advise compresses.",
+      "Possible distant spread of toxin — a medical emergency: direct her to emergency care immediately and notify the prescriber.",
+      "Secondary non-response; increase her dose next visit."
     ],
-    "correct": [0, 2],
-    "type": "multiple",
+    "correct": [2],
+    "explanation": "Dysphagia and slurred speech are hallmark symptoms of toxin effect distant from the injection site — the most serious neuromodulator concern. Even though it is very rare with cosmetic upper-face dosing, the threshold to act is deliberately low because the consequences are severe. A and B trivialize emergency symptoms. D confuses a serious systemic red flag with a loss-of-effect phenomenon that has nothing to do with these symptoms.",
+    "type": "single",
     "order": 5
   },
   {
     "externalKey": "ch08-q6",
-    "question": "A patient who has had successful treatments for three years reports that her usual dose 'just isn't working anymore.' Before the chapter's framework supports a conclusion of neutralizing-antibody non-response, what reasoning step is required?",
+    "question": "A returning patient who responded well for two years reports that her usual dose \"isn't working anymore.\" Before concluding she has developed neutralizing antibodies, what is the most appropriate reasoning?",
     "options": [
-      "Switch immediately to a different type A brand, since antibody formation is product-specific and a switch typically restores response.",
-      "Increase her dose at the next visit by a standard increment to overcome the antibody titre.",
-      "Treat it as a medical emergency and refer to the prescriber for urgent investigation.",
-      "Systematically exclude mundane explanations — under-dosing, reconstitution or storage error, realistic expectation mismatch, or the effect simply having worn off — before labelling it immunologic non-response, and involve the prescriber if genuine non-response is suspected."
+      "Immediately diagnose secondary non-response and stop offering treatment.",
+      "Rule out mundane causes first — under-dosing, reconstitution/handling error, storage problems, expectations, or the effect simply having worn off — and discuss genuine suspected non-response with the prescriber.",
+      "Switch products without further assessment, since antibodies affect only one brand.",
+      "Double her dose at the next visit to overcome the antibodies."
     ],
-    "correct": [3],
+    "correct": [1],
+    "explanation": "True neutralizing-antibody non-response is thought to be uncommon in low-dose cosmetic use and is a diagnosis of exclusion; the common explanations are technical or expectation-related and must be excluded first, with the prescriber involved in any genuine non-response work-up. A jumps to the rarest cause and abandons the patient. C and D act on an unconfirmed diagnosis and, in the case of dose escalation, could compound risk without evidence.",
     "type": "single",
     "order": 6
   }

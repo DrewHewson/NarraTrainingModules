@@ -9,6 +9,8 @@ export type ParsedQuestion = {
   correct: number[];
   type: "single" | "multiple";
   order: number;
+  /** shown to the learner AFTER they submit the quiz */
+  explanation?: string;
 };
 
 export type ParsedChapter = {

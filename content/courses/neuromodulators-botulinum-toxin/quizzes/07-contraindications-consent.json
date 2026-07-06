@@ -1,81 +1,86 @@
 [
   {
     "externalKey": "ch07-q1",
-    "question": "A patient presents for glabellar treatment. On focused history she reports a diagnosis of myasthenia gravis, currently stable and not visibly affecting her face. She has realistic expectations and no other concerns. What is the most defensible action?",
+    "question": "A 34-year-old presents for glabellar treatment. On focused history she mentions she was diagnosed with myasthenia gravis two years ago, currently stable. She has no other issues and realistic expectations. What is the most appropriate action?",
     "options": [
-      "Proceed as planned — the condition is stable, and cosmetic doses are far lower than therapeutic ones.",
-      "Proceed with a reduced dose to limit the muscle-weakening effect.",
-      "Do not treat today; escalate to the prescriber before any cosmetic neuromodulator treatment.",
-      "Treat only the lateral canthal lines, avoiding the glabella where NMJ risk is highest."
+      "Proceed as normal, since her condition is stable and the cosmetic dose is small.",
+      "Proceed but halve the dose to reduce risk.",
+      "Do not treat today; this is a neuromuscular condition affecting the neuromuscular junction — decline/defer and escalate to the prescriber.",
+      "Treat only the lateral canthal lines, avoiding the glabella."
     ],
     "correct": [2],
+    "explanation": "Myasthenia gravis impairs neuromuscular-junction transmission — precisely the system botulinum toxin acts on — so even a small cosmetic dose can produce an exaggerated or spreading effect. This is a stop-and-escalate finding, not one to manage with dose or site tweaks. A ignores that mechanism entirely. B and D are the classic \"improvise a compromise\" error: reducing dose or changing sites does not address a systemic vulnerability of the junction, and this decision is not the injector's to make independently. Objectives 2 & 4.",
     "type": "single",
     "order": 1
   },
   {
     "externalKey": "ch07-q2",
-    "question": "A patient on daily low-dose aspirin prescribed by her cardiologist wants frown-line treatment. She is otherwise an excellent candidate with realistic expectations. Which approach best reflects this chapter's guidance on antiplatelet use?",
+    "question": "A healthy 45-year-old on daily low-dose aspirin (prescribed by her physician for a cardiac indication) wants frown-line treatment. She understands the treatment well. What is the best approach?",
     "options": [
-      "Decline — anticoagulants and antiplatelets are an absolute contraindication to neuromodulator injection.",
-      "Advise her to stop aspirin for one week before treatment, then proceed.",
-      "Proceed after counseling her about the increased bruising risk; document that counseling and use bruise-minimizing technique.",
-      "Proceed without additional discussion, since aspirin affects only post-procedural bleeding and is not relevant to neuromodulators."
+      "Decline — anticoagulants and antiplatelets are an absolute contraindication.",
+      "Tell her to stop the aspirin for a week, then treat.",
+      "Proceed, but first counsel her about the increased bruising risk, document that counseling, and use bruise-minimizing technique.",
+      "Proceed without comment; aspirin has no relevance to this treatment."
     ],
     "correct": [2],
+    "explanation": "Antiplatelet/anticoagulant use is a bruising caution, not an absolute bar to a superficial upper-face injection; the correct response is to counsel, document, and inject carefully. A overstates it into an absolute contraindication. B is unsafe and outside your authority — you never instruct a patient to stop a prescribed cardiac medication for an elective cosmetic treatment. D wrongly dismisses a real, disclosable bruising risk. Objectives 3 & 5.",
     "type": "single",
     "order": 2
   },
   {
     "externalKey": "ch07-q3",
-    "question": "A patient mid-course on intravenous gentamicin for an active infection asks to keep her scheduled neuromodulator appointment. She is otherwise a good candidate and the infection is unrelated to the treatment site. What is the safest decision and why?",
+    "question": "A patient started a course of intravenous gentamicin (an aminoglycoside) five days ago for an infection and asks to have her scheduled neuromodulator appointment today. Otherwise she is a good candidate. What is the safest decision?",
     "options": [
-      "Treat as scheduled — antibiotics affect infection, not muscle-weakening action.",
-      "Treat with a proportionally reduced dose to offset any potentiation.",
-      "Defer cosmetic treatment until the aminoglycoside course is complete, or consult the prescriber before proceeding.",
-      "Decline permanently; any history of aminoglycoside use is a lifelong absolute contraindication."
+      "Treat — antibiotics have no bearing on neuromodulator treatment.",
+      "Defer the cosmetic treatment until the antibiotic course is complete, or consult the prescriber before proceeding.",
+      "Treat with a reduced dose to offset the interaction.",
+      "Decline permanently; she can never have neuromodulator treatment again."
     ],
-    "correct": [2],
+    "correct": [1],
+    "explanation": "Aminoglycosides affect neuromuscular transmission and may potentiate the toxin's effect, so the safe move is to defer the elective treatment until the course is done, or escalate to the prescriber. A misses a clinically significant interaction. C improvises a dose \"fix\" for a mechanism that dose reduction doesn't reliably control. D is wrong on \"permanently\" — the barrier is temporary and resolvable, which is exactly what makes this a defer, not a decline. Objectives 3 & 4.",
     "type": "single",
     "order": 3
   },
   {
     "externalKey": "ch07-q4",
-    "question": "During screening, a patient on a limited budget mentions an area of active, inflamed, pustular acne directly over the glabellar injection sites. She is otherwise a strong candidate. What is the most appropriate action?",
+    "question": "During consultation, a patient repeatedly points out a \"deformity\" you can barely perceive, has had multiple treatments elsewhere she felt made things worse, and says this treatment \"has to finally fix\" how she looks or she \"can't cope.\" Screening suggests body dysmorphic disorder. What is the most appropriate action?",
     "options": [
-      "Inject carefully through the uninvolved margins of the glabella and avoid the most inflamed spots.",
-      "Decline the patient permanently; active infection at an injection site is an absolute lifelong disqualification.",
-      "Defer treatment until the site has healed and rebook — the barrier is temporary, not permanent.",
-      "Proceed — superficial skin infection is irrelevant to a substance being injected into the underlying muscle."
+      "Treat conservatively to build trust, then reassess.",
+      "Treat, because she has clearly consented and strongly wants it.",
+      "Decline the cosmetic treatment and, where appropriate, offer sensitive referral; treatment is unlikely to help and may harm.",
+      "Treat only if she signs a waiver acknowledging she may be dissatisfied."
     ],
     "correct": [2],
+    "explanation": "Active BDD with fixed unrealistic expectations is a finding where treatment is likely to harm — the intervention cannot deliver what the patient is actually seeking. The appropriate action is to decline kindly and consider referral. A and B proceed anyway and expose a vulnerable patient. D misunderstands consent: a signed waiver cannot make an unsafe or inappropriate treatment appropriate — a patient cannot authorize a treatment your judgment forbids. Objectives 1, 2 & 4; builds on Chapter 6.",
     "type": "single",
     "order": 4
   },
   {
     "externalKey": "ch07-q5",
-    "question": "A colleague argues that because a patient with unrealistic expectations signed a detailed consent form acknowledging she may not be satisfied, it is safe to proceed with treatment. Which response best applies this chapter's reasoning?",
+    "question": "A patient books frown-line treatment and, at the appointment, has an obvious area of active, inflamed acne with pustules directly over the glabella. She is otherwise an excellent candidate. What is the best action?",
     "options": [
-      "The colleague is correct — a signed acknowledgment shifts liability to the patient and makes the treatment appropriate.",
-      "The colleague is correct, provided the form also disclosed the specific material risks.",
-      "The colleague is wrong — a patient can decline what you offer, but a patient cannot authorize a treatment your clinical judgment identifies as likely to harm them.",
-      "The colleague is wrong only if the patient shows overt signs of body dysmorphic disorder; documented unrealistic expectations alone are a relative, not absolute, barrier."
+      "Inject through the area; the infection is superficial and irrelevant.",
+      "Decline permanently, as active infection is an absolute lifelong contraindication.",
+      "Defer treatment until the site has healed, and rebook.",
+      "Treat the lateral canthal lines only and never revisit the glabella."
     ],
     "correct": [2],
+    "explanation": "Active infection or compromised skin at the injection site is an absolute bar at that moment — you should not inject through it — but it is temporary and resolvable, which makes the correct decision to defer and rebook, not to decline forever. A risks seeding infection and injecting into unassessable tissue. B wrongly treats a temporary barrier as permanent. D abandons the patient's actual goal when a simple deferral solves the problem. Objectives 2 & 4.",
     "type": "single",
     "order": 5
   },
   {
     "externalKey": "ch07-q6",
-    "question": "A well-screened patient with no contraindications hands back a signed consent form without having asked any questions. Which elements must be documented to meet a valid, medico-legal consent standard according to this chapter? (Select all that apply.)",
+    "question": "A patient is well-screened with no contraindications. You explain the treatment and hand her a consent form, which she signs at the bottom without questions. To meet a valid, medico-legal consent standard, what is still required?",
     "options": [
-      "Confirmation that the patient had capacity to understand the decision and its consequences.",
-      "Disclosure of specific material risks including asymmetry, brow or eyelid ptosis, and the temporary and variable nature of results.",
-      "A record that the decision was the patient's own, free of undue pressure or commercial coercion.",
-      "The patient's signature, which by itself constitutes complete and valid consent.",
-      "A realistic no-guarantee framing confirming the patient understands results cannot be warranted."
+      "Nothing further — a signed consent form is complete consent.",
+      "A documented conversation confirming capacity, disclosure of the specific material risks (e.g., asymmetry, brow/eyelid ptosis, temporary/variable results), voluntariness, and realistic no-guarantee framing.",
+      "A second staff member's signature as a witness, which by itself makes the consent valid.",
+      "Payment in advance, which confirms the patient's commitment to proceed."
     ],
-    "correct": [0, 1, 2, 4],
-    "type": "multiple",
+    "correct": [1],
+    "explanation": "Valid consent is a documented conversation satisfying capacity, disclosure of specific and material risks, voluntariness, and realistic-outcome framing — the signature merely records it. A mistakes a form for the process; a signature with no informing conversation is thin protection and may mean the patient wasn't truly informed. C confuses a witness with the substance of disclosure. D conflates a commercial transaction with informed consent. Objective 5.",
+    "type": "single",
     "order": 6
   }
 ]

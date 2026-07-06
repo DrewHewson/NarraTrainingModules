@@ -17,21 +17,30 @@ async function upsertQuestions(
   parentId: string,
   questions: ParsedQuestion[],
 ) {
-  if (questions.length === 0) return;
-  const rows = questions.map((q) => ({
-    scope,
-    parent_id: parentId,
-    external_key: q.externalKey,
-    question: q.question,
-    options: q.options,
-    correct: q.correct,
-    type: q.type,
-    order: q.order,
-  }));
-  const { error } = await db
-    .from("quiz_questions")
-    .upsert(rows, { onConflict: "scope,parent_id,external_key" });
-  if (error) throw error;
+  const keys = questions.map((q) => q.externalKey);
+  if (questions.length > 0) {
+    const rows = questions.map((q) => ({
+      scope,
+      parent_id: parentId,
+      external_key: q.externalKey,
+      question: q.question,
+      options: q.options,
+      correct: q.correct,
+      type: q.type,
+      order: q.order,
+      explanation: q.explanation ?? null,
+    }));
+    const { error } = await db
+      .from("quiz_questions")
+      .upsert(rows, { onConflict: "scope,parent_id,external_key" });
+    if (error) throw error;
+  }
+  // Prune: remove questions for this parent that are no longer in the source
+  // (keeps the DB authoritative when a quiz shrinks or questions are renamed).
+  let del = db.from("quiz_questions").delete().eq("scope", scope).eq("parent_id", parentId);
+  if (keys.length > 0) del = del.not("external_key", "in", `(${keys.join(",")})`);
+  const { error: delErr } = await del;
+  if (delErr) throw delErr;
 }
 
 export async function seedCourse(dir: string): Promise<void> {

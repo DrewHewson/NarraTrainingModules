@@ -23,6 +23,11 @@ function sameSet(a: number[], b: number[]): boolean {
   return true;
 }
 
+/** True iff the selected option set exactly matches the correct set. */
+export function answerIsCorrect(selected: number[], correct: number[]): boolean {
+  return sameSet(selected, correct);
+}
+
 /**
  * Grade a submission. A question is correct iff the set of selected indices
  * exactly equals its `correct` set (works for both single- and multi-select).
