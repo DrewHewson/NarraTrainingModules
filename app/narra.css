@@ -1,0 +1,255 @@
+/* ============================================================
+   Narra Training — shared design foundation
+   Aesthetic: refined editorial × luxury medical-aesthetics.
+   Warm ivory paper, deep ink, clay as the single accent;
+   Fraunces display + Newsreader body + Geist for labels.
+   ============================================================ */
+
+/* ---------- Design tokens (scoped to .narra-root) ---------- */
+.narra-root {
+  --paper:       #f6f1e8;
+  --paper-lift:  #fcf9f3;
+  --panel:       #efe7d9;
+  --ink:         #221f18;
+  --ink-soft:    #6a6153;
+  --ink-faint:   #928979;
+  --clay:        #9a6a46;
+  --clay-deep:   #7c5335;
+  --taupe:       #c9beac;
+  --line:        rgba(34, 31, 24, 0.13);
+  --line-soft:   rgba(34, 31, 24, 0.07);
+
+  min-height: 100dvh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Eyebrow: uppercase Geist, letter-spaced, ink-faint ---------- */
+.narra-eyebrow {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  line-height: 1.3;
+}
+
+/* ---------- Display heading: Fraunces ---------- */
+.narra-h {
+  font-family: var(--font-display), serif;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* ---------- Card ---------- */
+.narra-card {
+  background: var(--paper-lift);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: clamp(2rem, 5vw, 2.75rem) clamp(1.5rem, 4vw, 2.25rem);
+  box-shadow:
+    0 1px 3px rgba(34, 31, 24, 0.06),
+    0 4px 16px rgba(34, 31, 24, 0.04);
+}
+
+/* ---------- Form fields ---------- */
+.narra-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.narra-label {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.narra-input {
+  width: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 0.6rem 0.85rem;
+  font-family: var(--font-body), Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.narra-input::placeholder {
+  color: var(--ink-faint);
+}
+
+.narra-input:focus {
+  border-color: var(--clay);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--clay) 18%, transparent);
+}
+
+/* ---------- Buttons ---------- */
+.narra-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.7rem 1.5rem;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease, transform 0.1s ease;
+  text-decoration: none;
+  white-space: nowrap;
+
+  /* Primary: clay background, paper text */
+  background: var(--clay);
+  color: var(--paper);
+  border-color: var(--clay);
+}
+
+.narra-btn:hover:not(:disabled) {
+  background: var(--clay-deep);
+  border-color: var(--clay-deep);
+  transform: translateY(-1px);
+}
+
+.narra-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.narra-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Ghost variant */
+.narra-btn.ghost {
+  background: transparent;
+  color: var(--clay-deep);
+  border-color: var(--line);
+}
+
+.narra-btn.ghost:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--panel) 60%, transparent);
+  border-color: var(--clay);
+  transform: translateY(-1px);
+}
+
+/* Full-width modifier */
+.narra-btn.full {
+  width: 100%;
+}
+
+/* ---------- Alert (error) ---------- */
+.narra-alert {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  padding: 0.7rem 1rem;
+  border-radius: 7px;
+  border: 1px solid transparent;
+
+  /* error: warm red-clay */
+  background: color-mix(in srgb, #c0392b 8%, var(--paper-lift));
+  border-color: color-mix(in srgb, #c0392b 22%, var(--line));
+  color: #7c2318;
+}
+
+.narra-alert.info {
+  background: color-mix(in srgb, var(--clay) 7%, var(--paper-lift));
+  border-color: color-mix(in srgb, var(--clay) 20%, var(--line));
+  color: var(--clay-deep);
+}
+
+/* ---------- Status badges ---------- */
+.narra-badge {
+  display: inline-block;
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 0.22em 0.72em;
+  border: 1px solid transparent;
+}
+
+.narra-badge.is-pending {
+  background: color-mix(in srgb, var(--taupe) 40%, var(--paper));
+  color: var(--ink-soft);
+  border-color: var(--line);
+}
+
+.narra-badge.is-verified {
+  background: color-mix(in srgb, #2d7a4f 10%, var(--paper-lift));
+  color: #1e5c39;
+  border-color: color-mix(in srgb, #2d7a4f 25%, var(--line));
+}
+
+.narra-badge.is-rejected {
+  background: color-mix(in srgb, #c0392b 8%, var(--paper-lift));
+  color: #7c2318;
+  border-color: color-mix(in srgb, #c0392b 22%, var(--line));
+}
+
+/* ---------- Wordmark (reused from preview topbar vocabulary) ---------- */
+.narra-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5ch;
+  text-decoration: none;
+  color: inherit;
+}
+
+.narra-wordmark-the {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.narra-wordmark-name {
+  font-family: var(--font-display), serif;
+  font-weight: 600;
+  font-size: 1.28rem;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.narra-wordmark-sub {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--clay);
+  align-self: center;
+  padding-left: 0.4ch;
+  border-left: 1px solid var(--line);
+  margin-left: 0.2ch;
+  padding-top: 0.1em;
+}
+
+/* ---------- Divider ---------- */
+.narra-divider {
+  width: 3.2rem;
+  height: 2px;
+  background: var(--clay);
+  border: none;
+  margin: 1.4rem 0;
+}
