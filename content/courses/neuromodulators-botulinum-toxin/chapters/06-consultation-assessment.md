@@ -307,50 +307,6 @@ The consultation, not the injection, is where the outcome is decided. Run it as 
 
 ---
 
-## Knowledge Check
-
-**1. (Clinical reasoning) A new patient says, "I want Botox in my forehead so my husband stops telling me I look angry." Which response best reflects a client-centred consultation?**
-A. Book the forehead treatment as requested, since the patient has named the area clearly.
-B. Explain that treatment is inappropriate and decline outright, because a partner is involved.
-C. Ask open questions to understand what *she* wants and why now, reflect the goal back, and assess whether treatment serves her before deciding.
-D. Reassure her that forehead treatment will fix how her husband perceives her.
-
-> ✅ **Correct: C.** Client-centred practice starts by eliciting the patient's *own* motivation with open questions, confirming the goal, and assessing suitability before any decision — the request names an area, not the outcome she wants. **A** leads with the needle and skips the judgment layer where outcomes are decided. **B** over-reacts: a partner's *comment* is worth exploring (is this her wish or his pressure?), but it is not an automatic decline without further inquiry. **D** promises an outcome treatment cannot guarantee — how another person perceives her — which is exactly the over-promise to avoid. *Objective 1.*
-
-**2. (Clinical reasoning) During consultation a patient shows heavily edited photos of a celebrity as her target, reports multiple prior treatments where "no one ever got it right," and remains distressed by a forehead line you can barely see. What is the most appropriate next step?**
-A. Diagnose body dysmorphic disorder and inform the patient of the diagnosis.
-B. Recognize a cluster of BDD red flags, decline or defer treatment, and refer/escalate to the supervising physician or NP.
-C. Proceed cautiously with a very small dose to build trust before addressing her concerns.
-D. Treat only the line she points to, since a small treatment carries little risk.
-
-> ✅ **Correct: B.** Several red flags cluster here — unachievable/edited target, serial dissatisfaction, and distress out of proportion to the finding. The correct action is to **notice, decline or defer, and refer/escalate** — screening, not diagnosis. **A** exceeds scope: nurses do not diagnose BDD. **C** and **D** both proceed to treat a patient who is characteristically *not* helped by procedures and may worsen — "just a little" does not change the underlying mismatch and can reinforce it. *Objective 2.*
-
-**3. (Clinical reasoning) On assessment, a patient's horizontal forehead lines are visible *only* when she raises her brows and disappear completely at rest. She asks if treatment will "get rid of them for good." What should you tell her, and why?**
-A. Yes — a neuromodulator permanently erases these lines because they are on the surface of the skin.
-B. No — these are static lines etched into the skin and a neuromodulator will not help them.
-C. A neuromodulator should soften these *dynamic* lines well because they are caused by muscle movement, but the effect is temporary and will need repeating.
-D. These lines cannot be treated at all and require surgery.
-
-> ✅ **Correct: C.** Lines visible only on movement and absent at rest are **dynamic** rhytids — the core indication for neuromodulators, which reduce the muscle movement that creases the skin — but the effect is **temporary** by design (Chapter 2). **A** is wrong on both counts: the effect is temporary, and toxin acts on muscle, not the skin surface. **B** mislabels a clearly dynamic line as static. **D** is false — dynamic lines are precisely what this treatment addresses. *Objectives 3 & 4; uses Chapter 4's dynamic-vs-static framework.*
-
-**4. (Clinical reasoning) You notice a patient's right brow rests lower than the left, a finding he has not mentioned and seems unaware of. He is otherwise a good candidate. What is the most important immediate action?**
-A. Say nothing, to avoid making him self-conscious, and treat both sides identically.
-B. Photograph and document the asymmetry as a baseline, disclose it to the patient, and let it inform asymmetric targeting.
-C. Refuse to treat him because facial asymmetry is a contraindication.
-D. Correct the asymmetry silently by treating the lower side more heavily without mentioning it.
-
-> ✅ **Correct: B.** Pre-existing asymmetry must be **documented (photo + note) and disclosed before treatment**, both as good care and as your strongest medico-legal protection, and it should inform a plan that *balances* rather than mirrors. **A** treats identically and stays silent — risking that treatment "reveals" the asymmetry and he blames you, with nothing on record. **C** is wrong: asymmetry is near-universal, not a contraindication. **D** may be clinically reasonable to *balance*, but doing it "silently" and undocumented fails the consent and documentation standard — disclosure is the point. *Objectives 3 & 4; connects to Case Study 2.*
-
-**5. (Clinical reasoning) A busy clinic asks you to skip pre-treatment photos for a "quick top-up" on an established patient to save time. Why should you insist on capturing a standardized photo set anyway?**
-A. Photos are only needed for marketing, so you can capture them afterward if the result looks good.
-B. Because standardized before-treatment images are both a clinical comparison tool and the medico-legal record of the baseline you found — and they are worthless if not taken before you inject.
-C. Because the law requires a minimum of seven photos per visit in all cases.
-D. Because photos replace the need to document your assessment findings in writing.
-
-> ✅ **Correct: B.** Pre-treatment standardized images document the baseline (asymmetry, static lines, lid/brow position) for both clinical comparison and medico-legal protection, and that value exists *only* if they are captured **before** the injection — you cannot reconstruct a baseline afterward. **A** misframes photos as marketing and defeats their purpose by delaying them. **C** invents a legal specific (and the exact shot count is clinic policy/best practice, not a fixed statutory number). **D** is wrong — photos *complement*, they do not replace, written assessment documentation. *Objective 5.*
-
----
-
 ## References
 
 > ⚠ **Draft reference list — pending verification.** The categories and candidate works below are the standard evidence base for consultation skills, BDD screening in cosmetic settings, facial aesthetic assessment, and upper-face treatment planning. Full APA-7 details and DOIs are to be confirmed in the evidence pass; **no citation will be published unverified.** Prevalence and outcome claims about BDD (§6.3) and the scope/privacy claims (§6.4–6.5) require Margie's clinical and regulatory sign-off before this list is finalized. Where a specific work is not yet confirmed, a *category* is named rather than a fabricated citation.

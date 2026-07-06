@@ -1,79 +1,85 @@
 [
   {
     "externalKey": "ch05-q1",
-    "question": "A patient with a visibly heavy, hooded brow constantly raises her forehead to keep her upper lids clear of her lashes. She asks you to fully treat her horizontal forehead lines. What is the best-reasoned approach to her frontalis?",
+    "question": "A 58-year-old presents wanting her horizontal forehead lines gone. On assessment you notice her brows sit low and slightly hooded, and she constantly raises her forehead — even at rest — to keep her upper eyelids clear of her lashes. What is the best-reasoned approach to her frontalis?",
     "options": [
-      "Treat the frontalis fully to abolish the lines, since that is her stated goal.",
-      "Be very cautious or defer frontalis treatment, because she is using her frontalis to compensate for her heavy brow — weakening it could worsen the hooding.",
-      "Treat the frontalis aggressively but place product low, near the brow, to address every line.",
-      "Treat only the glabella and avoid discussing the forehead with her."
+      "Treat the frontalis fully to abolish the forehead lines, since that is her stated goal.",
+      "Treat the frontalis aggressively but low, near the brow, to catch every line.",
+      "Be very cautious or defer frontalis treatment, because she is using her frontalis to compensate for a heavy/hooded brow, and weakening it could worsen the hooding.",
+      "Treat only the glabella and never discuss the forehead with her."
     ],
-    "correct": [1],
+    "correct": [2],
+    "explanation": "This patient is frontalis-dependent — her forehead elevation is compensating for a heavy, hooded brow and low lid position. Weakening the frontalis removes that compensation and can drop the brow further, producing exactly the heavy, tired look she does not want. The best-reasoned approach is caution, patient education, and often deferral or a conservative, high, minimal approach after full discussion. A chases line-abolition and ignores function — the classic beginner error. B treats low, directly weakening the brow-holding fibres — the worst option. D abandons the assessment finding and the conversation the patient needs. Objectives 1 & 5; ties to Chapter 4 (elevator/depressor) and Chapter 6 (assessment).",
     "type": "single",
     "order": 1
   },
   {
     "externalKey": "ch05-q2",
-    "question": "Ten days after glabellar treatment a patient reports a drooping upper eyelid on one side. Which mechanism and which injection-principle failure best explain this?",
+    "question": "Ten days after glabellar treatment a patient develops a drooping upper eyelid on one side. Which mechanism best explains this, and which injection-principle failure most likely produced it?",
     "options": [
-      "The toxin permanently damaged the eyelid-closing muscle because too little product was used.",
-      "Product diffused through the orbital septum to the levator palpebrae superioris; the diffusion field was likely placed too low, too deep, or too large near the orbital rim.",
-      "The frontalis was over-treated laterally, allowing the lateral brow depressors to pull the lid down.",
-      "Zygomaticus major was weakened by product placed too superficially below the lateral canthus."
+      "The toxin permanently damaged the eyelid-closing muscle; too little product was used.",
+      "Product diffused through the orbital septum to the levator palpebrae superioris; the field was likely too low, too deep, or too large near the orbital rim.",
+      "The frontalis was over-treated laterally; the dilution was too low.",
+      "The zygomaticus major was weakened; the points were placed too superficially."
     ],
     "correct": [1],
+    "explanation": "Eyelid ptosis after glabellar treatment is caused by product diffusing to the levator palpebrae superioris deep behind the septum — a diffusion-control failure, typically from injecting too low/deep/medial near the rim or using too large a field. A is wrong on mechanism (this is temporary chemodenervation, not permanent damage, and the levator — not the eyelid closer — is affected) and on cause. C describes a brow-related mechanism, not eyelid ptosis, and misattributes it. D describes the crow's-feet smile-asymmetry complication, not eyelid ptosis. Objectives 3 & 4; ties to Chapter 8.",
     "type": "single",
     "order": 2
   },
   {
     "externalKey": "ch05-q3",
-    "question": "A colleague reconstitutes a vial with a much larger volume of diluent than usual before treating the glabella. From a diffusion-control standpoint, what is the principal safety concern?",
+    "question": "You are treating crow's feet and want to minimize the risk of an asymmetric smile. Which combination of choices best reflects sound diffusion reasoning?",
     "options": [
-      "None — the number of units is unchanged, so dilution has no effect on how far the product spreads.",
-      "The higher volume at lower concentration produces a larger diffusion field, increasing the risk of reaching the levator and causing eyelid ptosis.",
-      "The product becomes too concentrated and causes irreversible muscle damage near the orbital rim.",
-      "The larger volume makes the product biologically inert, so the treatment simply will not work."
+      "Deep placement, more anterior toward the cheek, larger volume per point.",
+      "Superficial placement, kept lateral and higher, small contained fields well-spaced.",
+      "Superficial placement, but low and anterior over the cheekbone to catch more lines.",
+      "Deep placement laterally with high dilution to spread the effect widely."
     ],
     "correct": [1],
+    "explanation": "\"Superficial, lateral, small\" is the safety logic: superficial matches the thin orbicularis and limits bruising; lateral and higher keeps the field away from zygomaticus major; small, well-spaced, contained fields prevent both overlap and unwanted spread. A does everything wrong — deep, anterior, and high-volume all drive product toward zygomaticus. C is superficial (good) but low and anterior (bad), steering the field straight to the danger zone. D combines depth and high dilution (large field) laterally — uncontrolled spread. Objectives 3, 4 & 5.",
     "type": "single",
     "order": 3
   },
   {
     "externalKey": "ch05-q4",
-    "question": "A patient with strong \"11\" frown lines has deep vertical creases visible at rest. She expects the lines to completely disappear after treatment. What is the most appropriate reasoning-based response?",
+    "question": "A colleague reconstitutes a vial with a larger-than-usual diluent volume \"to make it go further,\" then treats the glabella with the resulting product. From a diffusion standpoint, what is the main safety concern?",
     "options": [
-      "Increase the glabellar dose well above the usual range to fully erase the static component.",
-      "Decline treatment entirely, because lines visible at rest are an absolute contraindication to glabellar BoNT-A.",
-      "Explain that BoNT-A softens the dynamic component; deeply etched static lines will likely improve but may not fully disappear, and over-dosing to chase them raises complication risk without guaranteeing a better result.",
-      "Treat the frontalis instead, since it controls vertical frown lines between the brows."
+      "None — units are units, so dilution has no effect on spread.",
+      "The higher volume/lower concentration produces a larger diffusion field, which near the orbital rim increases the risk of reaching the levator and causing eyelid ptosis.",
+      "The product will be too concentrated and cause muscle damage.",
+      "The larger volume makes the product weaker, so it simply won't work at all."
     ],
-    "correct": [2],
+    "correct": [1],
+    "explanation": "Reconstituting in more diluent yields a larger volume at lower concentration, and larger volume generally means a larger diffusion field — dangerous in the glabella, where a bigger field is more likely to reach the levator and cause eyelid ptosis. Dilution is a diffusion decision, not just bookkeeping. A is the dangerous myth — dilution absolutely affects spread. C is backwards (more diluent means less concentrated) and misstates the mechanism (chemodenervation, not damage). D wrongly implies more diluent destroys potency; the units are the same, but the field is bigger. Objectives 2 & 3; ties to Chapter 3.",
     "type": "single",
     "order": 4
   },
   {
     "externalKey": "ch05-q5",
-    "question": "You are planning a crow's-feet treatment and want to minimize the risk of a lopsided smile. Which combination of choices best reflects the chapter's diffusion-control logic?",
+    "question": "A patient with strong \"11\" frown lines has visible deep vertical creases at rest, even when relaxed. She expects the lines to vanish completely after glabellar treatment. What is the most appropriate reasoning-based response?",
     "options": [
-      "Deep placement, more anterior toward the cheek, larger bolus per point to cover more lines.",
-      "Superficial placement, kept lateral and high, small contained fields with appropriate spacing.",
-      "Superficial placement but low and anterior over the zygoma to catch more lines.",
-      "Deep placement with high dilution to spread the effect evenly across the orbital area."
+      "Increase the glabellar dose well above the usual range to fully erase the static lines.",
+      "Explain that BoNT-A softens the dynamic component; deeply etched static lines will likely improve but may not fully disappear, and over-dosing to chase them raises complication risk without better results — set expectations and consider adjuncts later.",
+      "Decline all treatment because static lines are an absolute contraindication.",
+      "Treat the frontalis instead, since it controls the \"11\" lines."
     ],
     "correct": [1],
+    "explanation": "Neuromodulators act on movement; a line fully etched at rest has a static component BoNT-A cannot fully efface. The right move is expectation-setting: the dynamic component softens, the static line improves but may persist, and pushing the dose to chase it raises risk (including ptosis) without a better outcome. A invites complications for no gain. C is false — static lines are not a contraindication, just a limitation to discuss. D misattributes the \"11\" lines, which are produced by the glabellar complex, not the frontalis. Objectives 2 & 5; ties to Chapter 6 (assessment) and Chapter 9 (planning/adjuncts).",
     "type": "single",
     "order": 5
   },
   {
     "externalKey": "ch05-q6",
-    "question": "The chapter describes three danger zones in the upper face, each linked to a specific complication. Which of the following correctly maps each complication to the structure whose field must be respected?",
+    "question": "Match the complication to the danger zone whose field was not respected. A patient develops (i) a heavy, low brow, (ii) a drooping upper eyelid, and (iii) a lopsided smile. Which mapping is correct?",
     "options": [
-      "Heavy, low brow → zygomaticus; drooping upper eyelid → levator; lopsided smile → low-brow frontalis.",
-      "Heavy, low brow → low-brow frontalis; drooping upper eyelid → levator; lopsided smile → zygomaticus major.",
-      "Heavy, low brow → levator; drooping upper eyelid → zygomaticus; lopsided smile → low-brow frontalis.",
-      "Heavy, low brow → low-brow frontalis; drooping upper eyelid → zygomaticus; lopsided smile → levator."
+      "(i) zygomaticus, (ii) levator, (iii) low-brow frontalis.",
+      "(i) low-brow frontalis, (ii) levator, (iii) zygomaticus.",
+      "(i) levator, (ii) zygomaticus, (iii) low-brow frontalis.",
+      "(i) low-brow frontalis, (ii) zygomaticus, (iii) levator."
     ],
     "correct": [1],
+    "explanation": "A heavy, low brow follows weakening the low-brow frontalis (the elevator can't hold the brow); a drooping upper eyelid follows the field reaching the levator behind the septum; a lopsided smile follows the field reaching zygomaticus major below the lateral canthus. A, C, and D scramble the mappings — each swaps at least two mechanisms, and confusing the levator (eyelid) with zygomaticus (smile) or the frontalis (brow) is exactly the reasoning error this item tests. Objective 4; ties to Chapter 8.",
     "type": "single",
     "order": 6
   }

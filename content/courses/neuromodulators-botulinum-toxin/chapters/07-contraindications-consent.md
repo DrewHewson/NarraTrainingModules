@@ -202,58 +202,6 @@ Safe neuromodulator practice begins before any product is drawn up, with a **foc
 
 ---
 
-## Knowledge Check
-
-**1. (Scenario MCQ) A 34-year-old presents for glabellar treatment. On focused history she mentions she was diagnosed with myasthenia gravis two years ago, currently stable. She has no other issues and realistic expectations. What is the most appropriate action?**
-A. Proceed as normal, since her condition is stable and the cosmetic dose is small.
-B. Proceed but halve the dose to reduce risk.
-C. Do not treat today; this is a neuromuscular condition affecting the neuromuscular junction — decline/defer and escalate to the prescriber.
-D. Treat only the lateral canthal lines, avoiding the glabella.
-
-> ✅ **Correct: C.** Myasthenia gravis impairs neuromuscular-junction transmission — precisely the system botulinum toxin acts on — so even a small cosmetic dose can produce an exaggerated or spreading effect. This is a stop-and-escalate finding, not one to manage with dose or site tweaks. **A** ignores that mechanism entirely. **B** and **D** are the classic "improvise a compromise" error: reducing dose or changing sites does not address a systemic vulnerability of the junction, and this decision is not the injector's to make independently. *Objectives 2 & 4.*
-
-**2. (Scenario MCQ) A healthy 45-year-old on daily low-dose aspirin (prescribed by her physician for a cardiac indication) wants frown-line treatment. She understands the treatment well. What is the best approach?**
-A. Decline — anticoagulants and antiplatelets are an absolute contraindication.
-B. Tell her to stop the aspirin for a week, then treat.
-C. Proceed, but first counsel her about the increased bruising risk, document that counseling, and use bruise-minimizing technique.
-D. Proceed without comment; aspirin has no relevance to this treatment.
-
-> ✅ **Correct: C.** Antiplatelet/anticoagulant use is a **bruising caution, not an absolute bar** to a superficial upper-face injection; the correct response is to counsel, document, and inject carefully. **A** overstates it into an absolute contraindication. **B** is unsafe and outside your authority — you never instruct a patient to stop a prescribed cardiac medication for an elective cosmetic treatment. **D** wrongly dismisses a real, disclosable bruising risk. *Objectives 3 & 5.*
-
-**3. (Scenario MCQ) A patient started a course of intravenous gentamicin (an aminoglycoside) five days ago for an infection and asks to have her scheduled neuromodulator appointment today. Otherwise she is a good candidate. What is the safest decision?**
-A. Treat — antibiotics have no bearing on neuromodulator treatment.
-B. Defer the cosmetic treatment until the antibiotic course is complete, or consult the prescriber before proceeding.
-C. Treat with a reduced dose to offset the interaction.
-D. Decline permanently; she can never have neuromodulator treatment again.
-
-> ✅ **Correct: B.** Aminoglycosides affect neuromuscular transmission and may potentiate the toxin's effect, so the safe move is to **defer** the elective treatment until the course is done, or escalate to the prescriber. **A** misses a clinically significant interaction. **C** improvises a dose "fix" for a mechanism that dose reduction doesn't reliably control. **D** is wrong on "permanently" — the barrier is temporary and resolvable, which is exactly what makes this a *defer*, not a *decline*. *Objectives 3 & 4.*
-
-**4. (Scenario MCQ) During consultation, a patient repeatedly points out a "deformity" you can barely perceive, has had multiple treatments elsewhere she felt made things worse, and says this treatment "has to finally fix" how she looks or she "can't cope." Screening suggests body dysmorphic disorder. What is the most appropriate action?**
-A. Treat conservatively to build trust, then reassess.
-B. Treat, because she has clearly consented and strongly wants it.
-C. Decline the cosmetic treatment and, where appropriate, offer sensitive referral; treatment is unlikely to help and may harm.
-D. Treat only if she signs a waiver acknowledging she may be dissatisfied.
-
-> ✅ **Correct: C.** Active BDD with fixed unrealistic expectations is a finding where treatment is likely to *harm* — the intervention cannot deliver what the patient is actually seeking. The appropriate action is to decline kindly and consider referral. **A** and **B** proceed anyway and expose a vulnerable patient. **D** misunderstands consent: a signed waiver cannot make an unsafe or inappropriate treatment appropriate — **a patient cannot authorize a treatment your judgment forbids.** *Objectives 1, 2 & 4; builds on Chapter 6.*
-
-**5. (Scenario MCQ) A patient books frown-line treatment and, at the appointment, has an obvious area of active, inflamed acne with pustules directly over the glabella. She is otherwise an excellent candidate. What is the best action?**
-A. Inject through the area; the infection is superficial and irrelevant.
-B. Decline permanently, as active infection is an absolute lifelong contraindication.
-C. Defer treatment until the site has healed, and rebook.
-D. Treat the lateral canthal lines only and never revisit the glabella.
-
-> ✅ **Correct: C.** Active infection or compromised skin at the injection site is an absolute bar *at that moment* — you should not inject through it — but it is **temporary and resolvable**, which makes the correct decision to **defer** and rebook, not to decline forever. **A** risks seeding infection and injecting into unassessable tissue. **B** wrongly treats a temporary barrier as permanent. **D** abandons the patient's actual goal when a simple deferral solves the problem. *Objectives 2 & 4.*
-
-**6. (Scenario MCQ) A patient is well-screened with no contraindications. You explain the treatment and hand her a consent form, which she signs at the bottom without questions. To meet a valid, medico-legal consent standard, what is still required?**
-A. Nothing further — a signed consent form is complete consent.
-B. A documented conversation confirming capacity, disclosure of the specific material risks (e.g., asymmetry, brow/eyelid ptosis, temporary/variable results), voluntariness, and realistic no-guarantee framing.
-C. A second staff member's signature as a witness, which by itself makes the consent valid.
-D. Payment in advance, which confirms the patient's commitment to proceed.
-
-> ✅ **Correct: B.** Valid consent is a **documented conversation** satisfying capacity, disclosure of *specific and material* risks, voluntariness, and realistic-outcome framing — the signature merely records it. **A** mistakes a form for the process; a signature with no informing conversation is thin protection and may mean the patient wasn't truly informed. **C** confuses a witness with the substance of disclosure. **D** conflates a commercial transaction with informed consent. *Objective 5.*
-
----
-
 ## References
 
 > ⚠ **Draft reference list — pending verification.** The works and source *categories* below are the appropriate types of authority for this chapter's contraindication, interaction, consent, and documentation claims. Full APA-7 details and DOIs are to be confirmed in the evidence pass; **no citation will be published unverified.** Every specific contraindication, interaction, and legal claim in this chapter requires Margie's clinical sign-off and the CNO/Ontario regulatory pass before this list is finalized. Where a specific work is not yet confirmed, the source *category* is named rather than a citation invented.

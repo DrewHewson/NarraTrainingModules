@@ -299,58 +299,6 @@ The upper face is governed by four principles that repeat across all three areas
 
 ---
 
-## Knowledge Check
-
-**1. (Clinical reasoning MCQ) A 58-year-old presents wanting her horizontal forehead lines gone. On assessment you notice her brows sit low and slightly hooded, and she constantly raises her forehead — even at rest — to keep her upper eyelids clear of her lashes. What is the best-reasoned approach to her frontalis?**
-A. Treat the frontalis fully to abolish the forehead lines, since that is her stated goal.
-B. Treat the frontalis aggressively but low, near the brow, to catch every line.
-C. Be very cautious or defer frontalis treatment, because she is using her frontalis to compensate for a heavy/hooded brow, and weakening it could worsen the hooding.
-D. Treat only the glabella and never discuss the forehead with her.
-
-> ✅ **Correct: C.** This patient is *frontalis-dependent* — her forehead elevation is compensating for a heavy, hooded brow and low lid position. Weakening the frontalis removes that compensation and can drop the brow further, producing exactly the heavy, tired look she does not want. The best-reasoned approach is caution, patient education, and often deferral or a conservative, high, minimal approach after full discussion. **A** chases line-abolition and ignores function — the classic beginner error. **B** treats *low*, directly weakening the brow-holding fibres — the worst option. **D** abandons the assessment finding and the conversation the patient needs. *Objectives 1 & 5; ties to Chapter 4 (elevator/depressor) and Chapter 6 (assessment).*
-
-**2. (Clinical reasoning MCQ) Ten days after glabellar treatment a patient develops a drooping upper eyelid on one side. Which mechanism best explains this, and which injection-principle failure most likely produced it?**
-A. The toxin permanently damaged the eyelid-closing muscle; too little product was used.
-B. Product diffused through the orbital septum to the levator palpebrae superioris; the field was likely too low, too deep, or too large near the orbital rim.
-C. The frontalis was over-treated laterally; the dilution was too low.
-D. The zygomaticus major was weakened; the points were placed too superficially.
-
-> ✅ **Correct: B.** Eyelid ptosis after glabellar treatment is caused by product diffusing to the **levator palpebrae superioris** deep behind the septum — a diffusion-control failure, typically from injecting too low/deep/medial near the rim or using too large a field. **A** is wrong on mechanism (this is temporary chemodenervation, not permanent damage, and the levator — not the eyelid *closer* — is affected) and on cause. **C** describes a *brow*-related mechanism, not eyelid ptosis, and misattributes it. **D** describes the *crow's-feet* smile-asymmetry complication, not eyelid ptosis. *Objectives 3 & 4; ties to Chapter 8.*
-
-**3. (Interpretation MCQ) You are treating crow's feet and want to minimize the risk of an asymmetric smile. Which combination of choices best reflects sound diffusion reasoning?**
-A. Deep placement, more anterior toward the cheek, larger volume per point.
-B. Superficial placement, kept lateral and higher, small contained fields well-spaced.
-C. Superficial placement, but low and anterior over the cheekbone to catch more lines.
-D. Deep placement laterally with high dilution to spread the effect widely.
-
-> ✅ **Correct: B.** "Superficial, lateral, small" is the safety logic: superficial matches the thin orbicularis and limits bruising; lateral and higher keeps the field away from **zygomaticus major**; small, well-spaced, contained fields prevent both overlap and unwanted spread. **A** does everything wrong — deep, anterior, and high-volume all drive product toward zygomaticus. **C** is superficial (good) but *low and anterior* (bad), steering the field straight to the danger zone. **D** combines depth and high dilution (large field) laterally — uncontrolled spread. *Objectives 3, 4 & 5.*
-
-**4. (Clinical reasoning MCQ) A colleague reconstitutes a vial with a larger-than-usual diluent volume "to make it go further," then treats the glabella with the resulting product. From a diffusion standpoint, what is the main safety concern?**
-A. None — units are units, so dilution has no effect on spread.
-B. The higher volume/lower concentration produces a larger diffusion field, which near the orbital rim increases the risk of reaching the levator and causing eyelid ptosis.
-C. The product will be too concentrated and cause muscle damage.
-D. The larger volume makes the product weaker, so it simply won't work at all.
-
-> ✅ **Correct: B.** Reconstituting in more diluent yields a larger volume at lower concentration, and larger volume generally means a **larger diffusion field** — dangerous in the glabella, where a bigger field is more likely to reach the levator and cause eyelid ptosis. Dilution is a diffusion decision, not just bookkeeping. **A** is the dangerous myth — dilution absolutely affects spread. **C** is backwards (more diluent means *less* concentrated) and misstates the mechanism (chemodenervation, not damage). **D** wrongly implies more diluent destroys potency; the units are the same, but the *field* is bigger. *Objectives 2 & 3; ties to Chapter 3.*
-
-**5. (Clinical reasoning MCQ) A patient with strong "11" frown lines has visible deep vertical creases *at rest*, even when relaxed. She expects the lines to vanish completely after glabellar treatment. What is the most appropriate reasoning-based response?**
-A. Increase the glabellar dose well above the usual range to fully erase the static lines.
-B. Explain that BoNT-A softens the *dynamic* component; deeply etched static lines will likely improve but may not fully disappear, and over-dosing to chase them raises complication risk without better results — set expectations and consider adjuncts later.
-C. Decline all treatment because static lines are an absolute contraindication.
-D. Treat the frontalis instead, since it controls the "11" lines.
-
-> ✅ **Correct: B.** Neuromodulators act on *movement*; a line fully etched at rest has a static component BoNT-A cannot fully efface. The right move is expectation-setting: the dynamic component softens, the static line improves but may persist, and pushing the dose to chase it raises risk (including ptosis) without a better outcome. **A** invites complications for no gain. **C** is false — static lines are not a contraindication, just a limitation to discuss. **D** misattributes the "11" lines, which are produced by the **glabellar complex**, not the frontalis. *Objectives 2 & 5; ties to Chapter 6 (assessment) and Chapter 9 (planning/adjuncts).*
-
-**6. (Interpretation / matching-style MCQ) Match the complication to the danger zone whose field was not respected. A patient develops (i) a heavy, low brow, (ii) a drooping upper eyelid, and (iii) a lopsided smile. Which mapping is correct?**
-A. (i) zygomaticus, (ii) levator, (iii) low-brow frontalis.
-B. (i) low-brow frontalis, (ii) levator, (iii) zygomaticus.
-C. (i) levator, (ii) zygomaticus, (iii) low-brow frontalis.
-D. (i) low-brow frontalis, (ii) zygomaticus, (iii) levator.
-
-> ✅ **Correct: B.** A heavy, low brow follows weakening the **low-brow frontalis** (the elevator can't hold the brow); a drooping upper eyelid follows the field reaching the **levator** behind the septum; a lopsided smile follows the field reaching **zygomaticus major** below the lateral canthus. **A**, **C**, and **D** scramble the mappings — each swaps at least two mechanisms, and confusing the levator (eyelid) with zygomaticus (smile) or the frontalis (brow) is exactly the reasoning error this item tests. *Objective 4; ties to Chapter 8.*
-
----
-
 ## References
 
 > ⚠ **Draft reference list — pending verification (Margie / evidence pass).** The works below are **candidate** real sources of the type this chapter requires — published upper-face BoNT-A consensus guidance, procedural/aesthetic anatomy texts, and product monographs. Full APA-7 details, editions, and DOIs must be confirmed before publication, and **every dose, dilution, and danger-zone specific in this chapter remains ⚠-flagged until verified against these sources.** No citation, statistic, or dose ships unverified. Where a specific consensus paper cannot be confirmed, the *category* of source is named rather than a fabricated citation.

@@ -207,54 +207,6 @@ A motor nerve tells a muscle to contract by releasing **acetylcholine** at the *
 
 ---
 
-## Knowledge Check
-
-**1. (MCQ) A patient asks how the injection "gets rid of" her frown lines. Which explanation best reflects the actual mechanism of action?**
-A. The toxin dissolves the protein fibres in the wrinkled skin so it lies flat.
-B. The toxin kills the muscle under the frown so it can never contract again.
-C. The toxin blocks the nerve from releasing acetylcholine to the muscle, so the muscle relaxes and the overlying skin creases less.
-D. The toxin tightens the nerve so it pulls the skin smooth.
-
-> ✅ **Correct: C.** The toxin cleaves SNAP-25, preventing acetylcholine release at the NMJ; the muscle receives no "contract" signal and relaxes, so dynamic creasing softens. **A** describes no real mechanism — the toxin acts on nerve signalling, not on skin proteins. **B** is the critical error: this is *chemodenervation*, not muscle death — the muscle is silenced, not killed, which is exactly why the effect is reversible. **D** is nonsensical pharmacologically. *Objectives 1 & 3.*
-
-**2. (Matching) Match each botulinum toxin component or structure to its function. Select the option that pairs all three correctly.**
-
-Components: (i) Heavy chain, (ii) Light chain, (iii) SNAP-25
-Functions: (a) The SNARE protein the toxin cuts, (b) Targets the nerve terminal and delivers the toxin inside, (c) The enzyme that performs the cut
-
-A. i–a, ii–b, iii–c
-B. i–b, ii–c, iii–a
-C. i–c, ii–a, iii–b
-D. i–b, ii–a, iii–c
-
-> ✅ **Correct: B.** The **heavy chain** targets and delivers (binding + internalization + helping translocation) — i–b. The **light chain** is the enzyme/"scissors" that cuts — ii–c. **SNAP-25** is the nerve-terminal SNARE protein that type A cleaves — iii–a. **A** swaps the heavy and light chain roles and mislabels SNAP-25. **C** and **D** scramble the enzyme and target. Getting this mapping right is what lets you reason through the four-step cascade. *Objectives 2 & 3.*
-
-**3. (MCQ) A new injector is frustrated that a patient treated this morning "looks exactly the same" three hours later and wants to add more product. What is the best guidance, and why?**
-A. Add more product now; a good result should be visible within a few hours.
-B. Do not add product; onset is delayed by the mechanism — visible effect develops over days and peaks around two weeks — so re-treating now risks over-treatment that will only appear at peak.
-C. The product has failed; switch to a different toxin immediately.
-D. Reinject the same points to "boost" absorption into the muscle.
-
-> ✅ **Correct: B.** Cleaving SNAP-25 stops *new* acetylcholine release, but the clinical weakening takes days to appear and roughly two weeks to peak. Judging — or adding to — a result at three hours is judging an unfinished process, and extra product now would over-treat, becoming visible (and hard to undo) only at peak. This is the entire rationale for the **2-week review** (Chapters 8–9). **A** contradicts the delayed-onset mechanism. **C** confuses normal delayed onset with product failure. **D** would compound the over-treatment. *Objectives 4 & 5.*
-
-**4. (Clinical reasoning) A returning patient reports her result "wore off in about six weeks," far shorter than her previous cycles. Which line of reasoning best reflects how an experienced injector interprets this?**
-A. The toxin must have been permanent last time and is now failing; stop treating her.
-B. Automatically double the dose next time, since a bigger dose always lasts longer regardless of cause.
-C. Treat the short duration as a clue to a mechanism — consider dose relative to muscle mass, product handling/reconstitution, individual recovery rate, and whether this is a first short cycle or a progressively shrinking one (which can raise the question of neutralizing antibodies) — before deciding what to change.
-D. Reassure her that duration is fixed at three to four months for everyone, so her report must be mistaken.
-
-> ✅ **Correct: C.** Because duration *is* the length of nerve recovery, a short result is a consequence of some mechanism — under-dosing for that muscle's mass, handling/potency issues, faster individual recovery, or, if the pattern is *progressively* shortening across cycles, possible secondary non-response from neutralizing antibodies (Chapter 8). The expert diagnoses before dosing. **A** misunderstands reversibility (nothing was ever permanent). **B** reaches for a bigger dose reflexively without a diagnosis. **D** dismisses real inter-individual variation. *Objective 6; connects to Chapters 3 and 8.*
-
-**5. (Clinical reasoning) Understanding the mechanism, why can you tell an anxious first-time patient — honestly — that an unwanted effect such as mild eyelid heaviness will not be permanent?**
-A. Because there is an antidote injected afterward that fully reverses toxin already bound at the nerve.
-B. Because the toxin only ever affects skin, never nerves, so any muscle effect is imaginary.
-C. Because the effect is chemodenervation, not destruction: the affected nerve terminals recover over time through axonal sprouting and repair of the original terminal, restoring acetylcholine release and muscle function.
-D. Because the muscle grows a completely new nerve from the brain within days.
-
-> ✅ **Correct: C.** The block is functional, not destructive — nothing is killed. Affected nerve terminals recover on the same clock as the intended effect, through sprouting and terminal repair, so an unwanted effect resolves as function returns. This is why reversibility is the drug's built-in safety margin. **A** is false — there is no antidote that reverses bound toxin; management of complications is supportive (Chapter 8). **B** denies the actual mechanism (the toxin acts on nerve terminals). **D** misdescribes recovery, which is local sprouting/repair, not a new nerve from the brain. *Objectives 4 & 5; connects to Chapter 8.*
-
----
-
 ## References
 
 > ⚠ **Draft reference list — pending verification.** The categories and candidate works below are the standard sources for botulinum toxin mechanism and pharmacodynamics. Full APA-7 details and DOIs must be confirmed in the evidence pass; **no citation will be published unverified**, and every specific pharmacokinetic value flagged in §2.5 requires a verified monograph/consensus source before the numbers are asserted.

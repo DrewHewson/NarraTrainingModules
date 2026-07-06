@@ -144,42 +144,6 @@ A **neuromodulator** temporarily and reversibly weakens a targeted muscle by int
 
 ---
 
-## Knowledge Check
-
-**1. (MCQ) A patient books for glabellar ("frown line") treatment. Which statement best describes what the neuromodulator will do?**
-A. Fill the frown line with a gel-like material.
-B. Tighten the skin between the brows.
-C. Temporarily weaken the muscles that pull the brows together, so the overlying skin creases less.
-D. Permanently stop the muscles between the brows from contracting.
-
-> ✅ **Correct: C.** Neuromodulators reduce *muscle movement*, so dynamic lines crease less. **A** describes a dermal filler (a different modality). **B** is not how toxin works — it acts on muscle, not skin tension. **D** is wrong on "permanently": the effect is temporary and reversible as the nerve terminal recovers. *Objective 1.*
-
-**2. (MCQ) In Ontario, an RN working in an aesthetic clinic may administer botulinum toxin by injection when:**
-A. They personally decide the patient is a good candidate, because they are a registered nurse.
-B. There is a valid order for the patient, or a medical directive whose conditions the patient meets, from an authorized prescriber.
-C. The clinic owner asks them to, regardless of prescriber involvement.
-D. The product is available and the patient has paid.
-
-> ✅ **Correct: B.** Administering a substance by injection is a controlled act; a nurse performs it through an authorizing mechanism — a direct order or a medical directive from an authorized prescriber. **A** ignores that being a nurse is not, by itself, authorization to perform the controlled act for this drug. **C** and **D** describe commercial pressures, not lawful authorization. *Objective 4.*
-
-**3. (MCQ) Ten days after glabellar treatment, a patient returns distressed by mild drooping of one upper eyelid and asks whether it is permanent. Which response best reflects the drug's pharmacology?**
-A. It is likely permanent, because the toxin has damaged the eyelid muscle.
-B. It will resolve as the toxin's effect wears off over the coming weeks to months; reassure, document, and manage supportively.
-C. It can be reversed instantly with an antidote that neutralizes the toxin already bound at the nerve.
-D. It is unrelated to the treatment, because botulinum toxin cannot affect the eyelid.
-
-> ✅ **Correct: B.** Toxin-related lid ptosis is temporary because the nerve terminal recovers — the same reversibility that makes cosmetic results fade. **A** misstates the mechanism: this is *chemodenervation*, not muscle damage. **C** is wrong — there is no true antidote that reverses toxin already bound; management is supportive (e.g., apraclonidine drops, covered in Chapter 8). **D** is false — unwanted spread toward the eyelid elevator is precisely how this complication arises. *Objectives 1 & 4; connects to Chapter 8.*
-
-**4. (MCQ) A colleague says, "These are all type A toxins, so 20 units of one product equals 20 units of another." Why is that reasoning unsafe?**
-A. It isn't — units are standardized across all botulinum toxin products.
-B. Because the products are actually different serotypes, so their potencies differ.
-C. Because a "unit" is a *product-specific* measure of biological activity; even though all are type A, units do not convert 1:1 between products.
-D. Because only one product is genuinely type A; the others are type B.
-
-> ✅ **Correct: C.** Every cosmetic product is type A, but each manufacturer's "unit" reflects its own potency assay, so doses are **not** interchangeable — the foundation of the dosing-safety work in Chapter 3. **A** is the dangerous myth itself. **B** and **D** are factually wrong: these are all type A formulations. *Objective 3; connects to Chapter 3.*
-
----
-
 ## References
 
 > ⚠ **Draft reference list — pending verification.** The works below are the standard primary/secondary sources for this chapter's history and framing. Full APA-7 details and DOIs are to be confirmed in the evidence pass; **no citation will be published unverified**, and the CNO/RHPA scope claims in §1.4 require regulatory sign-off before this list is finalized.
