@@ -3,17 +3,15 @@
 /**
  * Set-password page — invite acceptance flow.
  *
- * The Supabase invite link contains a token in the URL fragment (e.g.
- * #access_token=…&type=invite). The @supabase/ssr browser client's
- * detectSessionInUrl (enabled by default in createBrowserClient) picks up
- * that token on mount and exchanges it for a live session via
- * onAuthStateChange. We wait for that event before showing the form so we
- * can distinguish "valid invite" from "expired / invalid link".
- *
- * NOTE: Full end-to-end invite acceptance cannot be exercised until Task 6
- * (admin invite UI) and Task 9 (E2E smoke tests). This page is built to the
- * correct @supabase/ssr flow and is marked DONE_WITH_CONCERNS in the
- * task-5 report.
+ * The Supabase invite/recovery link routes the recipient through the GoTrue
+ * /verify endpoint, which redirects here with the session delivered as URL
+ * *hash* tokens (implicit flow: #access_token=…&refresh_token=…&type=invite).
+ * The @supabase/ssr browser client defaults to PKCE, whose detectSessionInUrl
+ * only reads ?code= from the query string — it ignores the hash. Admin-issued
+ * invite links are always implicit (there is no PKCE code_verifier in the
+ * recipient's browser), so we parse the hash ourselves and call setSession(),
+ * then strip the tokens from the URL. No valid hash and no existing session →
+ * the "expired" state.
  */
 
 import { useEffect, useState } from "react";
@@ -31,36 +29,54 @@ export default function SetPasswordPage() {
 
   useEffect(() => {
     const supabase = createClient();
+    let cancelled = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
 
-    // Listen for the SIGNED_IN event that fires when detectSessionInUrl
-    // exchanges the invite token.
+    // A late SIGNED_IN (e.g. from setSession) also flips us to ready.
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((event, session) => {
-      if (event === "SIGNED_IN" && session) {
+      if (!cancelled && session && (event === "SIGNED_IN" || event === "PASSWORD_RECOVERY")) {
         setPageState("ready");
       }
     });
 
-    // Give onAuthStateChange a short window to fire before showing the
-    // "no session" error state. Hoisted here so the cleanup can clear it.
-    let timer: ReturnType<typeof setTimeout> | undefined;
+    async function establish() {
+      // 1) Invite/recovery links deliver the session as URL-hash tokens
+      //    (implicit flow). The PKCE-mode client won't auto-parse the hash,
+      //    so read it and establish the session explicitly.
+      const hash = typeof window !== "undefined" ? window.location.hash : "";
+      if (hash.includes("access_token")) {
+        const params = new URLSearchParams(hash.replace(/^#/, ""));
+        const access_token = params.get("access_token");
+        const refresh_token = params.get("refresh_token");
+        if (access_token && refresh_token) {
+          const { error } = await supabase.auth.setSession({ access_token, refresh_token });
+          // Strip the tokens from the address bar regardless of outcome.
+          window.history.replaceState(null, "", window.location.pathname);
+          if (!cancelled) setPageState(error ? "error-no-session" : "ready");
+          return;
+        }
+      }
 
-    // Also check if a session already exists (e.g. page refresh after
-    // the token was already exchanged).
-    supabase.auth.getSession().then(({ data: { session } }) => {
+      // 2) Already-established session (e.g. a refresh after the exchange).
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
+      if (cancelled) return;
       if (session) {
         setPageState("ready");
       } else {
         timer = setTimeout(() => {
-          setPageState((prev) =>
-            prev === "loading" ? "error-no-session" : prev,
-          );
+          setPageState((prev) => (prev === "loading" ? "error-no-session" : prev));
         }, 2500);
       }
-    });
+    }
+
+    establish();
 
     return () => {
+      cancelled = true;
       subscription.unsubscribe();
       clearTimeout(timer);
     };
