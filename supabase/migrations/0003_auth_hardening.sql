@@ -30,4 +30,5 @@ create policy cno_learner_read on storage.objects for select to authenticated
     and ((storage.foldername(name))[1] = auth.uid()::text or is_admin())
   );
 create policy cno_learner_update on storage.objects for update to authenticated
-  using (bucket_id = 'cno-proofs' and (storage.foldername(name))[1] = auth.uid()::text);
+  using  (bucket_id = 'cno-proofs' and (storage.foldername(name))[1] = auth.uid()::text)
+  with check (bucket_id = 'cno-proofs' and (storage.foldername(name))[1] = auth.uid()::text);

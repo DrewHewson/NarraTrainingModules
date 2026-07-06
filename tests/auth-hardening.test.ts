@@ -42,8 +42,14 @@ async function signInAs(email: string, password: string) {
 }
 
 const createdUserIds: string[] = [];
+// Objects uploaded during storage tests — cleaned up in afterAll
+const uploadedStoragePaths: string[] = [];
 
 afterAll(async () => {
+  // Remove any storage objects created during tests (idempotent reruns)
+  if (uploadedStoragePaths.length > 0) {
+    await admin.storage.from("cno-proofs").remove(uploadedStoragePaths);
+  }
   for (const id of createdUserIds) {
     await admin.auth.admin.deleteUser(id);
   }
@@ -115,5 +121,84 @@ describe("auth hardening: cno_status write protection", () => {
     expect(data!.full_name).toBe("Updated Name");
     expect(data!.role).toBe("learner");
     expect(data!.cno_status).toBe("pending");
+  });
+});
+
+describe("auth hardening: cno-proofs storage RLS", () => {
+  // Tiny valid PDF-ish content for uploads
+  const fileBody = new Uint8Array([37, 80, 68, 70]); // %PDF
+
+  it("cno-proofs bucket is private (not public)", async () => {
+    const { data, error } = await admin.storage.getBucket("cno-proofs");
+    expect(error).toBeNull();
+    expect(data!.public).toBe(false);
+  });
+
+  it("learner can upload to their own prefix", async () => {
+    const learner = await makeLearner();
+    createdUserIds.push(learner.id);
+
+    const asLearner = await signInAs(learner.email, learner.password);
+    const path = `${learner.id}/proof.pdf`;
+    uploadedStoragePaths.push(path);
+
+    const { error } = await asLearner.storage
+      .from("cno-proofs")
+      .upload(path, fileBody, { contentType: "application/pdf" });
+
+    expect(error).toBeNull();
+
+    // Confirm via service role that the object exists
+    const { data: list } = await admin.storage
+      .from("cno-proofs")
+      .list(learner.id);
+    const names = (list ?? []).map((o) => o.name);
+    expect(names).toContain("proof.pdf");
+  });
+
+  it("learner cannot upload to another learner's prefix", async () => {
+    const owner = await makeLearner();
+    const attacker = await makeLearner();
+    createdUserIds.push(owner.id, attacker.id);
+
+    const asAttacker = await signInAs(attacker.email, attacker.password);
+    const path = `${owner.id}/proof.pdf`;
+
+    // Attempt — expect RLS to block this
+    const { error } = await asAttacker.storage
+      .from("cno-proofs")
+      .upload(path, fileBody, { contentType: "application/pdf" });
+
+    // The upload should be rejected
+    expect(error).not.toBeNull();
+
+    // Belt-and-suspenders: verify via service role that no object was created
+    const { data: list } = await admin.storage
+      .from("cno-proofs")
+      .list(owner.id);
+    const names = (list ?? []).map((o) => o.name);
+    expect(names).not.toContain("proof.pdf");
+  });
+
+  it("admin can read/list any learner's object", async () => {
+    const learner = await makeLearner();
+    createdUserIds.push(learner.id);
+
+    const path = `${learner.id}/admin-read-test.pdf`;
+    uploadedStoragePaths.push(path);
+
+    // Upload via service-role (bypasses RLS) to seed the object
+    const { error: uploadErr } = await admin.storage
+      .from("cno-proofs")
+      .upload(path, fileBody, { contentType: "application/pdf" });
+    expect(uploadErr).toBeNull();
+
+    // Admin listing should see the object
+    const { data: list, error: listErr } = await admin.storage
+      .from("cno-proofs")
+      .list(learner.id);
+    expect(listErr).toBeNull();
+    const names = (list ?? []).map((o) => o.name);
+    expect(names).toContain("admin-read-test.pdf");
   });
 });
