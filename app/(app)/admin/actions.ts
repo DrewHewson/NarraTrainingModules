@@ -93,10 +93,14 @@ export async function setCnoStatus(
   await requireAdmin();
 
   const admin = createAdminClient();
-  await admin
+  const { error } = await admin
     .from("profiles")
     .update({ cno_status: status })
     .eq("id", profileId);
+
+  if (error) {
+    throw new Error(`Failed to update CNO status: ${error.message}`);
+  }
 
   revalidatePath("/admin");
 }

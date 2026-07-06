@@ -1,22 +1,33 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useState } from "react";
 import { inviteLearner } from "../actions";
 
-export default function InviteForm() {
-  const [state, formAction, pending] = useActionState(inviteLearner, null);
+type ActionState = { ok: string } | { error: string } | null;
+
+// Inner form — remounts (via key) on each new successKey to clear fields.
+function InviteFormInner({
+  onSuccess,
+}: {
+  onSuccess: (message: string) => void;
+}) {
+  const [state, formAction, pending] = useActionState(
+    async (prev: ActionState, formData: FormData): Promise<ActionState> => {
+      const result = await inviteLearner(prev, formData);
+      if (result && "ok" in result) {
+        onSuccess(result.ok);
+      }
+      return result;
+    },
+    null,
+  );
 
   return (
     <form action={formAction} style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-      {/* Status messages */}
-      {"ok" in (state ?? {}) && (
-        <p className="narra-alert info" role="status">
-          {"ok" in state! ? (state as { ok: string }).ok : ""}
-        </p>
-      )}
+      {/* Error banner — stays inside the keyed form so stale values are preserved */}
       {"error" in (state ?? {}) && (
         <p className="narra-alert" role="alert">
-          {"error" in state! ? (state as { error: string }).error : ""}
+          {(state as { error: string }).error}
         </p>
       )}
 
@@ -58,5 +69,27 @@ export default function InviteForm() {
         </button>
       </div>
     </form>
+  );
+}
+
+// Outer wrapper holds the success banner and the remount key.
+export default function InviteForm() {
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
+  const [formKey, setFormKey] = useState(0);
+
+  function handleSuccess(message: string) {
+    setSuccessMessage(message);
+    setFormKey((k) => k + 1);
+  }
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+      {successMessage && (
+        <p className="narra-alert info" role="status">
+          {successMessage}
+        </p>
+      )}
+      <InviteFormInner key={formKey} onSuccess={handleSuccess} />
+    </div>
   );
 }

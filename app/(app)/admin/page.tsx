@@ -27,6 +27,14 @@ export default async function AdminPage() {
     .eq("role", "learner")
     .order("created_at") as { data: Profile[] | null };
 
+  // Build userId → email map from Auth (single call, service role)
+  const { data: authData } = await admin.auth.admin.listUsers();
+  const emailMap = new Map<string, string>(
+    (authData?.users ?? [])
+      .filter((u) => u.email)
+      .map((u) => [u.id, u.email as string]),
+  );
+
   // Generate signed URLs for CNO proofs
   const learnersWithUrls = await Promise.all(
     (learners ?? []).map(async (learner) => {
@@ -37,7 +45,7 @@ export default async function AdminPage() {
           .createSignedUrl(learner.cno_proof_path, 60);
         signedUrl = data?.signedUrl ?? null;
       }
-      return { ...learner, signedUrl };
+      return { ...learner, signedUrl, email: emailMap.get(learner.id) ?? null };
     }),
   );
 
@@ -136,6 +144,12 @@ export default async function AdminPage() {
                     className="narra-eyebrow"
                     style={{ textAlign: "left", padding: "0.85rem 1rem", whiteSpace: "nowrap" }}
                   >
+                    Email
+                  </th>
+                  <th
+                    className="narra-eyebrow"
+                    style={{ textAlign: "left", padding: "0.85rem 1rem", whiteSpace: "nowrap" }}
+                  >
                     CNO Status
                   </th>
                   <th
@@ -158,6 +172,7 @@ export default async function AdminPage() {
                     key={learner.id}
                     profileId={learner.id}
                     fullName={learner.full_name ?? ""}
+                    email={learner.email}
                     cnoStatus={learner.cno_status}
                     signedProofUrl={learner.signedUrl}
                   />

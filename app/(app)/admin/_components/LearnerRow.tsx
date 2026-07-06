@@ -6,6 +6,7 @@ import { setCnoStatus } from "../actions";
 interface LearnerRowProps {
   profileId: string;
   fullName: string;
+  email: string | null;
   cnoStatus: "pending" | "verified" | "rejected" | null;
   signedProofUrl: string | null;
 }
@@ -13,6 +14,7 @@ interface LearnerRowProps {
 export default function LearnerRow({
   profileId,
   fullName,
+  email,
   cnoStatus,
   signedProofUrl,
 }: LearnerRowProps) {
@@ -36,6 +38,19 @@ export default function LearnerRow({
       <td style={{ padding: "0.85rem 1rem 0.85rem 0" }}>
         <span style={{ fontFamily: "var(--font-body), Georgia, serif" }}>
           {fullName || <em style={{ color: "var(--ink-faint)" }}>—</em>}
+        </span>
+      </td>
+
+      {/* Email */}
+      <td style={{ padding: "0.85rem 1rem" }}>
+        <span
+          style={{
+            fontFamily: "var(--font-geist-sans), sans-serif",
+            fontSize: "0.82rem",
+            color: "var(--ink-soft)",
+          }}
+        >
+          {email ?? <em style={{ color: "var(--ink-faint)" }}>—</em>}
         </span>
       </td>
 
