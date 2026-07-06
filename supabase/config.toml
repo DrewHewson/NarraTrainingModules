@@ -219,9 +219,11 @@ web3 = 30
 # secret = ""
 
 [auth.email]
-# Allow/disallow new user signups via email to your project.
-# Invite/admin-provisioned only; no public self-signup (see design spec)
-enable_signup = false
+# Must be true to keep the EMAIL PROVIDER enabled — this flag gates the whole
+# provider (sign-IN included), not just signup. Public self-signup is blocked by
+# the top-level [auth] enable_signup = false; admin invites bypass it via the
+# service role. Setting this false here disables email LOGIN (email_provider_disabled).
+enable_signup = true
 # If enabled, a user will be required to confirm any email change on both the old, and new email
 # addresses. If disabled, only the new email is required to confirm.
 double_confirm_changes = true
