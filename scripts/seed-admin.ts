@@ -1,7 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import { config } from "dotenv";
 
-config({ path: ".env.local", quiet: true });
+config({ path: process.env.ENV_FILE ?? ".env.local", quiet: true });
 
 const email = process.env.SEED_ADMIN_EMAIL!;
 const password = process.env.SEED_ADMIN_PASSWORD!;

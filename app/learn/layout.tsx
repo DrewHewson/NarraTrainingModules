@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Newsreader } from "next/font/google";
 import Link from "next/link";
+import TestSwitcher from "@/app/_components/TestSwitcher";
 import "@/app/preview/preview.css";
 import "@/app/narra.css";
 
@@ -35,6 +36,7 @@ export default function LearnLayout({
           <span className="np-wordmark-sub">Training</span>
         </Link>
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+          <TestSwitcher />
           <Link
             href="/dashboard"
             style={{ fontSize: "0.82rem", color: "var(--ink-soft)", textDecoration: "none" }}

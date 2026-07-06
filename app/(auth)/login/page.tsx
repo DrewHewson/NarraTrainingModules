@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { getSessionProfile } from "@/lib/auth";
 import LoginForm from "./LoginForm";
+import TestSwitcher from "@/app/_components/TestSwitcher";
 
 export const metadata = {
   title: "Sign In — Narra Training",
@@ -44,6 +45,10 @@ export default async function LoginPage() {
       <hr className="narra-divider" style={{ marginBottom: "1.75rem" }} />
 
       <LoginForm />
+
+      <div style={{ marginTop: "1.5rem", display: "flex", justifyContent: "center" }}>
+        <TestSwitcher />
+      </div>
     </>
   );
 }

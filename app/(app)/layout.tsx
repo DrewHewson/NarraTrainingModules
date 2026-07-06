@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import TestSwitcher from "@/app/_components/TestSwitcher";
 
 export const metadata: Metadata = {
   title: "Narra Training",
@@ -33,12 +34,15 @@ export default function AppLayout({
           <span className="narra-wordmark-sub">Training</span>
         </Link>
 
-        {/* Sign-out — real POST, no JS required */}
-        <form action="/auth/sign-out" method="post">
-          <button type="submit" className="narra-btn ghost">
-            Sign out
-          </button>
-        </form>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+          <TestSwitcher />
+          {/* Sign-out — real POST, no JS required */}
+          <form action="/auth/sign-out" method="post">
+            <button type="submit" className="narra-btn ghost">
+              Sign out
+            </button>
+          </form>
+        </div>
       </header>
 
       {/* Page content */}
