@@ -623,3 +623,39 @@
 .np-quiz-score strong { font-family: var(--font-display), serif; }
 .np-quiz-result .np-quiz-note { margin-top: 0.4rem; }
 .np-quiz-result .np-quiz-actions { margin-top: 1.1rem; }
+
+/* ---------- Quiz review (after submit) ---------- */
+.np-quiz-mark {
+  font-weight: 700;
+  margin-right: 0.35rem;
+}
+.np-quiz-mark.is-right { color: #4a7c59; }
+.np-quiz-mark.is-wrong { color: var(--clay-deep); }
+.np-quiz-option.is-correct {
+  border-color: color-mix(in srgb, #4a7c59 55%, var(--line));
+  background: color-mix(in srgb, #4a7c59 10%, var(--paper-lift));
+}
+.np-quiz-option.is-wrong {
+  border-color: color-mix(in srgb, var(--clay) 55%, var(--line));
+  background: color-mix(in srgb, var(--clay) 9%, var(--paper-lift));
+}
+.np-quiz-tag {
+  margin-left: auto;
+  align-self: center;
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4a7c59;
+  flex: none;
+}
+.np-quiz-explain {
+  margin: 0.75rem 0 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--taupe);
+  background: var(--panel);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}

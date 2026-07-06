@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { submitChapterQuiz, type QuizResult } from "@/app/learn/actions";
+import { submitChapterQuiz, type QuizResult, type QuizReview } from "@/app/learn/actions";
 
 export type QuizQuestion = {
   id: string;
@@ -11,9 +11,9 @@ export type QuizQuestion = {
   type: "single" | "multiple";
 };
 
-// End-of-chapter quiz. Renders the (answer-free) questions, submits selections to
-// the server action for grading, and shows score + pass/fail. Unlimited retakes;
-// no per-question answer reveal (the key stays server-side).
+// End-of-chapter quiz (the chapter's Knowledge Check, graded). Renders the
+// answer-free questions, submits to the server action for grading, then reveals
+// score + per-question correct answer + explanation. Unlimited retakes.
 export default function ChapterQuiz({
   chapterId,
   questions,
@@ -29,10 +29,15 @@ export default function ChapterQuiz({
   const [result, setResult] = useState<QuizResult | null>(null);
   const [pending, setPending] = useState(false);
 
+  const reviewMode = !!result && !("error" in result);
+  const reviewById = new Map<string, QuizReview>(
+    result && "review" in result ? result.review.map((r) => [r.questionId, r]) : [],
+  );
   const allAnswered = questions.every((q) => (answers[q.id]?.length ?? 0) > 0);
+  const passed = result && "passed" in result && result.passed;
 
   function select(q: QuizQuestion, optionIndex: number) {
-    if (result) return; // locked while showing a result until Retake
+    if (reviewMode) return;
     setAnswers((prev) => {
       if (q.type === "single") return { ...prev, [q.id]: [optionIndex] };
       const cur = prev[q.id] ?? [];
@@ -46,8 +51,7 @@ export default function ChapterQuiz({
   async function onSubmit() {
     setPending(true);
     try {
-      const res = await submitChapterQuiz(chapterId, answers);
-      setResult(res);
+      setResult(await submitChapterQuiz(chapterId, answers));
     } catch {
       setResult({ error: "Something went wrong submitting your quiz. Please try again." });
     } finally {
@@ -60,8 +64,6 @@ export default function ChapterQuiz({
     setResult(null);
   }
 
-  const passed = result && "passed" in result && result.passed;
-
   return (
     <div className="np-quiz">
       <p className="narra-eyebrow">Chapter quiz</p>
@@ -71,35 +73,71 @@ export default function ChapterQuiz({
         retake as many times as you like.
       </p>
 
-      <ol className="np-quiz-list">
-        {questions.map((q, qi) => (
-          <li key={q.id} className="np-quiz-q">
-            <p className="np-quiz-prompt">
-              <span className="np-quiz-num">{qi + 1}.</span> {q.question}
-              {q.type === "multiple" && <span className="np-quiz-hint"> (select all that apply)</span>}
+      {reviewMode && (
+        <div className={`np-quiz-result${passed ? " is-pass" : " is-fail"}`} role="status">
+          <p className="np-quiz-score">
+            You scored <strong>{(result as { score: number }).score}%</strong> —{" "}
+            {passed ? "Passed ✓" : `${passingScore}% needed to pass`}
+          </p>
+          {result && "saved" in result && !result.saved && (
+            <p className="np-quiz-note">
+              (Preview mode — this attempt wasn’t recorded because you’re not enrolled.)
             </p>
-            <div className="np-quiz-options">
-              {q.options.map((opt, oi) => {
-                const checked = answers[q.id]?.includes(oi) ?? false;
-                return (
-                  <label
-                    key={oi}
-                    className={`np-quiz-option${checked ? " is-selected" : ""}${result ? " is-locked" : ""}`}
-                  >
-                    <input
-                      type={q.type === "multiple" ? "checkbox" : "radio"}
-                      name={q.id}
-                      checked={checked}
-                      disabled={!!result || pending}
-                      onChange={() => select(q, oi)}
-                    />
-                    <span>{opt}</span>
-                  </label>
-                );
-              })}
-            </div>
-          </li>
-        ))}
+          )}
+        </div>
+      )}
+
+      <ol className="np-quiz-list">
+        {questions.map((q, qi) => {
+          const rev = reviewById.get(q.id);
+          return (
+            <li key={q.id} className="np-quiz-q">
+              <p className="np-quiz-prompt">
+                {reviewMode && (
+                  <span className={`np-quiz-mark${rev?.wasCorrect ? " is-right" : " is-wrong"}`}>
+                    {rev?.wasCorrect ? "✓" : "✗"}
+                  </span>
+                )}
+                <span className="np-quiz-num">{qi + 1}.</span> {q.question}
+                {q.type === "multiple" && (
+                  <span className="np-quiz-hint"> (select all that apply)</span>
+                )}
+              </p>
+              <div className="np-quiz-options">
+                {q.options.map((opt, oi) => {
+                  const checked = answers[q.id]?.includes(oi) ?? false;
+                  const isCorrect = reviewMode && (rev?.correct.includes(oi) ?? false);
+                  const isWrongChoice = reviewMode && checked && !(rev?.correct.includes(oi) ?? false);
+                  const cls = [
+                    "np-quiz-option",
+                    checked ? "is-selected" : "",
+                    reviewMode ? "is-locked" : "",
+                    isCorrect ? "is-correct" : "",
+                    isWrongChoice ? "is-wrong" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ");
+                  return (
+                    <label key={oi} className={cls}>
+                      <input
+                        type={q.type === "multiple" ? "checkbox" : "radio"}
+                        name={q.id}
+                        checked={checked}
+                        disabled={reviewMode || pending}
+                        onChange={() => select(q, oi)}
+                      />
+                      <span>{opt}</span>
+                      {isCorrect && <span className="np-quiz-tag">Correct</span>}
+                    </label>
+                  );
+                })}
+              </div>
+              {reviewMode && rev?.explanation && (
+                <p className="np-quiz-explain">{rev.explanation}</p>
+              )}
+            </li>
+          );
+        })}
       </ol>
 
       {result && "error" in result ? (
@@ -111,27 +149,16 @@ export default function ChapterQuiz({
             </button>
           </div>
         </div>
-      ) : result ? (
-        <div className={`np-quiz-result${passed ? " is-pass" : " is-fail"}`} role="status">
-          <p className="np-quiz-score">
-            You scored <strong>{result.score}%</strong> —{" "}
-            {passed ? "Passed ✓" : `${passingScore}% needed to pass`}
-          </p>
-          {!result.saved && (
-            <p className="np-quiz-note">
-              (Preview mode — this attempt wasn’t recorded because you’re not enrolled.)
-            </p>
+      ) : reviewMode ? (
+        <div className="np-quiz-actions">
+          <button type="button" className="narra-btn ghost" onClick={retake}>
+            Retake
+          </button>
+          {passed && nextHref && (
+            <Link href={nextHref} className="narra-btn">
+              Continue →
+            </Link>
           )}
-          <div className="np-quiz-actions">
-            <button type="button" className="narra-btn ghost" onClick={retake}>
-              Retake
-            </button>
-            {passed && nextHref && (
-              <Link href={nextHref} className="narra-btn">
-                Continue →
-              </Link>
-            )}
-          </div>
         </div>
       ) : (
         <div className="np-quiz-actions">

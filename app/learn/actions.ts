@@ -3,10 +3,17 @@
 import { revalidatePath } from "next/cache";
 import { getSessionProfile, singleCourse } from "@/lib/auth";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { gradeQuiz } from "@/lib/quiz";
+import { gradeQuiz, answerIsCorrect } from "@/lib/quiz";
+
+export type QuizReview = {
+  questionId: string;
+  correct: number[];
+  explanation: string | null;
+  wasCorrect: boolean;
+};
 
 export type QuizResult =
-  | { score: number; passed: boolean; total: number; saved: boolean }
+  | { score: number; passed: boolean; total: number; saved: boolean; review: QuizReview[] }
   | { error: string };
 
 /**
@@ -28,10 +35,10 @@ export async function submitChapterQuiz(
   const admin = createAdminClient();
   const course = await singleCourse();
 
-  // Answer key for this chapter's quiz (base table, service role).
+  // Answer key + explanations for this chapter's quiz (base table, service role).
   const { data: questions, error: qErr } = await admin
     .from("quiz_questions")
-    .select("id, correct")
+    .select("id, correct, explanation")
     .eq("scope", "chapter")
     .eq("parent_id", chapterId);
 
@@ -44,6 +51,17 @@ export async function submitChapterQuiz(
     answers,
   );
   const passed = score >= course.passing_score;
+
+  // Per-question review returned WITH the graded result (never before submit).
+  const review: QuizReview[] = questions.map((q) => {
+    const correct = (q.correct as number[]) ?? [];
+    return {
+      questionId: q.id as string,
+      correct,
+      explanation: (q.explanation as string | null) ?? null,
+      wasCorrect: answerIsCorrect(answers[q.id as string] ?? [], correct),
+    };
+  });
 
   // The learner's enrollment (needed to persist the attempt/progress).
   const { data: enrollment } = await admin
@@ -75,5 +93,5 @@ export async function submitChapterQuiz(
     revalidatePath("/dashboard");
   }
 
-  return { score, passed, total, saved };
+  return { score, passed, total, saved, review };
 }
