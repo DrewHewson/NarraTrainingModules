@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 452" width="680" height="452" role="img" aria-label="Treat, defer or decline decision tree">
+  <defs>
+    <marker id="tdd-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6a6153"/>
+    </marker>
+  </defs>
+  <g font-family="ui-sans-serif, system-ui, -apple-system, sans-serif">
+    <!-- Start -->
+    <rect x="130" y="20" width="240" height="42" rx="8" fill="#f6f1e8" stroke="#cabfa9" stroke-width="1.2"/>
+    <text x="250" y="46" text-anchor="middle" font-size="12" fill="#221f18">History &amp; assessment complete</text>
+    <line x1="250" y1="62" x2="250" y2="88" stroke="#6a6153" stroke-width="1.6" marker-end="url(#tdd-arrow)"/>
+
+    <!-- D1 -->
+    <rect x="110" y="90" width="280" height="46" rx="8" fill="#efe7d9" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="250" y="118" text-anchor="middle" font-size="12.5" font-weight="600" fill="#221f18">Absolute contraindication?</text>
+    <line x1="390" y1="113" x2="470" y2="113" stroke="#6a6153" stroke-width="1.6" marker-end="url(#tdd-arrow)"/>
+    <text x="428" y="105" text-anchor="middle" font-size="10" fill="#8a3a25">Yes</text>
+    <line x1="250" y1="136" x2="250" y2="162" stroke="#6a6153" stroke-width="1.6" marker-end="url(#tdd-arrow)"/>
+    <text x="261" y="153" font-size="10" fill="#6a6153">No</text>
+    <!-- DECLINE terminal -->
+    <rect x="475" y="90" width="150" height="46" rx="8" fill="#f3ddd3" stroke="#b0472e" stroke-width="1.6"/>
+    <text x="550" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#8a3a25">DECLINE</text>
+
+    <!-- D2 -->
+    <rect x="110" y="164" width="280" height="46" rx="8" fill="#efe7d9" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="250" y="185" text-anchor="middle" font-size="12" font-weight="600" fill="#221f18">Relative contraindication</text>
+    <text x="250" y="200" text-anchor="middle" font-size="12" font-weight="600" fill="#221f18">or interaction?</text>
+    <line x1="390" y1="187" x2="470" y2="187" stroke="#6a6153" stroke-width="1.6" marker-end="url(#tdd-arrow)"/>
+    <text x="428" y="179" text-anchor="middle" font-size="10" fill="#7c5335">No</text>
+    <line x1="250" y1="210" x2="250" y2="236" stroke="#6a6153" stroke-width="1.6" marker-end="url(#tdd-arrow)"/>
+    <text x="261" y="227" font-size="10" fill="#6a6153">Yes</text>
+    <!-- TREAT terminal -->
+    <rect x="475" y="164" width="150" height="46" rx="8" fill="#efe1d0" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="550" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#7c5335">TREAT</text>
+
+    <!-- D3 -->
+    <rect x="88" y="238" width="324" height="58" rx="8" fill="#efe7d9" stroke="#9a6a46" stroke-width="1.5"/>
+    <text x="250" y="263" text-anchor="middle" font-size="12" font-weight="600" fill="#221f18">Manageable?</text>
+    <text x="250" y="280" text-anchor="middle" font-size="10.5" fill="#4a453b">modify plan &#183; fuller consent &#183; prescriber input</text>
+    <!-- D3 Yes -> TREAT (right then up) -->
+    <path d="M412,267 H550 V212" fill="none" stroke="#6a6153" stroke-width="1.6" marker-end="url(#tdd-arrow)"/>
+    <text x="486" y="259" text-anchor="middle" font-size="10" fill="#7c5335">Yes (modified plan)</text>
+    <line x1="250" y1="296" x2="250" y2="322" stroke="#6a6153" stroke-width="1.6" marker-end="url(#tdd-arrow)"/>
+    <text x="261" y="313" font-size="10" fill="#6a6153">No</text>
+
+    <!-- DEFER/DECLINE terminal -->
+    <rect x="120" y="324" width="260" height="50" rx="8" fill="#f3e6cf" stroke="#b07a2e" stroke-width="1.6"/>
+    <text x="250" y="346" text-anchor="middle" font-size="12.5" font-weight="700" fill="#7c5a26">DEFER or DECLINE</text>
+    <text x="250" y="362" text-anchor="middle" font-size="10" fill="#7c5a26">the conservative default</text>
+
+    <!-- footer -->
+    <text x="340" y="410" text-anchor="middle" font-size="10.5" fill="#6a6153">When in doubt, escalate to the prescriber / medical director.</text>
+    <text x="340" y="426" text-anchor="middle" font-size="10.5" fill="#6a6153">Under uncertainty, choose the more conservative option — you cannot un-inject.</text>
+  </g>
+</svg>

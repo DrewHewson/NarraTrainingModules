@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280" role="img" aria-label="Timeline: from foodborne poison to cosmetic medicine">
+  <defs>
+    <marker id="tl-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9a6a46"/>
+    </marker>
+  </defs>
+
+  <!-- baseline -->
+  <line x1="60" y1="150" x2="846" y2="150" stroke="#c9beac" stroke-width="2" marker-end="url(#tl-arrow)"/>
+
+  <!-- Node 1 (above) — Kerner -->
+  <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <line x1="70" y1="150" x2="70" y2="112" stroke="#c9beac" stroke-width="1.5"/>
+    <text x="70" y="66" font-size="12.5" fill="#221f18">Kerner names</text>
+    <text x="70" y="81" font-size="12.5" fill="#221f18">&#8220;sausage poison&#8221;</text>
+    <text x="70" y="100" font-size="9.5" font-family="ui-sans-serif, system-ui, sans-serif" letter-spacing="0.06em" fill="#928979">EARLY 1800s</text>
+    <circle cx="70" cy="150" r="9" fill="none" stroke="#9a6a46" stroke-opacity="0.28" stroke-width="1.5"/>
+    <circle cx="70" cy="150" r="5" fill="#9a6a46"/>
+  </g>
+
+  <!-- Node 2 (below) — van Ermengem -->
+  <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <line x1="225" y1="150" x2="225" y2="188" stroke="#c9beac" stroke-width="1.5"/>
+    <text x="225" y="204" font-size="9.5" font-family="ui-sans-serif, system-ui, sans-serif" letter-spacing="0.06em" fill="#928979">1890s</text>
+    <text x="225" y="223" font-size="12.5" fill="#221f18">C. botulinum</text>
+    <text x="225" y="238" font-size="12.5" fill="#221f18">isolated</text>
+    <circle cx="225" cy="150" r="9" fill="none" stroke="#9a6a46" stroke-opacity="0.28" stroke-width="1.5"/>
+    <circle cx="225" cy="150" r="5" fill="#9a6a46"/>
+  </g>
+
+  <!-- Node 3 (above) — purified -->
+  <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <line x1="380" y1="150" x2="380" y2="112" stroke="#c9beac" stroke-width="1.5"/>
+    <text x="380" y="66" font-size="12.5" fill="#221f18">Type A purified</text>
+    <text x="380" y="81" font-size="12.5" fill="#221f18">&amp; crystallized</text>
+    <text x="380" y="100" font-size="9.5" font-family="ui-sans-serif, system-ui, sans-serif" letter-spacing="0.06em" fill="#928979">MID-1900s</text>
+    <circle cx="380" cy="150" r="9" fill="none" stroke="#9a6a46" stroke-opacity="0.28" stroke-width="1.5"/>
+    <circle cx="380" cy="150" r="5" fill="#9a6a46"/>
+  </g>
+
+  <!-- Node 4 (below) — Scott -->
+  <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <line x1="535" y1="150" x2="535" y2="188" stroke="#c9beac" stroke-width="1.5"/>
+    <text x="535" y="204" font-size="9.5" font-family="ui-sans-serif, system-ui, sans-serif" letter-spacing="0.06em" fill="#928979">1970s&#8211;80s</text>
+    <text x="535" y="223" font-size="12.5" fill="#221f18">First medical use</text>
+    <text x="535" y="238" font-size="12.5" fill="#221f18">(strabismus)</text>
+    <circle cx="535" cy="150" r="9" fill="none" stroke="#9a6a46" stroke-opacity="0.28" stroke-width="1.5"/>
+    <circle cx="535" cy="150" r="5" fill="#9a6a46"/>
+  </g>
+
+  <!-- Node 5 (above) — Carruthers -->
+  <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <line x1="690" y1="150" x2="690" y2="112" stroke="#c9beac" stroke-width="1.5"/>
+    <text x="690" y="66" font-size="12.5" fill="#221f18">Cosmetic effect</text>
+    <text x="690" y="81" font-size="12.5" fill="#221f18">discovered</text>
+    <text x="690" y="100" font-size="9.5" font-family="ui-sans-serif, system-ui, sans-serif" letter-spacing="0.06em" fill="#928979">EARLY 1990s</text>
+    <circle cx="690" cy="150" r="9" fill="none" stroke="#9a6a46" stroke-opacity="0.28" stroke-width="1.5"/>
+    <circle cx="690" cy="150" r="5" fill="#9a6a46"/>
+  </g>
+
+  <!-- Node 6 (below) — approval -->
+  <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <line x1="820" y1="150" x2="820" y2="188" stroke="#c9beac" stroke-width="1.5"/>
+    <text x="820" y="204" font-size="9.5" font-family="ui-sans-serif, system-ui, sans-serif" letter-spacing="0.06em" fill="#928979">EARLY 2000s</text>
+    <text x="820" y="223" font-size="12.5" fill="#221f18">Glabellar cosmetic</text>
+    <text x="820" y="238" font-size="12.5" fill="#221f18">approval</text>
+    <circle cx="820" cy="150" r="9" fill="none" stroke="#9a6a46" stroke-opacity="0.28" stroke-width="1.5"/>
+    <circle cx="820" cy="150" r="5" fill="#9a6a46"/>
+  </g>
+</svg>
