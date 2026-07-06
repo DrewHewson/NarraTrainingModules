@@ -1,0 +1,81 @@
+[
+  {
+    "externalKey": "ch03-q1",
+    "question": "A clinic switches from one Health Canada–approved type A botulinum toxin to a different one. A colleague proposes keeping the same number of units at each treatment point because both products share the type A mechanism. What is the safest reasoning to apply?",
+    "options": [
+      "The type A mechanism is identical across products, so the same unit count delivers the same biological effect regardless of which product is used.",
+      "A fixed conversion ratio published in the literature can reliably translate the dose from the old product into the new one.",
+      "Units are defined by each manufacturer's own potency assay, so the same number does not represent the same biological activity — the dose must be re-derived from the new product's own guidance.",
+      "The unit difference only matters for abobotulinumtoxinA; all other type A products are interchangeable dose-for-dose."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 1
+  },
+  {
+    "externalKey": "ch03-q2",
+    "question": "When reconstituting a lyophilized botulinum toxin vial, a colleague injects the diluent forcefully and shakes the vial to speed dissolution. Which explanation best captures why this technique is problematic?",
+    "options": [
+      "Shaking generates foam that makes it harder to draw up an accurate volume, but does not affect the drug's activity.",
+      "Botulinum toxin is a protein whose activity depends on its three-dimensional structure; vigorous agitation risks shear stress and foaming that could degrade that structure and compromise potency.",
+      "Forceful injection of diluent changes the final concentration because it splashes product onto the vial stopper.",
+      "Rapid mixing is only problematic if the diluent is preservative-containing saline; with preservative-free saline, agitation is acceptable."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 2
+  },
+  {
+    "externalKey": "ch03-q3",
+    "question": "You are planning an injection near a small, precise target adjacent to a muscle you must not weaken. Applying the concentration–diffusion trade-off described in this chapter, which reconstitution approach best supports that goal?",
+    "options": [
+      "A more dilute solution, because the larger volume per point creates a broader, more even spread across the area.",
+      "A more concentrated solution, because the smaller volume per point tends to keep the toxin more localized at the target.",
+      "Concentration has no meaningful influence on how the product behaves in tissue; only total units matter.",
+      "A more dilute solution, because lower concentration reduces the risk of weakening the nearby structure."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 3
+  },
+  {
+    "externalKey": "ch03-q4",
+    "question": "A 100-unit vial is reconstituted with 2.5 mL of sterile saline. A treatment plan calls for 4 units at a single injection point. Using the dose-to-volume reasoning in this chapter (illustrative numbers), what is the concentration and approximately what volume delivers that dose?",
+    "options": [
+      "Concentration = 25 units/mL; the point receives approximately 0.16 mL.",
+      "Concentration = 40 units/mL; the point receives approximately 0.1 mL.",
+      "Concentration = 40 units/mL; the point receives approximately 1.0 mL.",
+      "Concentration = 4 units/mL; the point receives approximately 1.0 mL."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 4
+  },
+  {
+    "externalKey": "ch03-q5",
+    "question": "A reconstituted vial has no label. The solution is clear and colourless. What does this chapter identify as the key risk, and what should happen next?",
+    "options": [
+      "The risk is minimal because a correctly reconstituted type A product always looks the same; proceed if the product was used recently.",
+      "The risk is an incorrect concentration calculation; re-check the diluent volume and proceed.",
+      "A clear reconstituted solution is visually indistinguishable from plain saline; an unlabeled syringe or vial cannot be positively identified for product, concentration, and patient — it must be relabeled and re-verified, or discarded.",
+      "Labeling is a documentation formality; the primary risk is not to the patient but to the clinic's compliance record."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 5
+  },
+  {
+    "externalKey": "ch03-q6",
+    "question": "Which of the following statements accurately reflect what this chapter teaches about botulinum toxin type A units? (Select all that apply.)",
+    "options": [
+      "A unit measures biological activity, not a fixed mass of drug.",
+      "Each manufacturer defines its own unit via its own potency assay, with no shared international standard across products.",
+      "Inter-product conversion ratios are reliable clinical constants that can be applied safely at the chair.",
+      "The non-proprietary name prefixes (ona-, abo-, inco-, praba-, daxi-) exist as a safety feature to signal that each product carries its own unit system.",
+      "Changing the diluent volume when reconstituting a vial changes the number of units delivered to the patient."
+    ],
+    "correct": [0, 1, 3],
+    "type": "multiple",
+    "order": 6
+  }
+]

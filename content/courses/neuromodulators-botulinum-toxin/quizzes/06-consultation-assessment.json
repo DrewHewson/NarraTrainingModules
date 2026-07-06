@@ -1,0 +1,80 @@
+[
+  {
+    "externalKey": "ch06-q1",
+    "question": "An RN opens an aesthetic consultation by saying, 'So you're here about your frown lines — let's take a look at those.' The patient agrees, and the conversation moves quickly to treatment. Which principle does this approach most directly violate?",
+    "options": [
+      "The injector should examine the face before speaking to the patient at all.",
+      "Leading with a closed, assumed concern replaces the patient's real motivation with the clinician's guess, bypassing the open-question stage that surfaces the actual goal.",
+      "Naming a treatment area before consent is obtained constitutes an unlawful recommendation.",
+      "The injector should have asked about previous cosmetic procedures before naming any anatomical area."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 1
+  },
+  {
+    "externalKey": "ch06-q2",
+    "question": "A patient answers the question 'What made you decide to come in now?' by describing a recent job loss and saying she wants to 'start fresh.' Her facial concern is minor and realistic. What does this chapter identify as the most clinically relevant implication of that timing detail?",
+    "options": [
+      "Acute life crisis timing is listed as a reason to defer or decline treatment, because expectations may be anchored to something treatment cannot fix rather than to the face itself.",
+      "The timing is irrelevant to candidacy; only the facial finding and absence of BDD red flags determine suitability.",
+      "A recent job loss increases urgency, so the injector should expedite treatment to support the patient's wellbeing.",
+      "Crisis timing is a BDD red flag, so the injector should refer immediately to a psychiatrist."
+    ],
+    "correct": [0],
+    "type": "single",
+    "order": 2
+  },
+  {
+    "externalKey": "ch06-q3",
+    "question": "On systematic facial assessment, a patient's lateral canthal lines fan out prominently when she squints but are completely absent when her face is fully relaxed. How should this finding be communicated during expectation-setting?",
+    "options": [
+      "These are static rhytids; treatment will offer only partial improvement and she should be told other modalities are needed for full correction.",
+      "These are dynamic rhytids caused by muscle movement; a neuromodulator should soften them well, though the effect is temporary.",
+      "Because the lines are absent at rest, no treatment is indicated and the patient should be reassured.",
+      "Lines that appear only on animation are pre-cancerous skin changes and require dermatology referral before any cosmetic treatment."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 3
+  },
+  {
+    "externalKey": "ch06-q4",
+    "question": "During assessment you observe that a patient's frontalis is subtly active even at rest and her upper eyelids appear mildly hooded. She has requested treatment of her horizontal forehead lines. Which reasoning most accurately translates this assessment finding into a treatment consideration?",
+    "options": [
+      "Hooding is a contraindication to all upper-face neuromodulator treatment, so the patient should be declined.",
+      "The frontalis is likely compensating for heavy or hooded brows; aggressively weakening it could drop the brow and worsen the very heaviness she wants to reduce, so a cautious or partial approach with explicit expectation-setting is warranted.",
+      "Compensatory frontalis activity means a higher dose is required to achieve the desired line softening.",
+      "Because the hooding is mild, it has no bearing on frontalis treatment planning and both areas should be treated as requested."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 4
+  },
+  {
+    "externalKey": "ch06-q5",
+    "question": "A clinician decides to decline treatment for a patient. Which elements does this chapter identify as characteristic of a well-executed 'no' conversation?",
+    "options": [
+      "Evasive language that avoids upsetting the patient, no alternative offered, and no written record since the patient was not treated.",
+      "A specific and honest explanation of why treatment is not appropriate, a non-judgmental tone, a constructive alternative where possible, and clear documentation of the decision and reasoning.",
+      "An immediate referral to the supervising physician without explaining the reason to the patient, followed by a brief note.",
+      "Telling the patient to return in six months without explaining the reason, to give them time to reconsider their expectations."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 5
+  },
+  {
+    "externalKey": "ch06-q6",
+    "question": "Which of the following practices are identified in this chapter as essential requirements for clinical photographs to serve as both a clinical assessment tool and a medico-legal record? (Select all that apply.)",
+    "options": [
+      "Images must be captured before treatment on every visit, including top-up appointments.",
+      "Consistent lighting, background, framing, and expression sets must be used at every visit to allow meaningful comparison.",
+      "Patients must give specific consent for photographs that is separate from general treatment consent.",
+      "Seven oblique shots at varying angles are the minimum required by Ontario law for every appointment."
+    ],
+    "correct": [0, 1, 2],
+    "type": "multiple",
+    "order": 6
+  }
+]

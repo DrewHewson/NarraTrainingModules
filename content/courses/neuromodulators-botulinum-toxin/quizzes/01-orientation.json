@@ -1,0 +1,80 @@
+[
+  {
+    "externalKey": "ch01-q1",
+    "question": "A patient presents with deep glabellar lines visible at rest, not just when frowning. Based on the chapter's core distinction about what neuromodulators treat, which statement best guides your clinical reasoning?",
+    "options": [
+      "Neuromodulators are ideal here because they target the skin directly, filling the crease from below.",
+      "Neuromodulators work by weakening the muscles that create movement; because these lines are etched at rest, treatment may produce limited improvement compared to dynamic lines.",
+      "Neuromodulators are equally effective on resting and dynamic lines, so this is a straightforward case.",
+      "Neuromodulators tighten the overlying skin, which will smooth both resting and movement-related lines."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 1
+  },
+  {
+    "externalKey": "ch01-q2",
+    "question": "The mid-century purification and crystallization of botulinum toxin type A is described as the step that made a medicine conceivable. Why does the chapter frame this as the critical turning point?",
+    "options": [
+      "It made the toxin less dangerous by permanently neutralizing its potency.",
+      "It allowed the toxin to be administered orally rather than by injection, simplifying delivery.",
+      "It converted an unpredictable poison into a measurable, dosable substance — a prerequisite for any safe therapeutic use.",
+      "It identified the type A serotype for the first time, distinguishing it from the other serotypes."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 2
+  },
+  {
+    "externalKey": "ch01-q3",
+    "question": "In Ontario, an RPN working in an aesthetic clinic wants to administer botulinum toxin to an established patient. The clinic owner, who is not a physician or NP, has verbally approved the treatment. Which statement correctly applies the chapter's scope and authorization framework?",
+    "options": [
+      "The owner's approval is sufficient because they carry business liability for the clinic.",
+      "The RPN may proceed — being a registered nurse is itself an authorizing mechanism for administering injections.",
+      "The RPN may not proceed without a valid order or medical directive from an authorized prescriber; a clinic owner cannot lawfully authorize this controlled act.",
+      "The RPN may proceed if they personally assess the patient as a suitable candidate, because clinical judgment is the authorization."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 3
+  },
+  {
+    "externalKey": "ch01-q4",
+    "question": "A colleague argues that because all cosmetic botulinum toxin products are type A, 20 units of one brand is clinically equivalent to 20 units of another. Which response best reflects the chapter's position on this reasoning?",
+    "options": [
+      "The colleague is correct — Health Canada approval ensures all type A products use standardized units.",
+      "The colleague is wrong — cosmetic products use different serotypes, so potencies differ.",
+      "The colleague is wrong — a 'unit' is a product-specific measure of biological activity, and units are not interchangeable across type A formulations.",
+      "The colleague is correct for type A products specifically; non-interchangeability applies only when comparing type A to type B."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 4
+  },
+  {
+    "externalKey": "ch01-q5",
+    "question": "An RN is working under a valid medical directive for cosmetic neuromodulator injections. During the assessment she concludes this patient does not clearly meet the directive's stated conditions. Which course of action is consistent with the chapter's accountability principles?",
+    "options": [
+      "Proceed — the directive was issued by a physician, so the physician bears responsibility for patient suitability.",
+      "Proceed with caution and document her concerns afterward, since the directive gives her standing to inject.",
+      "Pause and resolve the question of suitability before injecting; the directive does not eliminate her personal accountability for confirming conditions are met.",
+      "Defer the decision entirely to the prescriber and take no further action, since prescribing authority rests with the physician."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 5
+  },
+  {
+    "externalKey": "ch01-q6",
+    "question": "Which of the following statements about the botulinum toxin serotypes are accurate according to the chapter? (Select all that apply.)",
+    "options": [
+      "Every cosmetic product used in aesthetic practice is a formulation of type A toxin.",
+      "Type B toxin has therapeutic uses but is not a cosmetic mainstay.",
+      "Types C through G are in routine cosmetic use alongside type A.",
+      "Because products are all type A, their doses are directly interchangeable unit-for-unit."
+    ],
+    "correct": [0, 1],
+    "type": "multiple",
+    "order": 6
+  }
+]

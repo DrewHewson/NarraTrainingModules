@@ -1,0 +1,80 @@
+[
+  {
+    "externalKey": "ch09-q1",
+    "question": "A defensible treatment plan, per the chapter, must make four things explicit before any needle is discussed. A colleague's plan lists target muscles and a rough dose strategy but does not document which dynamic findings justify each target. What is the most significant clinical risk of this omission?",
+    "options": [
+      "The plan cannot be submitted for insurance reimbursement without documented findings.",
+      "The absence of documented dynamic findings removes the guard against over-treatment — there is no basis to justify each target, and no way to distinguish a deliberate choice from a guess.",
+      "Without dynamic findings recorded, the patient cannot give valid informed consent.",
+      "The omission is a minor documentation gap that can be corrected at the two-week review."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 1
+  },
+  {
+    "externalKey": "ch09-q2",
+    "question": "A 45-year-old woman with a naturally low brow and mild dermatochalasis requests upper-face treatment. Her goal is 'completely smooth — no lines at all.' Applying the chapter's dosing-modifier reasoning, what is the most appropriate initial response?",
+    "options": [
+      "Proceed with full frontalis and glabellar dosing to meet the stated goal, since she has strong muscle activity.",
+      "Pause and counsel before planning: the 'frozen/completely smooth' goal is a counseling trigger, and the low brow with dermatochalasis argues strongly toward frontalis caution — full dosing would risk reproducing the heaviness her anatomy predicts.",
+      "Treat only the glabella and defer the frontalis to a later cycle after she demonstrates good tolerance.",
+      "Decline to treat, because a low brow and dermatochalasis are absolute contraindications to neuromodulator treatment."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 2
+  },
+  {
+    "externalKey": "ch09-q3",
+    "question": "After a first upper-face treatment, a patient returns at ten days complaining that her forehead 'still moves a little.' Peak toxin effect has not yet been reached. Which action best reflects the chapter's guidance on the two-week review?",
+    "options": [
+      "Add a small amount of frontalis toxin now to address the residual movement before it becomes a source of dissatisfaction.",
+      "Wait until peak effect (~two weeks) before assessing; adding toxin before peak risks both doses maturing together into an over-treated result.",
+      "Reassure her and schedule a full retreatment in four months, since early movement indicates the product was ineffective.",
+      "Document the residual movement as a treatment failure and offer a complimentary session."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 3
+  },
+  {
+    "externalKey": "ch09-q4",
+    "question": "A patient's aftercare sheet includes the instruction: 'Frown and move your face vigorously for an hour after treatment — it helps the toxin work faster.' How should a clinician reason about this instruction based on the chapter's evidence-grading of aftercare?",
+    "options": [
+      "Follow this instruction — muscle activation increases neurotoxin uptake and is well supported by clinical evidence.",
+      "This instruction is weak and contested, not an established fact; it should not be presented as proven and may mislead patients about how the toxin works.",
+      "The instruction is correct for glabellar treatment but should be omitted for frontalis treatment.",
+      "The instruction is acceptable because, even if unproven, it causes no harm and improves patient engagement."
+    ],
+    "correct": [1],
+    "type": "single",
+    "order": 4
+  },
+  {
+    "externalKey": "ch09-q5",
+    "question": "Immediately before injecting a cleared, consented patient, an experienced injector performs a deliberate pre-injection safety pause. The chapter describes four checks in this pause. Which of the following most accurately captures its purpose?",
+    "options": [
+      "To verify that the injection technique is correct and the needle gauge is appropriate for the target muscle.",
+      "To confirm the patient is comfortable and has not eaten in the past two hours.",
+      "To make a deliberate, every-single-time stop that confirms the right patient and authority, right product and preparation, right plan and map, and whether any reason to stop exists — catching errors that a 'looks obvious' plan can hide.",
+      "To give the patient a final opportunity to ask questions before the procedure begins, satisfying informed consent requirements."
+    ],
+    "correct": [2],
+    "type": "single",
+    "order": 5
+  },
+  {
+    "externalKey": "ch09-q6",
+    "question": "A treatment record states: '20 units, glabella — good result.' According to the chapter's medico-legal documentation standard, which elements are missing that would make this record defensible? (Select all that apply.)",
+    "options": [
+      "An injection map recording each point, the target muscle, and units delivered per point.",
+      "Product name, lot number, expiry, and reconstitution details.",
+      "The authorizing mechanism — the order or medical directive under which the treatment was administered.",
+      "The patient's preferred follow-up contact method."
+    ],
+    "correct": [0, 1, 2],
+    "type": "multiple",
+    "order": 6
+  }
+]
