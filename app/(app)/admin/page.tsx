@@ -83,7 +83,7 @@ export default async function AdminPage() {
             className="narra-btn ghost"
             style={{ textDecoration: "none" }}
           >
-            Reviewer feedback →
+            Feedback Logged →
           </Link>
         </div>
         <hr className="narra-divider" style={{ marginTop: "0.2rem" }} />
