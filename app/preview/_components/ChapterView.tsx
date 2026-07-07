@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { setReaderContext } from "@/app/_components/readerContext";
 
 type Section = { id: string; title: string; html: string };
 type ChapterMini = { slug: string; title: string };
@@ -68,6 +69,19 @@ export default function ChapterView({
     if (hash) history.replaceState(null, "", `#${hash}`);
     mainRef.current?.scrollTo({ top: 0 });
   }, [active, sections, hasQuiz, quizIndex]);
+
+  // Publish the focused chapter + sub-section so the feedback widget can scope
+  // notes precisely. Cleared when the reader unmounts (navigating away).
+  useEffect(() => {
+    const onQuiz = hasQuiz && active === quizIndex;
+    setReaderContext({
+      chapterSlug: chapter.slug,
+      chapterTitle: chapter.title,
+      sectionId: onQuiz ? "chapter-quiz" : (sections[active]?.id ?? null),
+      sectionTitle: onQuiz ? "Chapter quiz" : (sections[active]?.title ?? null),
+    });
+  }, [active, chapter.slug, chapter.title, sections, hasQuiz, quizIndex]);
+  useEffect(() => () => setReaderContext(null), []);
 
   const go = (i: number) => setActive(Math.max(0, Math.min(stepCount - 1, i)));
   const onPrev = () => {
