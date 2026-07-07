@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { requireAdmin } from "@/lib/auth";
+import { requireAdmin, COURSE_SLUG } from "@/lib/auth";
 import { createAdminClient } from "@/lib/supabase/admin";
+import { getCourse } from "@/lib/preview-content";
 import FeedbackRow from "./FeedbackRow";
 
 export const metadata = { title: "Reviewer feedback — Narra Training" };
@@ -40,6 +41,11 @@ export default async function AdminFeedbackPage() {
   const rows = (data ?? []) as unknown as Row[];
   const openCount = rows.filter((r) => r.status !== "resolved").length;
 
+  // Map chapter slug → real chapter title for display.
+  const titleBySlug = new Map(
+    (getCourse(COURSE_SLUG)?.chapters ?? []).map((c) => [c.slug, c.title]),
+  );
+
   return (
     <div
       style={{
@@ -71,9 +77,12 @@ export default async function AdminFeedbackPage() {
         <ol style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: "1rem" }}>
           {rows.map((r) => {
             const href = r.path + (r.section_id ? `#${r.section_id}` : "");
+            const chapterTitle = r.chapter_slug
+              ? (titleBySlug.get(r.chapter_slug) ??
+                r.chapter_slug.replace(/^\d+-/, "").replace(/-/g, " "))
+              : null;
             const where =
-              r.section_label ||
-              (r.chapter_slug ? r.chapter_slug.replace(/^\d+-/, "").replace(/-/g, " ") : r.path);
+              [chapterTitle, r.section_label].filter(Boolean).join(" · ") || r.path;
             const resolved = r.status === "resolved";
             return (
               <li
