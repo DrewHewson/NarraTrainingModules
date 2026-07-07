@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import TestSwitcher from "@/app/_components/TestSwitcher";
+import FeedbackWidget from "@/app/_components/FeedbackWidget";
 
 export const metadata: Metadata = {
   title: "Narra Training",
@@ -47,6 +48,8 @@ export default function AppLayout({
 
       {/* Page content */}
       <main style={{ flex: 1 }}>{children}</main>
+
+      <FeedbackWidget />
     </div>
   );
 }

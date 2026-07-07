@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Newsreader } from "next/font/google";
 import Link from "next/link";
 import TestSwitcher from "@/app/_components/TestSwitcher";
+import FeedbackWidget from "@/app/_components/FeedbackWidget";
 import "@/app/preview/preview.css";
 import "@/app/narra.css";
 
@@ -51,6 +52,7 @@ export default function LearnLayout({
         </div>
       </header>
       {children}
+      <FeedbackWidget />
     </div>
   );
 }
