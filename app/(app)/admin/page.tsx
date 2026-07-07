@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { requireAdmin } from "@/lib/auth";
 import { createAdminClient } from "@/lib/supabase/admin";
 import InviteForm from "./_components/InviteForm";
@@ -62,12 +63,29 @@ export default async function AdminPage() {
         <p className="narra-eyebrow" style={{ marginBottom: "0.4rem" }}>
           Admin
         </p>
-        <h1
-          className="narra-h"
-          style={{ fontSize: "clamp(1.6rem, 4vw, 2.2rem)", marginBottom: "0.6rem" }}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "baseline",
+            justifyContent: "space-between",
+            gap: "1rem",
+            flexWrap: "wrap",
+          }}
         >
-          Learner Management
-        </h1>
+          <h1
+            className="narra-h"
+            style={{ fontSize: "clamp(1.6rem, 4vw, 2.2rem)", marginBottom: "0.6rem" }}
+          >
+            Learner Management
+          </h1>
+          <Link
+            href="/admin/feedback"
+            className="narra-btn ghost"
+            style={{ textDecoration: "none" }}
+          >
+            Reviewer feedback →
+          </Link>
+        </div>
         <hr className="narra-divider" style={{ marginTop: "0.2rem" }} />
       </div>
 

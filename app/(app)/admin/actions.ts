@@ -104,3 +104,18 @@ export async function setCnoStatus(
 
   revalidatePath("/admin");
 }
+
+export async function setFeedbackStatus(
+  id: string,
+  status: "open" | "resolved",
+): Promise<void> {
+  await requireAdmin();
+
+  const admin = createAdminClient();
+  const { error } = await admin.from("feedback").update({ status }).eq("id", id);
+  if (error) {
+    throw new Error(`Failed to update feedback: ${error.message}`);
+  }
+
+  revalidatePath("/admin/feedback");
+}
